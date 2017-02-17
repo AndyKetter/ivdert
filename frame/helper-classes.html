@@ -1,0 +1,1747 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<title>Helper Classes - iDvert Frame</title>
+<meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport" />
+<!--Style-->
+<link rel="stylesheet" href="core/bootstrap/css/bootstrap.min.css" />
+<link rel="stylesheet" href="core/dist/css/font-awesome.min.css" />
+<link rel="stylesheet" href="core/dist/css/AdminLTE.min.css" />
+<link rel="stylesheet" href="core/dist/css/skins/skin-ivt-light.min.css">
+<link rel="stylesheet" href="core/dist/css/doc.css">
+<!--[if lt IE 9]>
+<script src="core/dits/js/html5shiv.min.js"></script>
+<script src="core/dits/js/respond.min.js"></script>
+<![endif]-->
+</head>
+
+<body class="hold-transition skin-ivt-light sidebar-mini">
+<!--wrapper-->
+<div class="wrapper">
+
+ 	<!--main-header-->
+ 	<header class="main-header">
+
+ 	    <!--logo-->
+ 	    <a href="#" class="logo">
+ 	    	<span class="logo-lg">iDvert Frame</span>
+ 	    	<span class="logo-mini">ivt</span>
+ 	    </a>
+ 	    <!--/logo-->
+
+ 	    <!--navbar-->
+ 	    <nav class="navbar navbar-static-top" role="navigation">
+ 	    	<!--sidebar-toggle-->
+ 	    	<a href="#" class="sidebar-toggle" data-toggle="offcanvas" role="button">
+		    	<span class="sr-only">Toggle navigation</span>
+		    </a>
+ 	    	<!--/sidebar-toggle-->
+
+ 	    	<!--navbar-custom-menu-->
+ 	        <div class="navbar-custom-menu">
+				<ul class="nav navbar-nav">
+					<!-- <li class="dropdown messages-menu">
+						<a href="#">
+							<i class="fa fa-envelope-o"></i>
+							<span class="label label-success">4</span>
+						</a>
+					</li> -->
+					<li class="dropdown user user-menu dropdown-sm">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+							<img src="core/dist/img/user2-160x160.jpg" class="user-image" alt="User Image">
+							<span class="hidden-xs">Sim</span>
+						</a>
+					</li>
+				</ul>
+ 	        </div>
+ 	    	<!--navbar-custom-menu-->
+ 	    </nav>
+ 	    <!--/navbar-->
+
+ 	</header>
+ 	<!--/main-header-->
+	
+	<!--main-sidebar-->
+	<aside class="main-sidebar">
+		<section class="sidebar">
+			<!--sidebar-menu-->
+		    <ul class="sidebar-menu">
+				<li class="header">导航</li>
+				<li class="active"><a href="main.html"><i class="fa fa-dashboard"></i> <span>总览</span></a></li>
+				<li class="treeview">
+					<a href="#"><i class="fa fa-laptop"></i> <span>UI组件</span>
+						<span class="pull-right-container">
+							<i class="fa fa-angle-left pull-right"></i>
+						</span>
+					</a>
+					<ul class="treeview-menu">
+						<li><a href="general.html"><i class="fa fa-circle-o"></i> 基础组件</a></li>
+						<li><a href="button.html"><i class="fa fa-circle-o"></i> 按钮</a></li>
+						<li><a href="modal.html"><i class="fa fa-circle-o"></i> 弹层</a></li>
+						<li><a href="tips.html"><i class="fa fa-circle-o"></i> 消息</a></li>
+						<li><a href="collapse.html"><i class="fa fa-circle-o"></i> 折叠</a></li>
+						<li><a href="dragdrop.html"><i class="fa fa-circle-o"></i> 拖拽</a></li>
+						<li><a href="scrollbar.html"><i class="fa fa-circle-o"></i> 滚动条</a></li>
+						<li><a href="timeline.html"><i class="fa fa-circle-o"></i> 时间轴</a></li>
+						<li><a href="list-group.html"><i class="fa fa-circle-o"></i> 列表</a></li>
+						<li><a href="nestable.html"><i class="fa fa-circle-o"></i> 拖拽排序</a></li>
+						<li><a href="tabs.html"><i class="fa fa-circle-o"></i> 标签页</a></li>
+						<li><a href="tree.html"><i class="fa fa-circle-o"></i> 树形菜单</a></li>
+						<li><a href="typography.html"><i class="fa fa-circle-o"></i> 排版</a></li>
+						<li><a href="grid.html"><i class="fa fa-circle-o"></i> 栅格</a></li>
+						<li><a href="icon.html"><i class="fa fa-circle-o"></i> 图标</a></li>
+					</ul>
+				</li>
+				<li class="treeview">
+					<a href="#"><i class="fa fa-cube"></i> <span>组件</span>
+						<span class="pull-right-container">
+							<i class="fa fa-angle-left pull-right"></i>
+						</span>
+					</a>
+					<ul class="treeview-menu">
+						<li><a href="widget.html"><i class="fa fa-circle-o"></i> 组件</a></li>
+						<li><a href="box-panel.html"><i class="fa fa-circle-o"></i> 容器面板</a></li>
+					</ul>
+				</li>
+				<li class="treeview">
+					<a href="#"><i class="fa fa-image"></i> <span>图片</span>
+						<span class="pull-right-container">
+							<i class="fa fa-angle-left pull-right"></i>
+						</span>
+					</a>
+					<ul class="treeview-menu">
+						<li><a href="carousel.html"><i class="fa fa-circle-o"></i> 轮播图</a></li>
+						<li><a href="card.html"><i class="fa fa-circle-o"></i> 卡片组</a></li>
+						<li><a href="lightbox.html"><i class="fa fa-circle-o"></i> lightbox</a></li>
+						<li><a href="wookmark.html"><i class="fa fa-circle-o"></i> 瀑布流</a></li>
+					</ul>
+				</li>
+				<!-- <li><a href="echart.html"><i class="fa fa-area-chart"></i> <span>图表</span></a></li> -->
+				<li class="treeview">
+					<a href="#"><i class="fa fa-edit"></i> <span>表单</span>
+						<span class="pull-right-container">
+							<i class="fa fa-angle-left pull-right"></i>
+						</span>
+					</a>
+					<ul class="treeview-menu">
+						<li><a href="form.html"><i class="fa fa-circle-o"></i> 通用表单组件</a></li>
+						<li><a href="validform.html"><i class="fa fa-circle-o"></i> 表单验证</a></li>
+					</ul>
+				</li>
+				<li class="treeview">
+					<a href="#"><i class="fa fa-table"></i> <span>表格</span>
+						<span class="pull-right-container">
+							<i class="fa fa-angle-left pull-right"></i>
+						</span>
+					</a>
+					<ul class="treeview-menu">
+						<li><a href="table.html"><i class="fa fa-circle-o"></i> 基础表格</a></li>
+						<li><a href="data-table.html"><i class="fa fa-circle-o"></i> DataTable</a></li>
+						<li><a href="bootstrap-table.html"><i class="fa fa-circle-o"></i> Bootstrap Table</a></li>
+					</ul>
+				</li>
+				<li class="treeview">
+					<a href="#"><i class="fa fa-file-o"></i> <span>页面</span>
+						<span class="pull-right-container">
+							<i class="fa fa-angle-left pull-right"></i>
+						</span>
+					</a>
+					<ul class="treeview-menu">
+						<li><a href="blank.html"><i class="fa fa-circle-o"></i> 空白页面</a></li>
+						<li><a href="500.html"><i class="fa fa-circle-o"></i> 500</a></li>
+						<li><a href="404.html"><i class="fa fa-circle-o"></i> 404</a></li>
+					</ul>
+				</li>
+				<li><a href="helper-classes.html"><i class="fa fa-wrench"></i> <span>辅助类</span></a></li>
+		    </ul>
+			<!--/sidebar-menu-->
+		</section>
+	</aside>
+	<!--/main-sidebar-->
+
+	<!--content-wrapper-->
+	<div class="content-wrapper">
+		<!--content-header-->
+		<section class="content-header">
+			<!--content-header-title-->
+			<h1>辅助类</h1>
+			<!--/content-header-title-->
+
+			<!---breadcrumb-->
+			<ol class="breadcrumb">
+				<li><a href="#"><i class="fa fa-dashboard"></i> 控制面板</a></li>
+				<li class="active">辅助类</li>
+			</ol>
+			<!---/breadcrumb-->
+		</section>
+		<!--/content-header-->
+		
+		<!--content-->
+		<section class="content">
+			
+			<!--row-->
+			<div class="row">
+
+			    <div class="col-md-12 mb-10">
+					<!--box-->
+					<div class="box box-primary">
+					    <div class="box-header">
+					    	<h3 class="box-title">文字颜色</h3>
+					    </div>
+					    <div class="box-body">
+							
+							<div class="col-md-4">
+								<table class="table">
+									<thead>
+										<tr>
+											<th width="30%">类名</th>
+											<th>描述</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td><code>.text-default</code></td>
+											<td><span class="text-default">默认文本色</span></td>
+										</tr>
+										<tr>
+											<td><code>.text-primary</code></td>
+											<td><span class="text-primary">主要文本色</span></td>
+										</tr>
+										<tr>
+											<td><code>.text-success</code></td>
+											<td><span class="text-success">成功文本色</span></td>
+										</tr>
+										<tr>
+											<td><code>.text-info</code></td>
+											<td><span class="text-info">信息文本色</span></td>
+										</tr>
+										<tr>
+											<td><code>.text-warning</code></td>
+											<td><span class="text-warning">警告文本色</span></td>
+										</tr>
+										<tr>
+											<td><code>.text-danger</code></td>
+											<td><span class="text-danger">错误文本色</span></td>
+										</tr>
+										<tr>
+											<td><code>.text-dark</code></td>
+											<td><span class="text-dark">暗文本色</span></td>
+										</tr>
+										<tr>
+											<td><code>.text-alert</code></td>
+											<td><span class="text-alert">提示文本色</span></td>
+										</tr>
+										<tr>
+											<td><code>.text-system</code></td>
+											<td><span class="text-system">系统文本色</span></td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+							
+							<div class="col-md-4">
+								<table class="table">
+									<thead>
+										<tr>
+											<th width="30%">类名</th>
+											<th>描述</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td><code>.text-red</code></td>
+											<td><span class="text-red">红色文本色</span></td>
+										</tr>
+										<tr>
+											<td><code>.text-orange</code></td>
+											<td><span class="text-orange">橙色文本色</span></td>
+										</tr>
+										<tr>
+											<td><code>.text-yellow</code></td>
+											<td><span class="text-yellow">黄色文本色</span></td>
+										</tr>
+										<tr>
+											<td><code>.text-blue</code></td>
+											<td><span class="text-blue">蓝色文本色</span></td>
+										</tr>
+										<tr>
+											<td><code>.text-light-blue</code></td>
+											<td><span class="text-light-blue">亮蓝文本色</span></td>
+										</tr>
+										<tr>
+											<td><code>.text-black</code></td>
+											<td><span class="text-black">黑色文本色</span></td>
+										</tr>
+										<tr>
+											<td><code>.text-green</code></td>
+											<td><span class="text-green">绿色文本色</span></td>
+										</tr>
+										<tr>
+											<td><code>.text-light-green</code></td>
+											<td><span class="text-light-green">亮绿色文本色</span></td>
+										</tr>
+										<tr>
+											<td><code>.text-aqua</code></td>
+											<td><span class="text-aqua">浅绿色文本色</span></td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+							
+							<div class="col-md-4">
+								<table class="table">
+									<thead>
+										<tr>
+											<th width="30%">类名</th>
+											<th>描述</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td><code>.text-gray</code></td>
+											<td><span class="text-gray">灰色文本色</span></td>
+										</tr>
+										<tr>
+											<td><code>.text-light-gray</code></td>
+											<td><span class="text-light-gray">浅灰色文本色</span></td>
+										</tr>
+										<tr>
+											<td><code>.text-navy</code></td>
+											<td><span class="text-navy">深蓝色文本色</span></td>
+										</tr>
+										<tr>
+											<td><code>.text-teal</code></td>
+											<td><span class="text-teal">青色文本色</span></td>
+										</tr>
+										<tr>
+											<td><code>.text-olive</code></td>
+											<td><span class="text-olive">橄榄色文本色</span></td>
+										</tr>
+										<tr>
+											<td><code>.text-lime</code></td>
+											<td><span class="text-lime">黄绿色文本色</span></td>
+										</tr>
+										<tr>
+											<td><code>.text-fuchsia</code></td>
+											<td><span class="text-fuchsia">紫红色文本色</span></td>
+										</tr>
+										<tr>
+											<td><code>.text-purple</code></td>
+											<td><span class="text-purple">紫色文本色</span></td>
+										</tr>
+										<tr>
+											<td><code>.text-maroon</code></td>
+											<td><span class="text-maroon">红褐色文本色</span></td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+
+						</div>
+					</div>
+					<!--/box-->
+			    </div>
+
+			</div>
+			<!--/row-->
+			
+			<!--row-->
+			<div class="row">
+
+			    <div class="col-md-12 mb-10">
+					<!--box-->
+					<div class="box box-primary">
+					    <div class="box-header">
+					    	<h3 class="box-title">背景颜色</h3>
+					    </div>
+					    <div class="box-body">
+							
+							<div class="col-md-4">
+								<table class="table">
+									<thead>
+										<tr>
+											<th width="30%">类名</th>
+											<th>描述</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td><code>.bg-default</code></td>
+											<td><span class="bg-default">默认背景色</span></td>
+										</tr>
+										<tr>
+											<td><code>.bg-primary</code></td>
+											<td><span class="bg-primary">主要背景色</span></td>
+										</tr>
+										<tr>
+											<td><code>.bg-success</code></td>
+											<td><span class="bg-success">成功背景色</span></td>
+										</tr>
+										<tr>
+											<td><code>.bg-info</code></td>
+											<td><span class="bg-info">信息背景色</span></td>
+										</tr>
+										<tr>
+											<td><code>.bg-warning</code></td>
+											<td><span class="bg-warning">警告背景色</span></td>
+										</tr>
+										<tr>
+											<td><code>.bg-danger</code></td>
+											<td><span class="bg-danger">错误背景色</span></td>
+										</tr>
+										<tr>
+											<td><code>.bg-dark</code></td>
+											<td><span class="bg-dark">暗背景色</span></td>
+										</tr>
+										<tr>
+											<td><code>.bg-alert</code></td>
+											<td><span class="bg-alert">提示背景色</span></td>
+										</tr>
+										<tr>
+											<td><code>.bg-system</code></td>
+											<td><span class="bg-system">系统背景色</span></td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+							
+							<div class="col-md-4">
+								<table class="table">
+									<thead>
+										<tr>
+											<th width="30%">类名</th>
+											<th>描述</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td><code>.bg-red</code></td>
+											<td><span class="bg-red">红色背景色</span></td>
+										</tr>
+										<tr>
+											<td><code>.bg-orange</code></td>
+											<td><span class="bg-orange">橙色背景色</span></td>
+										</tr>
+										<tr>
+											<td><code>.bg-yellow</code></td>
+											<td><span class="bg-yellow">黄色背景色</span></td>
+										</tr>
+										<tr>
+											<td><code>.bg-blue</code></td>
+											<td><span class="bg-blue">蓝色背景色</span></td>
+										</tr>
+										<tr>
+											<td><code>.bg-light-blue</code></td>
+											<td><span class="bg-light-blue">亮蓝背景色</span></td>
+										</tr>
+										<tr>
+											<td><code>.bg-black</code></td>
+											<td><span class="bg-black">黑色背景色</span></td>
+										</tr>
+										<tr>
+											<td><code>.bg-green</code></td>
+											<td><span class="bg-green">绿色背景色</span></td>
+										</tr>
+										<tr>
+											<td><code>.bg-light-green</code></td>
+											<td><span class="bg-light-green">亮绿色背景色</span></td>
+										</tr>
+										<tr>
+											<td><code>.bg-aqua</code></td>
+											<td><span class="bg-aqua">浅绿色背景色</span></td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+							
+							<div class="col-md-4">
+								<table class="table">
+									<thead>
+										<tr>
+											<th width="30%">类名</th>
+											<th>描述</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td><code>.bg-gray</code></td>
+											<td><span class="bg-gray">灰色背景色</span></td>
+										</tr>
+										<tr>
+											<td><code>.bg-light-gray</code></td>
+											<td><span class="bg-light-gray">浅灰色背景色</span></td>
+										</tr>
+										<tr>
+											<td><code>.bg-navy</code></td>
+											<td><span class="bg-navy">深蓝色背景色</span></td>
+										</tr>
+										<tr>
+											<td><code>.bg-teal</code></td>
+											<td><span class="bg-teal">青色背景色</span></td>
+										</tr>
+										<tr>
+											<td><code>.bg-olive</code></td>
+											<td><span class="bg-olive">橄榄色背景色</span></td>
+										</tr>
+										<tr>
+											<td><code>.bg-lime</code></td>
+											<td><span class="bg-lime">黄绿色背景色</span></td>
+										</tr>
+										<tr>
+											<td><code>.bg-fuchsia</code></td>
+											<td><span class="bg-fuchsia">紫红色背景色</span></td>
+										</tr>
+										<tr>
+											<td><code>.bg-purple</code></td>
+											<td><span class="bg-purple">紫色背景色</span></td>
+										</tr>
+										<tr>
+											<td><code>.bg-maroon</code></td>
+											<td><span class="bg-maroon">红褐色背景色</span></td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+
+						</div>
+					</div>
+					<!--/box-->
+			    </div>
+
+			</div>
+			<!--/row-->
+			
+			<!--row-->
+			<div class="row">
+
+			    <div class="col-md-12 mb-10">
+					<!--box-->
+					<div class="box box-primary">
+					    <div class="box-header">
+					    	<h3 class="box-title">背景激活&悬停颜色</h3>
+					    </div>
+					    <div class="box-body">
+							
+							<div class="col-md-3">
+								<table class="table">
+									<thead>
+										<tr>
+											<th width="40%">类名</th>
+											<th>描述</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td><code>.bg-default-active</code></td>
+											<td><span class="bg-default-active">默认激活背景色</span></td>
+										</tr>
+										<tr>
+											<td><code>.bg-primary-active</code></td>
+											<td><span class="bg-primary-active">主要激活背景色</span></td>
+										</tr>
+										<tr>
+											<td><code>.bg-success-active</code></td>
+											<td><span class="bg-success-active">成功激活背景色</span></td>
+										</tr>
+										<tr>
+											<td><code>.bg-info-active</code></td>
+											<td><span class="bg-info-active">信息激活背景色</span></td>
+										</tr>
+										<tr>
+											<td><code>.bg-warning-active</code></td>
+											<td><span class="bg-warning-active">警告激活背景色</span></td>
+										</tr>
+										<tr>
+											<td><code>.bg-danger-active</code></td>
+											<td><span class="bg-danger-active">错误激活背景色</span></td>
+										</tr>
+										<tr>
+											<td><code>.bg-dark-active</code></td>
+											<td><span class="bg-dark-active">暗背激活景色</span></td>
+										</tr>
+										<tr>
+											<td><code>.bg-alert-active</code></td>
+											<td><span class="bg-alert-active">提示激活背景色</span></td>
+										</tr>
+										<tr>
+											<td><code>.bg-system-active</code></td>
+											<td><span class="bg-system-active">系统激活背景色</span></td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+							
+							<div class="col-md-3">
+								<table class="table">
+									<thead>
+										<tr>
+											<th width="40%">类名</th>
+											<th>描述</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td><code>.bg-default-hover</code></td>
+											<td><span class="bg-default-hover">默认悬停背景色</span></td>
+										</tr>
+										<tr>
+											<td><code>.bg-primary-hover</code></td>
+											<td><span class="bg-primary-hover">主要悬停背景色</span></td>
+										</tr>
+										<tr>
+											<td><code>.bg-success-hover</code></td>
+											<td><span class="bg-success-hover">成功悬停背景色</span></td>
+										</tr>
+										<tr>
+											<td><code>.bg-info-hover</code></td>
+											<td><span class="bg-info-hover">信息悬停背景色</span></td>
+										</tr>
+										<tr>
+											<td><code>.bg-warning-hover</code></td>
+											<td><span class="bg-warning-hover">警告悬停背景色</span></td>
+										</tr>
+										<tr>
+											<td><code>.bg-danger-hover</code></td>
+											<td><span class="bg-danger-hover">错误悬停背景色</span></td>
+										</tr>
+										<tr>
+											<td><code>.bg-dark-hover</code></td>
+											<td><span class="bg-dark-hover">暗背悬停景色</span></td>
+										</tr>
+										<tr>
+											<td><code>.bg-alert-hover</code></td>
+											<td><span class="bg-alert-hover">提示悬停背景色</span></td>
+										</tr>
+										<tr>
+											<td><code>.bg-system-hover</code></td>
+											<td><span class="bg-system-hover">系统悬停背景色</span></td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+							
+							<div class="col-md-3">
+								<table class="table">
+									<thead>
+										<tr>
+											<th width="50%">类名</th>
+											<th>描述</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td><code>.bg-red-active</code></td>
+											<td><span class="bg-red-active">红色激活背景色</span></td>
+										</tr>
+										<tr>
+											<td><code>.bg-orange-active</code></td>
+											<td><span class="bg-orange-active">橙色激活背景色</span></td>
+										</tr>
+										<tr>
+											<td><code>.bg-yellow-active</code></td>
+											<td><span class="bg-yellow-active">黄色激活背景色</span></td>
+										</tr>
+										<tr>
+											<td><code>.bg-blue-active</code></td>
+											<td><span class="bg-blue-active">蓝色激活背景色</span></td>
+										</tr>
+										<tr>
+											<td><code>.bg-light-blue-active</code></td>
+											<td><span class="bg-light-blue-active">亮蓝激活背景色</span></td>
+										</tr>
+										<tr>
+											<td><code>.bg-black-active</code></td>
+											<td><span class="bg-black-active">黑色激活背景色</span></td>
+										</tr>
+										<tr>
+											<td><code>.bg-green-active</code></td>
+											<td><span class="bg-green-active">绿色激活背景色</span></td>
+										</tr>
+										<tr>
+											<td><code>.bg-light-green-active</code></td>
+											<td><span class="bg-light-green-active">亮绿色激活背景色</span></td>
+										</tr>
+										<tr>
+											<td><code>.bg-aqua-active</code></td>
+											<td><span class="bg-aqua-active">浅绿色激活背景色</span></td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+							
+							<div class="col-md-3">
+								<table class="table">
+									<thead>
+										<tr>
+											<th width="50%">类名</th>
+											<th>描述</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td><code>.bg-gray-active</code></td>
+											<td><span class="bg-gray-active">灰色激活背景色</span></td>
+										</tr>
+										<tr>
+											<td><code>.bg-light-gray-active</code></td>
+											<td><span class="bg-light-gray-active">浅灰激活色背景色</span></td>
+										</tr>
+										<tr>
+											<td><code>.bg-navy-active</code></td>
+											<td><span class="bg-navy-active">深蓝色激活背景色</span></td>
+										</tr>
+										<tr>
+											<td><code>.bg-teal-active</code></td>
+											<td><span class="bg-teal-active">青色背景色</span></td>
+										</tr>
+										<tr>
+											<td><code>.bg-olive-active</code></td>
+											<td><span class="bg-olive-active">橄榄色激活背景色</span></td>
+										</tr>
+										<tr>
+											<td><code>.bg-lime-active</code></td>
+											<td><span class="bg-lime-active">黄绿色激活背景色</span></td>
+										</tr>
+										<tr>
+											<td><code>.bg-fuchsia-active</code></td>
+											<td><span class="bg-fuchsia-active">紫红色激活背景色</span></td>
+										</tr>
+										<tr>
+											<td><code>.bg-purple-active</code></td>
+											<td><span class="bg-purple-active">紫色激活背景色</span></td>
+										</tr>
+										<tr>
+											<td><code>.bg-maroon-active</code></td>
+											<td><span class="bg-maroon-active">红褐色激活背景色</span></td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+
+						</div>
+					</div>
+					<!--/box-->
+			    </div>
+
+			</div>
+			<!--/row-->
+			
+			<!--row-->
+			<div class="row">
+
+			    <div class="col-md-12 mb-10">
+					<!--box-->
+					<div class="box box-primary">
+					    <div class="box-header">
+					    	<h3 class="box-title">背景渐变颜色</h3>
+					    </div>
+					    <div class="box-body">
+							
+							<div class="col-md-6">
+								<table class="table">
+									<thead>
+										<tr>
+											<th width="40%">类名</th>
+											<th>描述</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td><code>.bg-teal-gradient</code></td>
+											<td><span class="bg-teal-gradient">青色渐变背景色</span></td>
+										</tr>
+										<tr>
+											<td><code>.bg-primary-gradient</code></td>
+											<td><span class="bg-light-blue-gradient">亮蓝渐变背景色</span></td>
+										</tr>
+										<tr>
+											<td><code>.bg-blue-gradient</code></td>
+											<td><span class="bg-blue-gradient">蓝色渐变背景色</span></td>
+										</tr>
+										<tr>
+											<td><code>.bg-aqua-gradient</code></td>
+											<td><span class="bg-aqua-gradient">浅绿色渐变背景色</span></td>
+										</tr>
+										<tr>
+											<td><code>.bg-yellow-gradient</code></td>
+											<td><span class="bg-yellow-gradient">黄色渐变背景色</span></td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+							
+							<div class="col-md-6">
+								<table class="table">
+									<thead>
+										<tr>
+											<th width="40%">类名</th>
+											<th>描述</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td><code>.bg-purple-gradient</code></td>
+											<td><span class="bg-purple-gradient">紫色渐变背景色</span></td>
+										</tr>
+										<tr>
+											<td><code>.bg-green-gradient</code></td>
+											<td><span class="bg-green-gradient">绿色渐变景色</span></td>
+										</tr>
+										<tr>
+											<td><code>.bg-red-gradient</code></td>
+											<td><span class="bg-red-gradient">红色渐变背景色</span></td>
+										</tr>
+										<tr>
+											<td><code>.bg-black-gradient</code></td>
+											<td><span class="bg-black-gradient">黑色渐变背景色</span></td>
+										</tr>
+										<tr>
+											<td><code>.bg-maroon-gradient</code></td>
+											<td><span class="bg-maroon-gradient">红褐色渐变背景色</span></td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+
+						</div>
+					</div>
+					<!--/box-->
+			    </div>
+
+			</div>
+			<!--/row-->
+			
+			<!--row-->
+			<div class="row">
+
+			    <div class="col-md-12 mb-10">
+					<!--box-->
+					<div class="box box-primary">
+					    <div class="box-header">
+					    	<h3 class="box-title">文字相关设置</h3>
+					    </div>
+					    <div class="box-body">
+							
+							<div class="col-md-3">
+								<table class="table">
+									<thead>
+										<tr>
+											<th width="40%">类名</th>
+											<th>描述</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td><code>.link-muted</code></td>
+											<td><a href="javascript:void(0);" class="link-muted">柔和文字链接</a></td>
+										</tr>
+										<tr>
+											<td><code>.link-black</code></td>
+											<td><a href="javascript:void(0);" class="link-black">黑色文字链接</a></td>
+										</tr>
+										<tr>
+											<td><code>.link-primary</code></td>
+											<td><a href="javascript:void(0);" class="link-primary">主要文字链接</a></td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+							
+							<div class="col-md-3">
+								<table class="table">
+									<thead>
+										<tr>
+											<th width="30%">类名</th>
+											<th>描述</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td><code>.text-xs</code></td>
+											<td><span class="text-xs">最小字体大小 10px</span></td>
+										</tr>
+										<tr>
+											<td><code>.text-sm</code></td>
+											<td><span class="text-sm">小字体大小 12px</span></td>
+										</tr>
+										<tr>
+											<td><code>.text-md</code></td>
+											<td><span class="text-md">默认字体大小 14px</span></td>
+										</tr>
+										<tr>
+											<td><code>.text-lg</code></td>
+											<td><span class="text-lg">达字体大小 16px</span></td>
+										</tr>
+										<tr>
+											<td><code>.text-xlg</code></td>
+											<td><span class="text-xlg">最大字体大小 20px</span></td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+							
+							<div class="col-md-3">
+								<table class="table">
+									<thead>
+										<tr>
+											<th width="30%">类名</th>
+											<th>描述</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td><code>.text-thin</code></td>
+											<td><span class="text-thin">字体变细</span></td>
+										</tr>
+										<tr>
+											<td><code>.text-minu</code></td>
+											<td><span class="text-minu">默认字体</span></td>
+										</tr>
+										<tr>
+											<td><code>.text-bold</code></td>
+											<td><span class="text-bold">字体加粗</span></td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+							
+							<div class="col-md-3">
+								<table class="table">
+									<thead>
+										<tr>
+											<th width="30%">类名</th>
+											<th>描述</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td><code>.text-left</code></td>
+											<td><span class="text-left">文字左对齐</span></td>
+										</tr>
+										<tr>
+											<td><code>.text-center</code></td>
+											<td><span class="text-center">文字居中对齐</span></td>
+										</tr>
+										<tr>
+											<td><code>.text-right</code></td>
+											<td><span class="text-right">文字右对齐</span></td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+
+						</div>
+					</div>
+					<!--/box-->
+			    </div>
+
+			</div>
+			<!--/row-->
+
+			<!--row-->
+			<div class="row">
+			    <div class="col-md-12 mb-10">
+					<!--box-->
+					<div class="box box-primary">
+					    <div class="box-header">
+					    	<h3 class="box-title">外边距</h3>
+					    </div>
+					    <div class="box-body">
+							
+							<div class="col-md-2">
+								<table class="table">
+									<thead>
+										<tr>
+											<th width="55%">类名</th>
+											<th>描述</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td><code>.m-auto</code></td>
+											<td><span class="">margin:auto</span></td>
+										</tr>
+										<tr>
+											<td><code>.m-0-auto</code></td>
+											<td><span class="">margin:0 auto</span></td>
+										</tr>
+										<tr>
+											<td><code>.m-40</code></td>
+											<td><span class="">margin:40px</span></td>
+										</tr>
+										<tr>
+											<td><code>.m-20</code></td>
+											<td><span class="">margin:20px</span></td>
+										</tr>
+										<tr>
+											<td><code>.m-10</code> <code>.margin</code></td>
+											<td><span class="">margin:10px</span></td>
+										</tr>
+										<tr>
+											<td><code>.m-5</code></td>
+											<td><span class="">margin:5px</span></td>
+										</tr>
+										<tr>
+											<td><code>.m-0</code> <code>.no-margin</code></td>
+											<td><span class="">margin:0</span></td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+							
+							<div class="col-md-3">
+								<table class="table">
+									<thead>
+										<tr>
+											<th width="50%">类名</th>
+											<th>描述</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td><code>.mb-40</code></td>
+											<td><span class="">margin-bottom:40px</span></td>
+										</tr>
+										<tr>
+											<td><code>.mb-20</code></td>
+											<td><span class="">margin-bottom:20px</span></td>
+										</tr>
+										<tr>
+											<td><code>.mb-10</code> <code>.margin-bottom</code></td>
+											<td><span class="">margin-bottom:10px</span></td>
+										</tr>
+										<tr>
+											<td><code>.mb-5</code></td>
+											<td><span class="">margin-bottom:5px</span></td>
+										</tr>
+										<tr>
+											<td><code>.mb-0</code></td>
+											<td><span class="">margin-bottom:0</span></td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+							
+							<div class="col-md-2">
+								<table class="table">
+									<thead>
+										<tr>
+											<th width="50%">类名</th>
+											<th>描述</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td><code>.mt-40</code></td>
+											<td><span class="">margin-top:40px</span></td>
+										</tr>
+										<tr>
+											<td><code>.mt-20</code></td>
+											<td><span class="">margin-top:20px</span></td>
+										</tr>
+										<tr>
+											<td><code>.mt-10</code> <code>.margin-top</code></td>
+											<td><span class="">margin-top:10px</span></td>
+										</tr>
+										<tr>
+											<td><code>.mt-5</code></td>
+											<td><span class="">margin-top:5px</span></td>
+										</tr>
+										<tr>
+											<td><code>.mt-0</code></td>
+											<td><span class="">margin-top:0</span></td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+							
+							<div class="col-md-2">
+								<table class="table">
+									<thead>
+										<tr>
+											<th width="50%">类名</th>
+											<th>描述</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td><code>.ml-40</code></td>
+											<td><span class="">margin-left:40px</span></td>
+										</tr>
+										<tr>
+											<td><code>.ml-20</code></td>
+											<td><span class="">margin-left:20px</span></td>
+										</tr>
+										<tr>
+											<td><code>.ml-10</code> <code>.margin-left</code></td>
+											<td><span class="">margin-left:10px</span></td>
+										</tr>
+										<tr>
+											<td><code>.ml-5</code></td>
+											<td><span class="">margin-left:5px</span></td>
+										</tr>
+										<tr>
+											<td><code>.ml-0</code></td>
+											<td><span class="">margin-left:0</span></td>
+										</tr>
+										<tr>
+											<td><code>.ml-auto</code></td>
+											<td><span class="">margin-left:auto</span></td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+							
+							<div class="col-md-3">
+								<table class="table">
+									<thead>
+										<tr>
+											<th width="45%">类名</th>
+											<th>描述</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td><code>.mr-40</code></td>
+											<td><span class="">margin-right:40px</span></td>
+										</tr>
+										<tr>
+											<td><code>.mr-20</code></td>
+											<td><span class="">margin-right:20px</span></td>
+										</tr>
+										<tr>
+											<td><code>.mr-10</code> <code>.margin-right</code></td>
+											<td><span class="">margin-right:10px</span></td>
+										</tr>
+										<tr>
+											<td><code>.mr-5</code></td>
+											<td><span class="">margin-right:5px</span></td>
+										</tr>
+										<tr>
+											<td><code>.mr-0</code></td>
+											<td><span class="">margin-right:0</span></td>
+										</tr>
+										<tr>
+											<td><code>.mr-auto</code></td>
+											<td><span class="">margin-right:auto</span></td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+
+						</div>
+					</div>
+					<!--/box-->
+			    </div>
+			</div>
+			<!--/row-->
+
+			<!--row-->
+			<div class="row">
+			    <div class="col-md-12 mb-10">
+					<!--box-->
+					<div class="box box-primary">
+					    <div class="box-header">
+					    	<h3 class="box-title">内边距</h3>
+					    </div>
+					    <div class="box-body">
+							
+							<div class="col-md-3">
+								<table class="table">
+									<thead>
+										<tr>
+											<th width="55%">类名</th>
+											<th>描述</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td><code>.p-30</code></td>
+											<td><span class="">padding:30px</span></td>
+										</tr>
+										<tr>
+											<td><code>.p-20</code></td>
+											<td><span class="">padding:20px</span></td>
+										</tr>
+										<tr>
+											<td><code>.p-15</code></td>
+											<td><span class="">padding:15px</span></td>
+										</tr>
+										<tr>
+											<td><code>.p-10</code> <code>.pad</code></td>
+											<td><span class="">padding:10px</span></td>
+										</tr>
+										<tr>
+											<td><code>.p-5</code></td>
+											<td><span class="">padding:5px</span></td>
+										</tr>
+										<tr>
+											<td><code>.p-0</code> <code>.no-padding</code></td>
+											<td><span class="">padding:0</span></td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+							
+							<div class="col-md-3">
+								<table class="table">
+									<thead>
+										<tr>
+											<th width="35%">类名</th>
+											<th>描述</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td><code>.pb-30</code></td>
+											<td><span class="">padding-bottom:30px</span></td>
+										</tr>
+										<tr>
+											<td><code>.pb-20</code></td>
+											<td><span class="">padding-bottom:20px</span></td>
+										</tr>
+										<tr>
+											<td><code>.pb-15</code></td>
+											<td><span class="">padding-bottom:15px</span></td>
+										</tr>
+										<tr>
+											<td><code>.pb-10</code></td>
+											<td><span class="">padding-bottom:10px</span></td>
+										</tr>
+										<tr>
+											<td><code>.pb-5</code></td>
+											<td><span class="">padding-bottom:5px</span></td>
+										</tr>
+										<tr>
+											<td><code>.pb-0</code></td>
+											<td><span class="">padding-bottom:0</span></td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+							
+							<div class="col-md-2">
+								<table class="table">
+									<thead>
+										<tr>
+											<th width="35%">类名</th>
+											<th>描述</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td><code>.pt-30</code></td>
+											<td><span class="">padding-top:30px</span></td>
+										</tr>
+										<tr>
+											<td><code>.pt-20</code></td>
+											<td><span class="">padding-top:20px</span></td>
+										</tr>
+										<tr>
+											<td><code>.pt-15</code></td>
+											<td><span class="">padding-top:15px</span></td>
+										</tr>
+										<tr>
+											<td><code>.pt-10</code></td>
+											<td><span class="">padding-top:10px</span></td>
+										</tr>
+										<tr>
+											<td><code>.pt-5</code></td>
+											<td><span class="">padding-top:5px</span></td>
+										</tr>
+										<tr>
+											<td><code>.pt-0</code></td>
+											<td><span class="">padding-top:0</span></td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+							
+							<div class="col-md-2">
+								<table class="table">
+									<thead>
+										<tr>
+											<th width="35%">类名</th>
+											<th>描述</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td><code>.pl-30</code></td>
+											<td><span class="">padding-left:30px</span></td>
+										</tr>
+										<tr>
+											<td><code>.pl-20</code></td>
+											<td><span class="">padding-left:20px</span></td>
+										</tr>
+										<tr>
+											<td><code>.pl-15</code></td>
+											<td><span class="">padding-left:15px</span></td>
+										</tr>
+										<tr>
+											<td><code>.pl-10</code></td>
+											<td><span class="">padding-left:10px</span></td>
+										</tr>
+										<tr>
+											<td><code>.pl-5</code></td>
+											<td><span class="">padding-left:5px</span></td>
+										</tr>
+										<tr>
+											<td><code>.pl-0</code></td>
+											<td><span class="">padding-left:0</span></td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+							
+							<div class="col-md-2">
+								<table class="table">
+									<thead>
+										<tr>
+											<th width="35%">类名</th>
+											<th>描述</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td><code>.pr-30</code></td>
+											<td><span class="">padding-right:30px</span></td>
+										</tr>
+										<tr>
+											<td><code>.pr-20</code></td>
+											<td><span class="">padding-right:20px</span></td>
+										</tr>
+										<tr>
+											<td><code>.pr-15</code></td>
+											<td><span class="">padding-right:15px</span></td>
+										</tr>
+										<tr>
+											<td><code>.pr-10</code></td>
+											<td><span class="">padding-right:10px</span></td>
+										</tr>
+										<tr>
+											<td><code>.pr-5</code></td>
+											<td><span class="">padding-right:5px</span></td>
+										</tr>
+										<tr>
+											<td><code>.pr-0</code></td>
+											<td><span class="">padding-right:0</span></td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+
+						</div>
+					</div>
+					<!--/box-->
+			    </div>
+			</div>
+			<!--/row-->
+
+			<!--row-->
+			<div class="row">
+			    <div class="col-md-12 mb-10">
+					<!--box-->
+					<div class="box box-primary">
+					    <div class="box-header">
+					    	<h3 class="box-title">边框 & 圆角</h3>
+					    </div>
+					    <div class="box-body">
+							
+							<div class="col-md-4">
+								<table class="table">
+									<thead>
+										<tr>
+											<th width="35%">类名</th>
+											<th>描述</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td><code>.b-0</code> <code>.no-border</code></td>
+											<td><span class="">border:0</span></td>
+										</tr>
+										<tr>
+											<td><code>.bt-0</code></td>
+											<td><span class="">border-top:0</span></td>
+										</tr>
+										<tr>
+											<td><code>.bb-0</code></td>
+											<td><span class="">border-bottom:0</span></td>
+										</tr>
+										<tr>
+											<td><code>.b-a</code></td>
+											<td><span class="">border:1px solid rgba(0,0,0,0.05)</span></td>
+										</tr>
+										<tr>
+											<td><code>.b-t</code></td>
+											<td><span class="">border-top:1px solid rgba(0,0,0,0.05)</span></td>
+										</tr>
+										<tr>
+											<td><code>.b-r</code></td>
+											<td><span class="">border-right:1px solid rgba(0,0,0,0.05)</span></td>
+										</tr>
+										<tr>
+											<td><code>.b-b</code></td>
+											<td><span class="">border-bottom:1px solid rgba(0,0,0,0.05)</span></td>
+										</tr>
+										<tr>
+											<td><code>.b-l</code></td>
+											<td><span class="">border-left:1px solid rgba(0,0,0,0.05)</span></td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+							
+							<div class="col-md-2">
+								<table class="table">
+									<thead>
+										<tr>
+											<th width="40%">类名</th>
+											<th>描述</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td><code>.b-dashed</code></td>
+											<td><span class="">虚线</span></td>
+										</tr>
+										<tr>
+											<td><code>.b-solid</code></td>
+											<td><span class="">实线</span></td>
+										</tr>
+										<tr>
+											<td><code>.b-1x</code></td>
+											<td><span class="">1px 线宽</span></td>
+										</tr>
+										<tr>
+											<td><code>.b-2x</code></td>
+											<td><span class="">2px 线宽</span></td>
+										</tr>
+										<tr>
+											<td><code>.b-3x</code></td>
+											<td><span class="">3px 线宽</span></td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+							
+							<div class="col-md-3">
+								<table class="table">
+									<thead>
+										<tr>
+											<th width="40%">类名</th>
+											<th>描述</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td><code>.b-default</code></td>
+											<td><span class="">默认线色</span></td>
+										</tr>
+										<tr>
+											<td><code>.b-primary</code></td>
+											<td><span class="">主要线色</span></td>
+										</tr>
+										<tr>
+											<td><code>.b-success</code></td>
+											<td><span class="">成功线色</span></td>
+										</tr>
+										<tr>
+											<td><code>.b-info</code></td>
+											<td><span class="">信息线色</span></td>
+										</tr>
+										<tr>
+											<td><code>.b-warning</code></td>
+											<td><span class="">警告线色</span></td>
+										</tr>
+										<tr>
+											<td><code>.b-danger</code></td>
+											<td><span class="">出错线色</span></td>
+										</tr>
+										<tr>
+											<td><code>.b-white</code></td>
+											<td><span class="">白色线色</span></td>
+										</tr>
+										<tr>
+											<td><code>.b-black</code></td>
+											<td><span class="">黑色线色</span></td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+							
+							<div class="col-md-3">
+								<table class="table">
+									<thead>
+										<tr>
+											<th width="40%">类名</th>
+											<th>描述</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td><code>.br-0</code> <code>.no-radius</code></td>
+											<td><span class="">无圆角</span></td>
+										</tr>
+										<tr>
+											<td><code>.br-2</code></td>
+											<td><span class="">2px 圆角</span></td>
+										</tr>
+										<tr>
+											<td><code>.br-2-t</code></td>
+											<td><span class="">2px 上圆角</span></td>
+										</tr>
+										<tr>
+											<td><code>.br-2-r</code></td>
+											<td><span class="">2px 右圆角</span></td>
+										</tr>
+										<tr>
+											<td><code>.br-2-b</code></td>
+											<td><span class="">2px 下圆角</span></td>
+										</tr>
+										<tr>
+											<td><code>.br-2-l</code></td>
+											<td><span class="">2px 左圆角</span></td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+
+						</div>
+					</div>
+					<!--/box-->
+			    </div>
+			</div>
+			<!--/row-->
+
+			<!--row-->
+			<div class="row">
+			    <div class="col-md-12 mb-10">
+					<!--box-->
+					<div class="box box-primary">
+					    <div class="box-header">
+					    	<h3 class="box-title">图片</h3>
+					    </div>
+					    <div class="box-body">
+							
+							<div class="col-md-6">
+								<table class="table">
+									<thead>
+										<tr>
+											<th width="35%">类名</th>
+											<th>描述</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td><code>.img-sm</code></td>
+											<td><span class="">30x30 图片</span></td>
+										</tr>
+										<tr>
+											<td><code>.img-md</code></td>
+											<td><span class="">60x60 图片</span></td>
+										</tr>
+										<tr>
+											<td><code>.img-lg</code></td>
+											<td><span class="">90x90 图片</span></td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+							
+							<div class="col-md-6">
+								<table class="table">
+									<thead>
+										<tr>
+											<th width="35%">类名</th>
+											<th>描述</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td><code>.img-bordered</code></td>
+											<td><span class="">3px边框 3px内边距 图片</span></td>
+										</tr>
+										<tr>
+											<td><code>.img-bordered-sm</code></td>
+											<td><span class="">2px边框 2px内边距 图片</span></td>
+										</tr>
+										<tr>
+											<td><code>.img-bordered-xs</code></td>
+											<td><span class="">1px边框 1px内边距 图片</span></td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+
+						</div>
+					</div>
+					<!--/box-->
+			    </div>
+			</div>
+			<!--/row-->
+
+			<!--row-->
+			<div class="row">
+			    <div class="col-md-12 mb-10">
+					<!--box-->
+					<div class="box box-primary">
+					    <div class="box-header">
+					    	<h3 class="box-title">其他</h3>
+					    </div>
+					    <div class="box-body">
+							
+							<div class="col-md-4">
+								<table class="table">
+									<thead>
+										<tr>
+											<th width="40%">类名</th>
+											<th>描述</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td><code>.no-bg</code></td>
+											<td><span class="no-bg">无背景</span></td>
+										</tr>
+										<tr>
+											<td><code>.no-shadow</code></td>
+											<td><span class="no-shadow">无阴影</span></td>
+										</tr>
+										<tr>
+											<td><code>.no-border</code> <code>.b-0</code></td>
+											<td><span class="no-border">无边框</span></td>
+										</tr>
+										<tr>
+											<td><code>.no-radius</code> <code>.flat</code></td>
+											<td><span class="no-radius">无圆角</span></td>
+										</tr>
+										<tr>
+											<td><code>.no-margin</code> <code>.m-0</code></td>
+											<td><span class="no-radius">无外边距</span></td>
+										</tr>
+										<tr>
+											<td><code>.no-padding</code> <code>.p-0</code></td>
+											<td><span class="no-radius">无内边距</span></td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+							
+							<div class="col-md-4">
+								<table class="table">
+									<thead>
+										<tr>
+											<th width="40%">类名</th>
+											<th>描述</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td><code>.pull-left</code></td>
+											<td><span class="">居左</span></td>
+										</tr>
+										<tr>
+											<td><code>.pull-right</code></td>
+											<td><span class="">居右</span></td>
+										</tr>
+										<tr>
+											<td><code>.pull-center</code></td>
+											<td><span class="">居中</span></td>
+										</tr>
+										<tr>
+											<td><code>.hide</code></td>
+											<td><span class="">隐藏</span></td>
+										</tr>
+										<tr>
+											<td><code>.block</code><code>.show</code></td>
+											<td><span class="">显示</span></td>
+										</tr>
+										<tr>
+											<td><code>.inline</code></td>
+											<td><span class="">内联元素</span></td>
+										</tr>
+										<tr>
+											<td><code>.inline-block</code></td>
+											<td><span class="">行内块元素</span></td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+							
+							<div class="col-md-4">
+								<table class="table">
+									<thead>
+										<tr>
+											<th width="30%">类名</th>
+											<th>描述</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td><code>.static</code></td>
+											<td><span class="">无定位</span></td>
+										</tr>
+										<tr>
+											<td><code>.relative</code></td>
+											<td><span class="">父级定位</span></td>
+										</tr>
+										<tr>
+											<td><code>.absolute</code></td>
+											<td><span class="">子级定位</span></td>
+										</tr>
+										<tr>
+											<td><code>.fixed</code></td>
+											<td><span class="">固定位置</span></td>
+										</tr>
+										<tr>
+											<td><code>.clearfix</code></td>
+											<td><span class="">清除浮动</span></td>
+										</tr>
+										<tr>
+											<td><code>.radius-rounded</code></td>
+											<td><span class="">圆形</span></td>
+										</tr>
+										<tr>
+											<td><code>.text-ellipsis</code></td>
+											<td><span class="">文字超出省略</span></td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+
+						</div>
+					</div>
+					<!--/box-->
+			    </div>
+			</div>
+			<!--/row-->
+
+		</section>
+		<!--/content-->
+
+	</div>
+	<!--/content-wrapper-->
+
+	<!--main-footer-->
+	<footer class="main-footer">
+		<div class="pull-right hidden-xs">iDvert Frame ver 1.0</div>
+		<strong>Copyright &copy; 2016 <a href="#">iDvert</a>.</strong> All rights reserved.
+	</footer>
+	<!--/main-footer-->
+
+</div>
+<!--/wrapper-->
+
+
+<!-- Script -->
+<script src="core/plugins/jQuery/jquery-2.2.3.min.js"></script>
+<script src="core/bootstrap/js/bootstrap.min.js"></script>
+<script src="core/plugins/slimScroll/jquery.slimscroll.min.js"></script>
+<script src="core/dist/js/app.min.js"></script>
+<script src="core/dist/js/ivt.js"></script>
+</body>
+</html>

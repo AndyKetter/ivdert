@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Title</title>
+<!-- Bootstrap -->
+<link href="http://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+<style>
+/* Loading */
+.loading-container { z-index:2000; position:fixed; top:0; left:0; right:0; bottom:0; background:rgba(45,195,232,.9);}
+.loading-container.loading-inactive { display:none;}
+.loading-container.loading-inactive .loader { display:none;}
+.loading-container .loader { width:40px; height:40px; margin:50vh auto; position:relative; left:-12px; background:url(loading.svg) no-repeat center; background-size:100%;}
+</style>
+</head>
+
+<body style="margin:20px;">
+<div class="loading-container"><div class="loader"></div></div>
+
+<!--container-fluid-->
+<div class="container-fluid">
+	<!--row-->
+    <div class="row">
+
+    </div>
+    <!--/row-->
+
+</div>
+<!--/container-fluid-->
+
+<script src="http://cdn.bootcss.com/jquery/2.2.1/jquery.min.js"></script>
+<script>
+$(function(){
+/*Loading*/
+$(window).load(function () {
+    setTimeout(function () {
+        $('.loading-container').addClass('loading-inactive');
+    }, 500);
+});
+});
+
+</script>
+</body>
+</html>

@@ -1,0 +1,128 @@
+.spinbox {
+	position: relative;
+
+	input {
+		float:left;
+		padding-left:35px;
+	}
+
+	.spinbox-buttons {
+		position: absolute;
+		left: 0;
+		float: left;
+		width: 20px;
+		height: 34px;
+		border-radius:0;
+
+		.btn {
+			position: absolute;
+			width: 20px;
+			height: 16px;
+			border:0;
+			border-radius:0 !important;
+			font-size: 14px;
+			font-weight: normal;
+			padding: 4px 0;
+			zoom: 1;
+			background-color:@light-color;
+			-webkit-box-shadow: none;
+			-moz-box-shadow: none;
+			box-shadow: none;
+
+			&:hover,&:focus,&:active {
+				color: lighten(@dark-color,20%);
+				zoom: 1;
+			}
+			
+			&.disabled {
+				cursor: not-allowed;
+			}
+
+			&.spinbox-up,&.spinbox-down {
+				&:hover,&:focus,&:active {
+					background-color:@default-color;
+					color:@dark-color;
+				}
+			}
+
+			&.spinbox-up {
+				top: 0;
+				background-color: @light-gray;
+
+				border-top-right-radius:@btn-border-radius;
+				
+				i {
+					position: relative;
+					top: -7px;
+					margin-right: 0;
+				}
+			}
+
+			&.spinbox-down {
+				top:17px;
+				background-color: @light-gray;
+				border-top: 1px solid @default-color;
+				border-bottom-right-radius:@btn-border-radius;
+
+				i {
+					position: relative;
+					top: -7px;
+					margin-right: 0;
+				}
+			}
+
+		}
+		
+	}
+
+	&.spinbox-right {
+		.spinbox-buttons {
+			top:1px;
+			right:1px;
+			left: auto;
+			bottom:1px;
+			border-left:1px solid @default-color;
+		}
+
+		input {
+			padding-left: 10px;
+			padding-right: 35px;
+			margin-left: 0;
+		}
+	}
+
+	&.spinbox-two-sided {
+		.spinbox-buttons {
+			height:32px;
+			&.spinbox-buttons-left {
+				top:1px;
+				left:1px;
+
+				.spinbox-up {
+					top:0;
+					height:100%;
+					line-height:40px;
+					border-right:1px solid @default-color;
+				}
+			}
+
+			&.spinbox-buttons-right {
+				top:1px;
+				right:1px;
+				left: auto;
+
+				.spinbox-down {
+					top:0;
+					height:100%;
+					line-height:40px;
+					border-left:1px solid @default-color;
+				}
+
+			}
+		}
+
+		input {
+			padding-left: 35px !important;
+		}
+	}
+}

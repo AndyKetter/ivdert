@@ -1,0 +1,650 @@
+/*
+ * Component: Nav
+ * --------------
+ */
+
+.nav {
+  > li > a {
+    padding:10px 15px;
+  }
+  > li > a:hover,
+  > li > a:active,
+  > li > a:focus {
+    color: @dark-color;
+    background: lighten(@default-color, 20%);
+  }
+}
+
+/* NAV PILLS */
+.nav-pills {
+  > li > a {
+    .border-radius(0);
+    border-top: 3px solid transparent;
+    color: darken(@default-color, 10%);
+    > .fa,
+    > .glyphicon,
+    > .ion {
+      margin-right: 5px;
+    }
+  }
+  > li.active > a,
+  > li.active > a:hover,
+  > li.active > a:focus {
+    .border-radius(2px);
+    border-top-color: transparent;
+  }
+  > li.active > a {
+    font-weight: normal;
+  }
+  &.left-position {
+    > li {
+      width:100%;
+      &.active {
+        a {
+          &,&:hover,&:focus {
+            color:@light-color !important;
+          }
+        }
+      }
+    }
+  }
+  &.right-position {
+    > li {
+      width:100%;
+      a {
+        text-align:right;
+      }
+      &.active {
+        a {
+          &,&:hover,&:focus {
+            color:@light-color !important;
+          }
+        }
+      }
+    }
+  }
+
+}
+
+/* NAV STACKED */
+.nav-stacked {
+  > li > a {
+    .border-radius(0);
+    border-top: 0;
+    border-left: 3px solid transparent;
+    color: #444;
+  }
+  > li.active > a,
+  > li.active > a:hover {
+    background: transparent;
+    color: #444;
+    border-top: 0;
+    border-left-color: @primary-color;
+  }
+
+  > li.header {
+    border-bottom: 1px solid #ddd;
+    color: #777;
+    margin-bottom: 10px;
+    padding: 5px 10px;
+    text-transform: uppercase;
+  }
+}
+
+.nav-tabs {
+  //left
+  &.left-position {
+    border-right:1px solid @default-color;
+    > li {
+      float:none;
+      margin-right:-1px;
+      margin-bottom:2px;
+      a {
+        color: darken(@default-color, 10%);
+        & {
+
+          margin-right:0;
+        }
+        &:hover {
+          border-color:transparent;
+        }
+      }
+
+      &.active {
+        .border-left-radius(2px);
+        a {
+          &,&:hover,&:focus {
+            border:1px solid @default-color;
+            border-left-width:3px;
+            border-style:solid;
+            border-right:0;
+          }
+        }
+      }
+    }
+  }
+  //right
+  &.right-position {
+    border-left:1px solid @default-color;
+    border-bottom:0;
+    > li {
+      float:none;
+      margin-left:-1px;
+      margin-bottom:2px;
+      a {
+        text-align:right;
+        color: darken(@default-color, 10%);
+        & {
+
+          margin-left:0;
+          .border-left-radius(2px);
+        }
+        &:hover {
+          border-color:transparent;
+        }
+      }
+
+      &.active {
+        border-left:0;
+        a {
+          &,&:hover,&:focus {
+            border:1px solid @default-color;
+            border-left:0;
+            border-right-width:3px;
+            border-style:solid;
+          }
+        }
+      }
+    }
+  }
+  //bottom
+  &.bottom-position {
+    border-top:1px solid @default-color;
+    border-bottom:0;
+    > li {
+      margin-top:-1px;
+      margin-bottom:2px;
+      a {
+        color: darken(@default-color, 10%);
+        & {
+
+          margin-top:0;
+          .border-bottom-radius(2px);
+        }
+        &:hover {
+          border-color:transparent;
+        }
+      }
+
+      &.active {
+        border-top:0;
+        a {
+          &,&:hover,&:focus {
+            border:1px solid @default-color;
+            border-top:0;
+            border-bottom-width:3px;
+            border-style:solid;
+          }
+        }
+      }
+    }
+  }
+
+}
+
+/* NAV TABS */
+.nav-tabs-custom {
+  margin-bottom: 20px;
+  background: #fff;
+  border-radius: @box-border-radius;
+  > .nav-tabs {
+    margin: 0;
+    border-bottom-color: @default-color;
+    .border-top-radius(@box-border-radius);
+    > li {
+      border-top: 3px solid transparent;
+      margin-bottom: -2px;
+      > a {
+        color: darken(@default-color, 10%);
+        .border-radius(0);
+        &.text-muted {
+          color: #999;
+        }
+        &,
+        &:hover {
+          background: transparent;
+          margin: 0;
+        }
+        &:hover {
+          color: #999;
+        }
+      }
+      &:not(.active) {
+        > a:hover,
+        > a:focus,
+        > a:active {
+          border-color: transparent;
+        }
+      }
+      margin-right: 5px;
+    }
+
+    > li.active {
+      border-top-color: @primary-color;
+      & > a,
+      &:hover > a {
+        background-color: #fff;
+        color: @dark-color;
+      }
+      > a {
+        border-top-color: transparent;
+        border-left-color: @default-color;
+        border-right-color: @default-color;
+      }
+
+    }
+
+    > li:first-of-type {
+      margin-left: 0;
+      &.active {
+        > a {
+          border-left-color: @default-color;
+        }
+      }
+    }
+
+    //Pulled to the right
+    &.pull-right {
+      float: none !important;
+      > li {
+        float: right;
+      }
+      > li:first-of-type {
+        margin-right: 0;
+        > a {
+          border-right-width: 1px;
+        }
+        &.active {
+          > a {
+            border-right-color: @default-color;
+          }
+        }
+      }
+    }
+
+    > li.header {
+      line-height: 35px;
+      padding: 0 10px;
+      font-size: 20px;
+      color: #444;
+      > .fa,
+      > .glyphicon,
+      > .ion {
+        margin-right: 5px;
+      }
+    }
+  }
+
+  > .tab-content {
+    background: #fff;
+    padding: 10px;
+    .border-bottom-radius(@box-border-radius);
+    .tab-pane {
+      color:lighten(@dark-color, 10%);
+     }
+  }
+
+  .dropdown.open > a {
+    &:active,
+    &:focus {
+      background: transparent;
+      color: #999;
+    }
+  }
+
+  // Tab color variations
+  &.tab-primary {
+    > .nav-tabs {
+      > li.active {
+        border-top-color: @primary-color;
+        a {
+          color: @primary-color;
+        }
+      }
+    }
+    .nav-pills {
+      > li.active {
+        a {
+          &,&:hover,&:focus {
+            background-color:@primary-color;
+          }
+        }
+      }
+    }
+    .left-position {
+      > li {
+        &.active {
+          a {
+            &,&:hover,&:focus {
+              border-left-color:@primary-color;
+              color:@primary-color;
+            }
+          }
+        }
+      }
+    }
+    .right-position {
+      > li {
+        &.active {
+          a {
+            &,&:hover,&:focus {
+              border-right-color:@primary-color;
+              color:@primary-color;
+            }
+          }
+        }
+      }
+    }
+    .bottom-position {
+      > li {
+        &.active {
+          a {
+            &,&:hover,&:focus {
+              border-bottom-color:@primary-color;
+              color:@primary-color;
+            }
+          }
+        }
+      }
+    }
+  }
+  &.tab-info {
+    > .nav-tabs {
+      > li.active {
+        border-top-color: @info-color;
+        a {
+          color: @info-color;
+        }
+      }
+    }
+    .nav-pills {
+      > li.active {
+        a {
+          &,&:hover,&:focus {
+            background-color:@info-color;
+          }
+        }
+      }
+    }
+    .left-position {
+      > li {
+        &.active {
+          a {
+            &,&:hover,&:focus {
+              border-left-color:@info-color;
+              color:@info-color;
+            }
+          }
+        }
+      }
+    }
+    .right-position {
+      > li {
+        &.active {
+          a {
+            &,&:hover,&:focus {
+              border-right-color:@info-color;
+              color:@info-color;
+            }
+          }
+        }
+      }
+    }
+    .bottom-position {
+      > li {
+        &.active {
+          a {
+            &,&:hover,&:focus {
+              border-bottom-color:@info-color;
+              color:@info-color;
+            }
+          }
+        }
+      }
+    }
+  }
+  &.tab-danger {
+    > .nav-tabs {
+      > li.active {
+        border-top-color: @danger-color;
+        a {
+          color: @danger-color;
+        }
+      }
+    }
+    .nav-pills {
+      > li.active {
+        a {
+          &,&:hover,&:focus {
+            background-color:@danger-color;
+          }
+        }
+      }
+    }
+    .left-position {
+      > li {
+        &.active {
+          a {
+            &,&:hover,&:focus {
+              border-left-color:@danger-color;
+              color:@danger-color;
+            }
+          }
+        }
+      }
+    }
+    .right-position {
+      > li {
+        &.active {
+          a {
+            &,&:hover,&:focus {
+              border-right-color:@danger-color;
+              color:@danger-color;
+            }
+          }
+        }
+      }
+    }
+    .bottom-position {
+      > li {
+        &.active {
+          a {
+            &,&:hover,&:focus {
+              border-bottom-color:@danger-color;
+              color:@danger-color;
+            }
+          }
+        }
+      }
+    }
+  }
+  &.tab-warning {
+    > .nav-tabs {
+      > li.active {
+        border-top-color: @warning-color;
+        a {
+          color: @warning-color;
+        }
+      }
+    }
+    .nav-pills {
+      > li.active {
+        a {
+          &,&:hover,&:focus {
+            background-color:@warning-color;
+          }
+        }
+      }
+    }
+    .left-position {
+      > li {
+        &.active {
+          a {
+            &,&:hover,&:focus {
+              border-left-color:@warning-color;
+              color:@warning-color;
+            }
+          }
+        }
+      }
+    }
+    .right-position {
+      > li {
+        &.active {
+          a {
+            &,&:hover,&:focus {
+              border-right-color:@warning-color;
+              color:@warning-color;
+            }
+          }
+        }
+      }
+    }
+    .bottom-position {
+      > li {
+        &.active {
+          a {
+            &,&:hover,&:focus {
+              border-bottom-color:@warning-color;
+              color:@warning-color;
+            }
+          }
+        }
+      }
+    }
+  }
+  &.tab-success {
+    > .nav-tabs {
+      > li.active {
+        border-top-color: @success-color;
+        a {
+          color: @success-color;
+        }
+      }
+    }
+    .nav-pills {
+      > li.active {
+        a {
+          &,&:hover,&:focus {
+            background-color:@success-color;
+          }
+        }
+      }
+    }
+    .left-position {
+      > li {
+        &.active {
+          a {
+            &,&:hover,&:focus {
+              border-left-color:@success-color;
+              color:@success-color;
+            }
+          }
+        }
+      }
+    }
+    .right-position {
+      > li {
+        &.active {
+          a {
+            &,&:hover,&:focus {
+              border-right-color:@success-color;
+              color:@success-color;
+            }
+          }
+        }
+      }
+    }
+    .bottom-position {
+      > li {
+        &.active {
+          a {
+            &,&:hover,&:focus {
+              border-bottom-color:@success-color;
+              color:@success-color;
+            }
+          }
+        }
+      }
+    }
+  }
+  &.tab-default {
+    > .nav-tabs {
+      > li.active {
+        border-top-color: @default-color;
+        a {
+          color: darken(@default-color,30%);
+        }
+      }
+    }
+    .nav-pills {
+      > li.active {
+        a {
+          &,&:hover,&:focus {
+            background-color:@default-color;
+            color:@dark-color;
+          }
+        }
+      }
+    }
+    .left-position {
+      > li {
+        &.active {
+          a {
+            &,&:hover,&:focus {
+              border-left-color:@default-color;
+              color:darken(@default-color,30%);
+            }
+          }
+        }
+      }
+    }
+    .right-position {
+      > li {
+        &.active {
+          a {
+            &,&:hover,&:focus {
+              border-right-color:@default-color;
+              color:darken(@default-color,30%);
+            }
+          }
+        }
+      }
+    }
+    .bottom-position {
+      > li {
+        &.active {
+          a {
+            &,&:hover,&:focus {
+              border-bottom-color:@default-color;
+              color:darken(@default-color,30%);
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+/* PAGINATION */
+.pagination {
+  > li > a {
+    background: #fafafa;
+    color: #666;
+  }
+  &.pagination-flat {
+    > li > a {
+      .border-radius(0) !important;
+    }
+  }
+}

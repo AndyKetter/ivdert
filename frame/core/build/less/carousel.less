@@ -1,0 +1,35 @@
+/*
+ * Component: Carousel
+ * -------------------
+ */
+.carousel-control {
+  width:10%;
+  font-size:42px;
+  &.left,
+  &.right {
+    background-image: none;
+    text-shadow:none;
+  }
+  > .fa {
+    font-size: 42px;
+    position: absolute;
+    top: 50%;
+    left:50%;
+    z-index: 5;
+    display: inline-block;
+    margin-top: -21px;
+    margin-left:-7.5px;
+  }
+}
+
+.carousel-indicators {
+  bottom:5px;
+  li {
+    margin:3px;
+    &.active {
+      margin:3px;
+      width:10px;
+      height:10px;
+    }
+  }
+}

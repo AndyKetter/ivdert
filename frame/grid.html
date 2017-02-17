@@ -1,0 +1,700 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<title>Grid - iDvert Frame</title>
+<meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport" />
+<!--Style-->
+<link rel="stylesheet" href="core/bootstrap/css/bootstrap.min.css" />
+<link rel="stylesheet" href="core/dist/css/font-awesome.min.css" />
+<link rel="stylesheet" href="core/dist/css/AdminLTE.min.css" />
+<link rel="stylesheet" href="core/dist/css/skins/skin-ivt-light.min.css">
+<link rel="stylesheet" href="core/dist/css/doc.css">
+<!--[if lt IE 9]>
+<script src="core/dits/js/html5shiv.min.js"></script>
+<script src="core/dits/js/respond.min.js"></script>
+<![endif]-->
+</head>
+
+<body class="hold-transition skin-ivt-light sidebar-mini">
+<!--wrapper-->
+<div class="wrapper">
+
+ 	<!--main-header-->
+ 	<header class="main-header">
+
+ 	    <!--logo-->
+ 	    <a href="#" class="logo">
+ 	    	<span class="logo-lg">iDvert Frame</span>
+ 	    	<span class="logo-mini">ivt</span>
+ 	    </a>
+ 	    <!--/logo-->
+
+ 	    <!--navbar-->
+ 	    <nav class="navbar navbar-static-top" role="navigation">
+ 	    	<!--sidebar-toggle-->
+ 	    	<a href="#" class="sidebar-toggle" data-toggle="offcanvas" role="button">
+		    	<span class="sr-only">Toggle navigation</span>
+		    </a>
+ 	    	<!--/sidebar-toggle-->
+
+ 	    	<!--navbar-custom-menu-->
+ 	        <div class="navbar-custom-menu">
+				<ul class="nav navbar-nav">
+					<!-- <li class="dropdown messages-menu">
+						<a href="#">
+							<i class="fa fa-envelope-o"></i>
+							<span class="label label-success">4</span>
+						</a>
+					</li> -->
+					<li class="dropdown user user-menu dropdown-sm">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+							<img src="core/dist/img/user2-160x160.jpg" class="user-image" alt="User Image">
+							<span class="hidden-xs">Sim</span>
+						</a>
+					</li>
+				</ul>
+ 	        </div>
+ 	    	<!--navbar-custom-menu-->
+ 	    </nav>
+ 	    <!--/navbar-->
+
+ 	</header>
+ 	<!--/main-header-->
+	
+	<!--main-sidebar-->
+	<aside class="main-sidebar">
+		<section class="sidebar">
+			<!--sidebar-menu-->
+		    <ul class="sidebar-menu">
+				<li class="header">导航</li>
+				<li class="active"><a href="main.html"><i class="fa fa-dashboard"></i> <span>总览</span></a></li>
+				<li class="treeview">
+					<a href="#"><i class="fa fa-laptop"></i> <span>UI组件</span>
+						<span class="pull-right-container">
+							<i class="fa fa-angle-left pull-right"></i>
+						</span>
+					</a>
+					<ul class="treeview-menu">
+						<li><a href="general.html"><i class="fa fa-circle-o"></i> 基础组件</a></li>
+						<li><a href="button.html"><i class="fa fa-circle-o"></i> 按钮</a></li>
+						<li><a href="modal.html"><i class="fa fa-circle-o"></i> 弹层</a></li>
+						<li><a href="tips.html"><i class="fa fa-circle-o"></i> 消息</a></li>
+						<li><a href="collapse.html"><i class="fa fa-circle-o"></i> 折叠</a></li>
+						<li><a href="dragdrop.html"><i class="fa fa-circle-o"></i> 拖拽</a></li>
+						<li><a href="scrollbar.html"><i class="fa fa-circle-o"></i> 滚动条</a></li>
+						<li><a href="timeline.html"><i class="fa fa-circle-o"></i> 时间轴</a></li>
+						<li><a href="list-group.html"><i class="fa fa-circle-o"></i> 列表</a></li>
+						<li><a href="nestable.html"><i class="fa fa-circle-o"></i> 拖拽排序</a></li>
+						<li><a href="tabs.html"><i class="fa fa-circle-o"></i> 标签页</a></li>
+						<li><a href="tree.html"><i class="fa fa-circle-o"></i> 树形菜单</a></li>
+						<li><a href="typography.html"><i class="fa fa-circle-o"></i> 排版</a></li>
+						<li><a href="grid.html"><i class="fa fa-circle-o"></i> 栅格</a></li>
+						<li><a href="icon.html"><i class="fa fa-circle-o"></i> 图标</a></li>
+					</ul>
+				</li>
+				<li class="treeview">
+					<a href="#"><i class="fa fa-cube"></i> <span>组件</span>
+						<span class="pull-right-container">
+							<i class="fa fa-angle-left pull-right"></i>
+						</span>
+					</a>
+					<ul class="treeview-menu">
+						<li><a href="widget.html"><i class="fa fa-circle-o"></i> 组件</a></li>
+						<li><a href="box-panel.html"><i class="fa fa-circle-o"></i> 容器面板</a></li>
+					</ul>
+				</li>
+				<li class="treeview">
+					<a href="#"><i class="fa fa-image"></i> <span>图片</span>
+						<span class="pull-right-container">
+							<i class="fa fa-angle-left pull-right"></i>
+						</span>
+					</a>
+					<ul class="treeview-menu">
+						<li><a href="carousel.html"><i class="fa fa-circle-o"></i> 轮播图</a></li>
+						<li><a href="card.html"><i class="fa fa-circle-o"></i> 卡片组</a></li>
+						<li><a href="lightbox.html"><i class="fa fa-circle-o"></i> lightbox</a></li>
+						<li><a href="wookmark.html"><i class="fa fa-circle-o"></i> 瀑布流</a></li>
+					</ul>
+				</li>
+				<!-- <li><a href="echart.html"><i class="fa fa-area-chart"></i> <span>图表</span></a></li> -->
+				<li class="treeview">
+					<a href="#"><i class="fa fa-edit"></i> <span>表单</span>
+						<span class="pull-right-container">
+							<i class="fa fa-angle-left pull-right"></i>
+						</span>
+					</a>
+					<ul class="treeview-menu">
+						<li><a href="form.html"><i class="fa fa-circle-o"></i> 通用表单组件</a></li>
+						<li><a href="validform.html"><i class="fa fa-circle-o"></i> 表单验证</a></li>
+					</ul>
+				</li>
+				<li class="treeview">
+					<a href="#"><i class="fa fa-table"></i> <span>表格</span>
+						<span class="pull-right-container">
+							<i class="fa fa-angle-left pull-right"></i>
+						</span>
+					</a>
+					<ul class="treeview-menu">
+						<li><a href="table.html"><i class="fa fa-circle-o"></i> 基础表格</a></li>
+						<li><a href="data-table.html"><i class="fa fa-circle-o"></i> DataTable</a></li>
+						<li><a href="bootstrap-table.html"><i class="fa fa-circle-o"></i> Bootstrap Table</a></li>
+					</ul>
+				</li>
+				<li class="treeview">
+					<a href="#"><i class="fa fa-file-o"></i> <span>页面</span>
+						<span class="pull-right-container">
+							<i class="fa fa-angle-left pull-right"></i>
+						</span>
+					</a>
+					<ul class="treeview-menu">
+						<li><a href="blank.html"><i class="fa fa-circle-o"></i> 空白页面</a></li>
+						<li><a href="500.html"><i class="fa fa-circle-o"></i> 500</a></li>
+						<li><a href="404.html"><i class="fa fa-circle-o"></i> 404</a></li>
+					</ul>
+				</li>
+				<li><a href="helper-classes.html"><i class="fa fa-wrench"></i> <span>辅助类</span></a></li>
+		    </ul>
+			<!--/sidebar-menu-->
+		</section>
+	</aside>
+	<!--/main-sidebar-->
+
+	<!--content-wrapper-->
+	<div class="content-wrapper">
+		<!--content-header-->
+		<section class="content-header">
+			<!--content-header-title-->
+			<h1>栅格</h1>
+			<!--/content-header-title-->
+
+			<!---breadcrumb-->
+			<ol class="breadcrumb">
+				<li><a href="#"><i class="fa fa-dashboard"></i> 控制面板</a></li>
+				<li class="active">栅格</li>
+			</ol>
+			<!---/breadcrumb-->
+		</section>
+		<!--/content-header-->
+		
+		<!--content-->
+		<section class="content">
+			
+			<!--row-->
+			<div class="row">
+
+			    <div class="col-md-12 mb-10">
+					<!--box-->
+					<div class="box box-primary">
+					    <div class="box-header">
+					    	<span class="text-primary mr-5"><i class="fa fa-cogs"></i></span>
+					    	<h3 class="box-title">栅格设置</h3>
+					    </div>
+					    <div class="box-body p-10">
+							<p>通过下表可以详细查看 Bootstrap 的栅格系统是如何在多种屏幕设备上工作的。</p>
+							<div class="table-responsive">
+	                            <table class="table table-bordered table-striped">
+	                                <thead>
+	                                    <tr>
+	                                        <th></th>
+	                                        <th>
+	                                            超小屏幕
+	                                            <small>手机 (&lt;768px)</small>
+	                                        </th>
+	                                        <th>
+	                                            小屏幕
+	                                            <small>平板 (≥768px)</small>
+	                                        </th>
+	                                        <th>
+	                                            中等屏幕
+	                                            <small>桌面显示器 (≥992px)</small>
+	                                        </th>
+	                                        <th>
+	                                            大屏幕
+	                                            <small>大桌面显示器 (≥1200px)</small>
+	                                        </th>
+	                                    </tr>
+	                                </thead>
+	                                <tbody>
+	                                    <tr>
+	                                        <th class="text-nowrap">栅格系统行为</th>
+	                                        <td>总是水平排列</td>
+	                                        <td colspan="3">开始是堆叠在一起的，当大于这些阈值时将变为水平排列C</td>
+	                                    </tr>
+	                                    <tr>
+	                                        <th class="text-nowrap"><code>.container</code> 最大宽度</th>
+	                                        <td>None （自动）</td>
+	                                        <td>750px</td>
+	                                        <td>970px</td>
+	                                        <td>1170px</td>
+	                                    </tr>
+	                                    <tr>
+	                                        <th class="text-nowrap">类前缀</th>
+	                                        <td><code>.col-xs-</code>
+	                                        </td>
+	                                        <td><code>.col-sm-</code>
+	                                        </td>
+	                                        <td><code>.col-md-</code>
+	                                        </td>
+	                                        <td><code>.col-lg-</code>
+	                                        </td>
+	                                    </tr>
+	                                    <tr>
+	                                        <th class="text-nowrap">列（column）数</th>
+	                                        <td colspan="4">12</td>
+	                                    </tr>
+	                                    <tr>
+	                                        <th class="text-nowrap">最大列（column）宽</th>
+	                                        <td class="text-muted">自动</td>
+	                                        <td>~62px</td>
+	                                        <td>~81px</td>
+	                                        <td>~97px</td>
+	                                    </tr>
+	                                    <tr>
+	                                        <th class="text-nowrap">槽（gutter）宽</th>
+	                                        <td colspan="4">30px （每列左右均有 15px）</td>
+	                                    </tr>
+	                                    <tr>
+	                                        <th class="text-nowrap">可嵌套</th>
+	                                        <td colspan="4">是</td>
+	                                    </tr>
+	                                    <tr>
+	                                        <th class="text-nowrap">偏移（Offsets）</th>
+	                                        <td colspan="4">是</td>
+	                                    </tr>
+	                                    <tr>
+	                                        <th class="text-nowrap">列排序</th>
+	                                        <td colspan="4">是</td>
+	                                    </tr>
+	                                </tbody>
+	                            </table>
+	                        </div>
+
+						</div>
+					</div>
+					<!--/box-->
+			    </div>
+			</div>
+			<!--/row-->
+			
+			<!--row-->
+			<div class="row">
+
+			    <div class="col-md-12 mb-10">
+					<!--box-->
+					<div class="box box-primary">
+					    <div class="box-header">
+					    	<span class="text-primary mr-5"><i class="fa fa-th"></i></span>
+					    	<h3 class="box-title">从堆叠到水平排列</h3>
+					    </div>
+					    <div class="box-body">
+							<p>使用单一的一组 <code>.col-md-*</code> 栅格类，就可以创建一个基本的栅格系统，在手机和平板设备上一开始是堆叠在一起的（超小屏幕到小屏幕这一范围），在桌面（中等）屏幕设备上变为水平排列。所有“列（column）必须放在 ” <code>.row</code> 内。</p>
+							
+							<div class="p-15">
+								<div class="row show-grid mb-10">
+		                            <div class="col-md-1">.col-md-1</div>
+		                            <div class="col-md-1">.col-md-1</div>
+		                            <div class="col-md-1">.col-md-1</div>
+		                            <div class="col-md-1">.col-md-1</div>
+		                            <div class="col-md-1">.col-md-1</div>
+		                            <div class="col-md-1">.col-md-1</div>
+		                            <div class="col-md-1">.col-md-1</div>
+		                            <div class="col-md-1">.col-md-1</div>
+		                            <div class="col-md-1">.col-md-1</div>
+		                            <div class="col-md-1">.col-md-1</div>
+		                            <div class="col-md-1">.col-md-1</div>
+		                            <div class="col-md-1">.col-md-1</div>
+		                        </div>
+
+		                        <div class="row show-grid mb-10">
+		                            <div class="col-md-8">.col-md-8</div>
+		                            <div class="col-md-4">.col-md-4</div>
+		                        </div>
+
+		                        <div class="row show-grid mb-10">
+		                            <div class="col-md-4">.col-md-4</div>
+		                            <div class="col-md-4">.col-md-4</div>
+		                            <div class="col-md-4">.col-md-4</div>
+		                        </div>
+
+		                        <div class="row show-grid mb-10">
+		                            <div class="col-md-6">.col-md-6</div>
+		                            <div class="col-md-6">.col-md-6</div>
+		                        </div>
+
+	                        </div>
+
+						</div>
+					</div>
+					<!--/box-->
+			    </div>
+			</div>
+			<!--/row-->
+			
+			<!--row-->
+			<div class="row">
+
+			    <div class="col-md-12 mb-10">
+					<!--box-->
+					<div class="box box-primary">
+					    <div class="box-header">
+					    	<span class="text-primary mr-5"><i class="fa fa-th"></i></span>
+					    	<h3 class="box-title">移动设备和桌面屏幕</h3>
+					    </div>
+					    <div class="box-body">
+							<p>是否不希望在小屏幕设备上所有列都堆叠在一起？那就使用针对超小屏幕和中等屏幕设备所定义的类吧，即 <code>.col-xs-*</code> 和 <code>.col-md-*</code>。请看下面的实例，研究一下这些是如何工作的。</p>
+							
+							<div class="p-15">
+								<div class="row show-grid mb-10">
+		                            <div class="col-xs-12 col-md-8">.col-xs-12 .col-md-8</div>
+		                            <div class="col-xs-6 col-md-4">.col-xs-6 .col-md-4</div>
+		                        </div>
+
+		                        <div class="row show-grid mb-10">
+		                            <div class="col-xs-6 col-md-4">.col-xs-6 .col-md-4</div>
+		                            <div class="col-xs-6 col-md-4">.col-xs-6 .col-md-4</div>
+		                            <div class="col-xs-6 col-md-4">.col-xs-6 .col-md-4</div>
+		                        </div>
+
+		                        <div class="row show-grid mb-10">
+		                            <div class="col-xs-6">.col-xs-6</div>
+		                            <div class="col-xs-6">.col-xs-6</div>
+		                        </div>
+
+	                        </div>
+
+						</div>
+					</div>
+					<!--/box-->
+			    </div>
+			</div>
+			<!--/row-->
+			
+			<!--row-->
+			<div class="row">
+
+			    <div class="col-md-12 mb-10">
+					<!--box-->
+					<div class="box box-primary">
+					    <div class="box-header">
+					    	<span class="text-primary mr-5"><i class="fa fa-th"></i></span>
+					    	<h3 class="box-title">手机、平板、桌面</h3>
+					    </div>
+					    <div class="box-body">
+							<p>在上面案例的基础上，通过使用针对平板设备的 <code>.col-sm-*</code> 类，我们来创建更加动态和强大的布局吧。</p>
+							
+							<div class="p-15">
+								<div class="row show-grid mb-10">
+		                            <div class="col-xs-12 col-sm-6 col-md-8">.col-xs-12 .col-sm-6 .col-md-8</div>
+		                            <div class="col-xs-6 col-md-4">.col-xs-6 .col-md-4</div>
+		                        </div>
+
+		                        <div class="row show-grid mb-10">
+		                            <div class="col-xs-6 col-sm-4">.col-xs-6 .col-sm-4</div>
+		                            <div class="col-xs-6 col-sm-4">.col-xs-6 .col-sm-4</div>
+		                            <div class="clearfix visible-xs"></div>
+		                            <div class="col-xs-6 col-sm-4">.col-xs-6 .col-sm-4</div>
+		                        </div>
+
+	                        </div>
+
+						</div>
+					</div>
+					<!--/box-->
+			    </div>
+			</div>
+			<!--/row-->
+			
+			<!--row-->
+			<div class="row">
+
+			    <div class="col-md-12 mb-10">
+					<!--box-->
+					<div class="box box-primary">
+					    <div class="box-header">
+					    	<span class="text-primary mr-5"><i class="fa fa-th"></i></span>
+					    	<h3 class="box-title">多余的列（column）将另起一行排列</h3>
+					    </div>
+					    <div class="box-body">
+							<p>在等宽的4网格中，网格不等高会碰到问题，为了解决这个问题，可使用<code>.clearfix</code>。响应实用工具类</p>
+							
+							<div class="p-15">
+								<div class="row show-grid">
+		                            <div class="col-xs-6 col-sm-3">
+		                                .col-xs-6 .col-sm-3
+		                                <br>调整窗口大小或者在手机上查看本示例
+		                            </div>
+		                            <div class="col-xs-6 col-sm-3">.col-xs-6 .col-sm-3</div>
+
+		                            <!-- Add the extra clearfix for only the required viewport -->
+		                            <div class="clearfix visible-xs"></div>
+
+		                            <div class="col-xs-6 col-sm-3">.col-xs-6 .col-sm-3</div>
+		                            <div class="col-xs-6 col-sm-3">.col-xs-6 .col-sm-3</div>
+		                        </div>
+
+	                        </div>
+
+						</div>
+					</div>
+					<!--/box-->
+			    </div>
+			</div>
+			<!--/row-->
+			
+			<!--row-->
+			<div class="row">
+
+			    <div class="col-md-12 mb-10">
+					<!--box-->
+					<div class="box box-primary">
+					    <div class="box-header">
+					    	<span class="text-primary mr-5"><i class="fa fa-th"></i></span>
+					    	<h3 class="box-title">列偏移</h3>
+					    </div>
+					    <div class="box-body">
+							<p>使用 <code>.col-md-offset-*</code> 类可以将列向右侧偏移。这些类实际是通过使用 <code>*</code> 选择器为当前元素增加了左侧的边距（margin）。例如，<code>.col-md-offset-4</code> 类将 <code>.col-md-4</code> 元素向右侧偏移了4个列（column）的宽度。</p>
+							
+							<div class="p-15">
+								<div class="row show-grid mb-10">
+		                            <div class="col-md-4">.col-md-4</div>
+		                            <div class="col-md-4 col-md-offset-4">.col-md-4 .col-md-offset-4</div>
+		                        </div>
+
+		                        <div class="row show-grid mb-10">
+		                            <div class="col-md-3 col-md-offset-3">.col-md-3 .col-md-offset-3</div>
+		                            <div class="col-md-3 col-md-offset-3">.col-md-3 .col-md-offset-3</div>
+		                        </div>
+
+		                        <div class="row show-grid mb-10">
+		                            <div class="col-md-6 col-md-offset-3">.col-md-6 .col-md-offset-3</div>
+		                        </div>
+
+	                        </div>
+
+						</div>
+					</div>
+					<!--/box-->
+			    </div>
+			</div>
+			<!--/row-->
+			
+			<!--row-->
+			<div class="row">
+
+			    <div class="col-md-12 mb-10">
+					<!--box-->
+					<div class="box box-primary">
+					    <div class="box-header">
+					    	<span class="text-primary mr-5"><i class="fa fa-th"></i></span>
+					    	<h3 class="box-title">嵌套列</h3>
+					    </div>
+					    <div class="box-body">
+							<p>为了使用内置的栅格系统将内容再次嵌套，可以通过添加一个新的 <code>.row</code> 元素和一系列 <code>.col-sm-*</code> 元素到已经存在的 <code>.col-sm-*</code> 元素内。被嵌套的行（row）所包含的列（column）的个数不能超过12（其实，没有要求你必须占满12列）。</p>
+							
+							<div class="p-15">
+								<div class="row show-grid">
+		                            <div class="col-md-9">
+		                                第一级： .col-md-9
+		                                <div class="row show-grid">
+		                                    <div class="col-md-6">
+		                                        第二级： .col-md-6
+		                                    </div>
+		                                    <div class="col-md-6">
+		                                        第二级： .col-md-6
+		                                    </div>
+		                                </div>
+		                            </div>
+		                        </div>
+
+	                        </div>
+
+						</div>
+					</div>
+					<!--/box-->
+			    </div>
+			</div>
+			<!--/row-->
+			
+			<!--row-->
+			<div class="row">
+
+			    <div class="col-md-12 mb-10">
+					<!--box-->
+					<div class="box box-primary">
+					    <div class="box-header">
+					    	<span class="text-primary mr-5"><i class="fa fa-th"></i></span>
+					    	<h3 class="box-title">列排序</h3>
+					    </div>
+					    <div class="box-body">
+							<p>通过使用 <code>.col-md-push-*</code> 和 <code>.col-md-pull-*</code> 类就可以很容易的改变列（column）的顺序。</p>
+							
+							<div class="p-15">
+								<div class="row show-grid">
+		                            <div class="col-md-9 col-md-push-3">.col-md-9 .col-md-push-3</div>
+		                            <div class="col-md-3 col-md-pull-9">.col-md-3 .col-md-pull-9</div>
+		                        </div>
+
+	                        </div>
+
+						</div>
+					</div>
+					<!--/box-->
+			    </div>
+			</div>
+			<!--/row-->
+			
+			<!--row-->
+			<div class="row">
+
+			    <div class="col-md-12 mb-10">
+					<!--box-->
+					<div class="box box-primary">
+					    <div class="box-header">
+					    	<span class="text-primary mr-5"><i class="fa fa-th"></i></span>
+					    	<h3 class="box-title">栅格间隔</h3>
+					    </div>
+					    <div class="box-body">
+							
+							<div class="col-md-3">
+							    <div class="container-sm-fluid">
+									<div class="row">
+										<div class="col-sm-4">
+											<div class="bg-default text-dark p-10 text-center">col-sm-4</div>
+										</div>
+										<div class="col-sm-4">
+											<div class="bg-default text-dark p-10 text-center">col-sm-4</div>
+										</div>
+										<div class="col-sm-4">
+											<div class="bg-default text-dark p-10 text-center">col-sm-4</div>
+										</div>
+									</div>
+							    </div>
+							</div>
+							
+							<div class="col-md-3">
+							    <div class="container-md-fluid">
+									<div class="row">
+										<div class="col-sm-4">
+											<div class="bg-default text-dark p-10 text-center">col-sm-4</div>
+										</div>
+										<div class="col-sm-4">
+											<div class="bg-default text-dark p-10 text-center">col-sm-4</div>
+										</div>
+										<div class="col-sm-4">
+											<div class="bg-default text-dark p-10 text-center">col-sm-4</div>
+										</div>
+									</div>
+							    </div>
+							</div>
+							
+							<div class="col-md-3">
+							    <div class="container-fluid">
+									<div class="row">
+										<div class="col-sm-4">
+											<div class="bg-default text-dark p-10 text-center">col-sm-4</div>
+										</div>
+										<div class="col-sm-4">
+											<div class="bg-default text-dark p-10 text-center">col-sm-4</div>
+										</div>
+										<div class="col-sm-4">
+											<div class="bg-default text-dark p-10 text-center">col-sm-4</div>
+										</div>
+									</div>
+							    </div>
+							</div>
+							
+							<div class="col-md-3">
+							    <div class="container-lg-fluid">
+									<div class="row">
+										<div class="col-sm-4">
+											<div class="bg-default text-dark p-10 text-center">col-sm-4</div>
+										</div>
+										<div class="col-sm-4">
+											<div class="bg-default text-dark p-10 text-center">col-sm-4</div>
+										</div>
+										<div class="col-sm-4">
+											<div class="bg-default text-dark p-10 text-center">col-sm-4</div>
+										</div>
+									</div>
+							    </div>
+							</div>
+
+						</div>
+					</div>
+					<!--/box-->
+			    </div>
+			</div>
+			<!--/row-->
+			
+			<!--row-->
+			<div class="row">
+
+			    <div class="col-md-12 mb-10">
+					<!--box-->
+					<div class="box box-primary">
+					    <div class="box-header">
+					    	<span class="text-primary mr-5"><i class="fa fa-th"></i></span>
+					    	<h3 class="box-title">无间隔栅格</h3>
+					    </div>
+					    <div class="box-body">
+							
+							<div class="col-md-12">
+							    <div class="container-collapse-fluid">
+									<div class="row">
+										<div class="col-sm-2">
+											<div class="bg-default text-dark p-10 text-center">col-sm-2</div>
+										</div>
+										<div class="col-sm-2">
+											<div class="bg-default text-dark p-10 text-center">col-sm-2</div>
+										</div>
+										<div class="col-sm-2">
+											<div class="bg-default text-dark p-10 text-center">col-sm-2</div>
+										</div>
+										<div class="col-sm-2">
+											<div class="bg-default text-dark p-10 text-center">col-sm-2</div>
+										</div>
+										<div class="col-sm-2">
+											<div class="bg-default text-dark p-10 text-center">col-sm-2</div>
+										</div>
+										<div class="col-sm-2">
+											<div class="bg-default text-dark p-10 text-center">col-sm-2</div>
+										</div>
+									</div>
+							    </div>
+							</div>
+
+						</div>
+					</div>
+					<!--/box-->
+			    </div>
+			</div>
+			<!--/row-->
+
+
+		</section>
+		<!--/content-->
+
+	</div>
+	<!--/content-wrapper-->
+
+	<!--main-footer-->
+	<footer class="main-footer">
+		<div class="pull-right hidden-xs">iDvert Frame ver 1.0</div>
+		<strong>Copyright &copy; 2016 <a href="#">iDvert</a>.</strong> All rights reserved.
+	</footer>
+	<!--/main-footer-->
+
+</div>
+<!--/wrapper-->
+
+
+<!-- Script -->
+<script src="core/plugins/jQuery/jquery-2.2.3.min.js"></script>
+<script src="core/bootstrap/js/bootstrap.min.js"></script>
+<script src="core/plugins/slimScroll/jquery.slimscroll.min.js"></script>
+<script src="core/dist/js/app.min.js"></script>
+<script src="core/dist/js/ivt.js"></script>
+</body>
+</html>

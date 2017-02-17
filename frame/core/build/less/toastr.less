@@ -1,0 +1,274 @@
+// Mix-ins
+.wordWrap(@wordWrap: break-word) {
+	-ms-word-wrap: @wordWrap;
+	word-wrap: @wordWrap;
+}
+
+// Styles
+.toast-title {
+	font-weight: bold;
+}
+
+.toast-message {
+	.wordWrap();
+
+	a,
+	label {
+		color: @light-color;
+	}
+
+		a:hover {
+			color: @default-color;
+			text-decoration: none;
+		}
+}
+
+.toast-close-button {
+	position: relative;
+	right: -0.3em;
+	top: -0.3em;
+	float: right;
+	font-size: 20px;
+	font-weight: bold;
+	color: @light-color;
+	.opacity(0.8);
+	line-height: 1;
+
+	&:hover,
+	&:focus {
+		color: @dark-color;
+		text-decoration: none;
+		cursor: pointer;
+		.opacity(0.4);
+	}
+}
+
+.rtl .toast-close-button {
+	left: -0.3em;
+	float: left;
+	right: 0.3em;
+}
+
+/*Additional properties for button version
+ iOS requires the button element instead of an anchor tag.
+ If you want the anchor version, it requires `href="#"`.*/
+button.toast-close-button {
+	padding: 0;
+	cursor: pointer;
+	background: transparent;
+	border: 0;
+	-webkit-appearance: none;
+}
+
+//#endregion
+
+.toast-top-center {
+	top: 0;
+	right: 0;
+	width: 100%;
+}
+
+.toast-bottom-center {
+	bottom: 0;
+	right: 0;
+	width: 100%;
+}
+
+.toast-top-full-width {
+	top: 0;
+	right: 0;
+	width: 100%;
+}
+
+.toast-bottom-full-width {
+	bottom: 0;
+	right: 0;
+	width: 100%;
+}
+
+.toast-top-left {
+	top: 12px;
+	left: 12px;
+}
+
+.toast-top-right {
+	top: 62px;
+	right: 12px;
+}
+
+.toast-bottom-right {
+	right: 12px;
+	bottom: 12px;
+}
+
+.toast-bottom-left {
+	bottom: 12px;
+	left: 12px;
+}
+
+#toast-container {
+	position: fixed;
+	z-index: 999999;
+	// The container should not be clickable.
+	pointer-events: none;
+	* {
+		-moz-box-sizing: border-box;
+		-webkit-box-sizing: border-box;
+		box-sizing: border-box;
+	}
+
+	> .toast:before {
+		position:fixed;
+		font-family:FontAwesome;
+		font-size:24px;
+		line-height:18px;
+		float:left;
+		color:#fff;
+		padding-right:.5em;
+		margin:auto .5em auto -1.5em;
+	}
+
+	> div {
+		position: relative;
+		// The toast itself should be clickable.
+		pointer-events: auto;
+		overflow: hidden;
+		margin: 0 0 6px;
+		padding: 15px 15px 15px 50px;
+		width: 300px;
+		.border-radius(3px);
+		background-position: 15px center;
+		background-repeat: no-repeat;
+		color: @light-color;
+		.opacity(0.8);
+	}
+
+	> div.rtl {
+		direction: rtl;
+		padding: 15px 50px 15px 15px;
+		background-position: right 15px center;
+	}
+
+	> div:hover {
+		.opacity(1);
+		cursor: pointer;
+	}
+
+	/*overrides*/
+	&.toast-top-center > div,
+	&.toast-bottom-center > div {
+		width: 300px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	&.toast-top-full-width > div,
+	&.toast-bottom-full-width > div {
+		width: 96%;
+		margin-left: auto;
+		margin-right: auto;
+	}
+}
+
+.toast {
+	background-color: @dark-color;
+}
+
+.toast-default {
+	background-color: @dark-color;
+}
+
+.toast-primary {
+	background-color: @primary-color;
+}
+
+.toast-success {
+	background-color: @success-color;
+}
+
+.toast-error {
+	background-color: @danger-color;
+}
+
+.toast-info {
+	background-color: @info-color;
+}
+
+.toast-warning {
+	background-color: @warning-color;
+}
+
+.toast-danger {
+	background-color: @danger-color;
+}
+
+.toast-progress {
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	height: 4px;
+	background-color: @dark-color;
+	.opacity(0.4);
+}
+
+/*Responsive Design*/
+
+@media all and (max-width: 240px) {
+	#toast-container {
+
+		> div {
+			padding: 8px 8px 8px 50px;
+			width: 11em;
+		}
+
+		> div.rtl {
+			padding: 8px 50px 8px 8px;
+		}
+
+		& .toast-close-button {
+			right: -0.2em;
+			top: -0.2em;
+		}
+
+		& .rtl .toast-close-button {
+			left: -0.2em;
+			right: 0.2em;
+		}
+	}
+}
+
+@media all and (min-width: 241px) and (max-width: 480px) {
+	#toast-container {
+		> div {
+			padding: 8px 8px 8px 50px;
+			width: 18em;
+		}
+
+		> div.rtl {
+			padding: 8px 50px 8px 8px;
+		}
+
+		& .toast-close-button {
+			right: -0.2em;
+			top: -0.2em;
+		}
+
+		& .rtl .toast-close-button {
+			left: -0.2em;
+			right: 0.2em;
+		}
+	}
+}
+
+@media all and (min-width: 481px) and (max-width: 768px) {
+	#toast-container {
+		> div {
+			padding: 15px 15px 15px 50px;
+			width: 25em;
+		}
+
+		> div.rtl {
+			padding: 15px 50px 15px 15px;
+		}
+	}
+}

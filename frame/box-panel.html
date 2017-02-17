@@ -1,0 +1,855 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<title>Box Panel - iDvert Frame</title>
+<meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport" />
+<!--Style-->
+<link rel="stylesheet" href="core/bootstrap/css/bootstrap.min.css" />
+<link rel="stylesheet" href="core/dist/css/font-awesome.min.css" />
+<link rel="stylesheet" href="core/dist/css/AdminLTE.min.css" />
+<link rel="stylesheet" href="core/dist/css/skins/skin-ivt-light.min.css">
+<link rel="stylesheet" href="core/dist/css/doc.css">
+<!--[if lt IE 9]>
+<script src="core/dits/js/html5shiv.min.js"></script>
+<script src="core/dits/js/respond.min.js"></script>
+<![endif]-->
+</head>
+
+<body class="hold-transition skin-ivt-light sidebar-mini">
+<!--wrapper-->
+<div class="wrapper">
+
+ 	<!--main-header-->
+ 	<header class="main-header">
+
+ 	    <!--logo-->
+ 	    <a href="#" class="logo">
+ 	    	<span class="logo-lg">iDvert Frame</span>
+ 	    	<span class="logo-mini">ivt</span>
+ 	    </a>
+ 	    <!--/logo-->
+
+ 	    <!--navbar-->
+ 	    <nav class="navbar navbar-static-top" role="navigation">
+ 	    	<!--sidebar-toggle-->
+ 	    	<a href="#" class="sidebar-toggle" data-toggle="offcanvas" role="button">
+		    	<span class="sr-only">Toggle navigation</span>
+		    </a>
+ 	    	<!--/sidebar-toggle-->
+
+ 	    	<!--navbar-custom-menu-->
+ 	        <div class="navbar-custom-menu">
+				<ul class="nav navbar-nav">
+					<!-- <li class="dropdown messages-menu">
+						<a href="#">
+							<i class="fa fa-envelope-o"></i>
+							<span class="label label-success">4</span>
+						</a>
+					</li> -->
+					<li class="dropdown user user-menu dropdown-sm">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+							<img src="core/dist/img/user2-160x160.jpg" class="user-image" alt="User Image">
+							<span class="hidden-xs">Sim</span>
+						</a>
+					</li>
+				</ul>
+ 	        </div>
+ 	    	<!--navbar-custom-menu-->
+ 	    </nav>
+ 	    <!--/navbar-->
+
+ 	</header>
+ 	<!--/main-header-->
+	
+	<!--main-sidebar-->
+	<aside class="main-sidebar">
+		<section class="sidebar">
+			<!--sidebar-menu-->
+		    <ul class="sidebar-menu">
+				<li class="header">导航</li>
+				<li class="active"><a href="main.html"><i class="fa fa-dashboard"></i> <span>总览</span></a></li>
+				<li class="treeview">
+					<a href="#"><i class="fa fa-laptop"></i> <span>UI组件</span>
+						<span class="pull-right-container">
+							<i class="fa fa-angle-left pull-right"></i>
+						</span>
+					</a>
+					<ul class="treeview-menu">
+						<li><a href="general.html"><i class="fa fa-circle-o"></i> 基础组件</a></li>
+						<li><a href="button.html"><i class="fa fa-circle-o"></i> 按钮</a></li>
+						<li><a href="modal.html"><i class="fa fa-circle-o"></i> 弹层</a></li>
+						<li><a href="tips.html"><i class="fa fa-circle-o"></i> 消息</a></li>
+						<li><a href="collapse.html"><i class="fa fa-circle-o"></i> 折叠</a></li>
+						<li><a href="dragdrop.html"><i class="fa fa-circle-o"></i> 拖拽</a></li>
+						<li><a href="scrollbar.html"><i class="fa fa-circle-o"></i> 滚动条</a></li>
+						<li><a href="timeline.html"><i class="fa fa-circle-o"></i> 时间轴</a></li>
+						<li><a href="list-group.html"><i class="fa fa-circle-o"></i> 列表</a></li>
+						<li><a href="nestable.html"><i class="fa fa-circle-o"></i> 拖拽排序</a></li>
+						<li><a href="tabs.html"><i class="fa fa-circle-o"></i> 标签页</a></li>
+						<li><a href="tree.html"><i class="fa fa-circle-o"></i> 树形菜单</a></li>
+						<li><a href="typography.html"><i class="fa fa-circle-o"></i> 排版</a></li>
+						<li><a href="grid.html"><i class="fa fa-circle-o"></i> 栅格</a></li>
+						<li><a href="icon.html"><i class="fa fa-circle-o"></i> 图标</a></li>
+					</ul>
+				</li>
+				<li class="treeview">
+					<a href="#"><i class="fa fa-cube"></i> <span>组件</span>
+						<span class="pull-right-container">
+							<i class="fa fa-angle-left pull-right"></i>
+						</span>
+					</a>
+					<ul class="treeview-menu">
+						<li><a href="widget.html"><i class="fa fa-circle-o"></i> 组件</a></li>
+						<li><a href="box-panel.html"><i class="fa fa-circle-o"></i> 容器面板</a></li>
+					</ul>
+				</li>
+				<li class="treeview">
+					<a href="#"><i class="fa fa-image"></i> <span>图片</span>
+						<span class="pull-right-container">
+							<i class="fa fa-angle-left pull-right"></i>
+						</span>
+					</a>
+					<ul class="treeview-menu">
+						<li><a href="carousel.html"><i class="fa fa-circle-o"></i> 轮播图</a></li>
+						<li><a href="card.html"><i class="fa fa-circle-o"></i> 卡片组</a></li>
+						<li><a href="lightbox.html"><i class="fa fa-circle-o"></i> lightbox</a></li>
+						<li><a href="wookmark.html"><i class="fa fa-circle-o"></i> 瀑布流</a></li>
+					</ul>
+				</li>
+				<!-- <li><a href="echart.html"><i class="fa fa-area-chart"></i> <span>图表</span></a></li> -->
+				<li class="treeview">
+					<a href="#"><i class="fa fa-edit"></i> <span>表单</span>
+						<span class="pull-right-container">
+							<i class="fa fa-angle-left pull-right"></i>
+						</span>
+					</a>
+					<ul class="treeview-menu">
+						<li><a href="form.html"><i class="fa fa-circle-o"></i> 通用表单组件</a></li>
+						<li><a href="validform.html"><i class="fa fa-circle-o"></i> 表单验证</a></li>
+					</ul>
+				</li>
+				<li class="treeview">
+					<a href="#"><i class="fa fa-table"></i> <span>表格</span>
+						<span class="pull-right-container">
+							<i class="fa fa-angle-left pull-right"></i>
+						</span>
+					</a>
+					<ul class="treeview-menu">
+						<li><a href="table.html"><i class="fa fa-circle-o"></i> 基础表格</a></li>
+						<li><a href="data-table.html"><i class="fa fa-circle-o"></i> DataTable</a></li>
+						<li><a href="bootstrap-table.html"><i class="fa fa-circle-o"></i> Bootstrap Table</a></li>
+					</ul>
+				</li>
+				<li class="treeview">
+					<a href="#"><i class="fa fa-file-o"></i> <span>页面</span>
+						<span class="pull-right-container">
+							<i class="fa fa-angle-left pull-right"></i>
+						</span>
+					</a>
+					<ul class="treeview-menu">
+						<li><a href="blank.html"><i class="fa fa-circle-o"></i> 空白页面</a></li>
+						<li><a href="500.html"><i class="fa fa-circle-o"></i> 500</a></li>
+						<li><a href="404.html"><i class="fa fa-circle-o"></i> 404</a></li>
+					</ul>
+				</li>
+				<li><a href="helper-classes.html"><i class="fa fa-wrench"></i> <span>辅助类</span></a></li>
+		    </ul>
+			<!--/sidebar-menu-->
+		</section>
+	</aside>
+	<!--/main-sidebar-->
+
+	<!--content-wrapper-->
+	<div class="content-wrapper">
+		<!--content-header-->
+		<section class="content-header">
+			<!--content-header-title-->
+			<h1>容器&面板</h1>
+			<!--/content-header-title-->
+
+			<!---breadcrumb-->
+			<ol class="breadcrumb">
+				<li><a href="#"><i class="fa fa-dashboard"></i> 控制面板</a></li>
+				<li class="active">容器&面板</li>
+			</ol>
+			<!---/breadcrumb-->
+		</section>
+		<!--/content-header-->
+		
+		<!--content-->
+		<section class="content">
+			
+			<!--row-->
+			<div class="row">
+			    <div class="col-md-4 mb-10">
+					<div class="box box-default">
+						<div class="box-header">
+							<h3 class="box-title">默认容器</h3>
+						</div>
+						<div class="box-body p-10">
+
+						</div>
+					</div>
+			    </div>
+
+			    <div class="col-md-4 mb-10">
+					<div class="box box-primary">
+						<div class="box-header">
+							<h3 class="box-title">主要容器</h3>
+						</div>
+						<div class="box-body p-10">
+
+						</div>
+					</div>
+			    </div>
+
+			    <div class="col-md-4 mb-10">
+					<div class="box box-success">
+						<div class="box-header">
+							<h3 class="box-title">成功容器</h3>
+						</div>
+						<div class="box-body p-10">
+
+						</div>
+					</div>
+			    </div>
+
+			    <div class="col-md-4 mb-10">
+					<div class="box box-info">
+						<div class="box-header with-border">
+							<h3 class="box-title">信息容器</h3>
+						</div>
+						<div class="box-body p-10">
+
+						</div>
+					</div>
+			    </div>
+
+			    <div class="col-md-4 mb-10">
+					<div class="box box-warning">
+						<div class="box-header with-border">
+							<h3 class="box-title">警告容器</h3>
+						</div>
+						<div class="box-body p-10">
+
+						</div>
+					</div>
+			    </div>
+
+			    <div class="col-md-4 mb-10">
+					<div class="box box-danger">
+						<div class="box-header with-border">
+							<h3 class="box-title">危险容器</h3>
+						</div>
+						<div class="box-body p-10">
+
+						</div>
+					</div>
+			    </div>
+
+			    <div class="col-md-4 mb-10">
+					<div class="box box-default">
+						<div class="box-header with-border">
+							<h3 class="box-title">默认容器</h3>
+						</div>
+						<div class="box-body p-10">
+							容器内容
+						</div>
+						<div class="box-footer">容器底部</div>
+					</div>
+			    </div>
+
+			    <div class="col-md-4 mb-10">
+					<div class="box box-primary">
+						<div class="box-header with-border">
+							<h3 class="box-title">主要容器</h3>
+						</div>
+						<div class="box-body p-10">
+							容器内容
+						</div>
+						<div class="box-footer">容器底部</div>
+					</div>
+			    </div>
+
+			    <div class="col-md-4 mb-10">
+					<div class="box box-success">
+						<div class="box-header with-border">
+							<h3 class="box-title">成功容器</h3>
+						</div>
+						<div class="box-body p-10">
+							容器内容
+						</div>
+						<div class="box-footer">容器底部</div>
+					</div>
+			    </div>
+
+			</div>
+			<!--/row-->
+
+			<!--row-->
+			<div class="row">
+
+			    <div class="col-md-4 mb-10">
+					<div class="box box-primary collapsed-box">
+						<div class="box-header with-border">
+							<h3 class="box-title">折叠容器</h3>
+							<div class="box-tools pull-right">
+								<button type="button" class="btn btn-box-tool" data-widget="collapse">
+									<i class="fa fa-plus"></i>
+								</button>
+							</div>
+						</div>
+						<div class="box-body">
+							容器内容
+						</div>
+					</div>
+			    </div>
+
+			    <div class="col-md-4 mb-10">
+					<div class="box box-success">
+						<div class="box-header with-border">
+							<h3 class="box-title">折叠容器</h3>
+							<div class="box-tools pull-right">
+								<button type="button" class="btn btn-box-tool" data-widget="collapse">
+									<i class="fa fa-minus"></i>
+								</button>
+							</div>
+						</div>
+						<div class="box-body">
+							容器内容
+						</div>
+					</div>
+			    </div>
+
+			    <div class="col-md-4 mb-10">
+					<div class="box box-info">
+						<div class="box-header with-border">
+							<h3 class="box-title">移除容器</h3>
+							<div class="box-tools pull-right">
+								<button type="button" class="btn btn-box-tool" data-widget="remove"><i class="fa fa-times"></i></button>
+							</div>
+						</div>
+						<div class="box-body">
+							容器内容
+						</div>
+					</div>
+			    </div>
+			    
+			</div>
+			<!--/row-->
+
+			<!--row-->
+			<div class="row">
+
+			    <div class="col-md-4 mb-10">
+					<div class="box box-info box-solid">
+						<div class="box-header with-border">
+							<h3 class="box-title">容器</h3>
+						</div>
+						<div class="box-body">
+							容器内容
+						</div>
+					</div>
+			    </div>
+
+			    <div class="col-md-4 mb-10">
+					<div class="box box-warning box-solid">
+						<div class="box-header with-border">
+							<h3 class="box-title">容器</h3>
+						</div>
+						<div class="box-body">
+							容器内容
+						</div>
+					</div>
+			    </div>
+
+			    <div class="col-md-4 mb-10">
+					<div class="box box-danger box-solid">
+						<div class="box-header with-border">
+							<h3 class="box-title">容器</h3>
+						</div>
+						<div class="box-body">
+							容器内容
+						</div>
+					</div>
+			    </div>
+			    
+			</div>
+			<!--/row-->
+
+			<!--row-->
+			<div class="row">
+
+			    <div class="col-md-3 mb-10">
+					
+					<div class="box box-primary direct-chat direct-chat-primary">
+						<div class="box-header with-border">
+							<h3 class="box-title">聊天室</h3>
+							<div class="box-tools pull-right">
+								<span data-toggle="tooltip" title="3 条新消息" class="badge bg-light-blue">3</span>
+								<button type="button" class="btn btn-box-tool" data-widget="collapse">
+									<i class="fa fa-minus"></i>
+								</button>
+								<button type="button" class="btn btn-box-tool" data-widget="remove">
+									<i class="fa fa-times"></i>
+								</button>
+							</div>
+						</div>
+						<div class="box-body">
+							<div class="direct-chat-messages">
+								<div class="direct-chat-msg">
+									<div class="direct-chat-info clearfix">
+										<span class="direct-chat-name pull-left">艾利克斯</span>
+										<span class="direct-chat-timestamp pull-right">01-23 14:00</span>
+									</div>
+									<img class="direct-chat-img" src="core/dist/img/user1-128x128.jpg" alt="Message User Image">
+									<div class="direct-chat-text">
+										这个真的免费吗?那是难以置信的!
+									</div>
+								</div>
+								<div class="direct-chat-msg right">
+									<div class="direct-chat-info clearfix">
+										<span class="direct-chat-name pull-right">布鲁克</span>
+										<span class="direct-chat-timestamp pull-left">01-23 14:05</span>
+									</div>
+									<img class="direct-chat-img" src="core/dist/img/user3-128x128.jpg" alt="Message User Image">
+									<div class="direct-chat-text">
+										你最好相信!
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="box-footer">
+							<form action="#" method="post">
+								<div class="input-group">
+								<input type="text" name="message" placeholder="输入消息 ..." class="form-control">
+								<span class="input-group-btn">
+									<button type="submit" class="btn btn-primary btn-flat">发送</button>
+								</span>
+								</div>
+							</form>
+						</div>
+					</div>
+
+			    </div>
+
+			    <div class="col-md-3 mb-10">
+					
+					<div class="box box-success direct-chat direct-chat-success">
+						<div class="box-header with-border">
+							<h3 class="box-title">聊天室</h3>
+							<div class="box-tools pull-right">
+								<span data-toggle="tooltip" title="3 条新消息" class="badge bg-light-blue">3</span>
+								<button type="button" class="btn btn-box-tool" data-widget="collapse">
+									<i class="fa fa-minus"></i>
+								</button>
+								<button type="button" class="btn btn-box-tool" data-widget="remove">
+									<i class="fa fa-times"></i>
+								</button>
+							</div>
+						</div>
+						<div class="box-body">
+							<div class="direct-chat-messages">
+								<div class="direct-chat-msg">
+									<div class="direct-chat-info clearfix">
+										<span class="direct-chat-name pull-left">艾利克斯</span>
+										<span class="direct-chat-timestamp pull-right">01-23 14:00</span>
+									</div>
+									<img class="direct-chat-img" src="core/dist/img/user1-128x128.jpg" alt="Message User Image">
+									<div class="direct-chat-text">
+										这个真的免费吗?那是难以置信的!
+									</div>
+								</div>
+								<div class="direct-chat-msg right">
+									<div class="direct-chat-info clearfix">
+										<span class="direct-chat-name pull-right">布鲁克</span>
+										<span class="direct-chat-timestamp pull-left">01-23 14:05</span>
+									</div>
+									<img class="direct-chat-img" src="core/dist/img/user3-128x128.jpg" alt="Message User Image">
+									<div class="direct-chat-text">
+										你最好相信!
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="box-footer">
+							<form action="#" method="post">
+								<div class="input-group">
+								<input type="text" name="message" placeholder="输入消息 ..." class="form-control">
+								<span class="input-group-btn">
+									<button type="submit" class="btn btn-primary btn-flat">发送</button>
+								</span>
+								</div>
+							</form>
+						</div>
+					</div>
+
+			    </div>
+
+			    <div class="col-md-3 mb-10">
+					
+					<div class="box box-info direct-chat direct-chat-info">
+						<div class="box-header with-border">
+							<h3 class="box-title">聊天室</h3>
+							<div class="box-tools pull-right">
+								<span data-toggle="tooltip" title="3 条新消息" class="badge bg-light-blue">3</span>
+								<button type="button" class="btn btn-box-tool" data-widget="collapse">
+									<i class="fa fa-minus"></i>
+								</button>
+								<button type="button" class="btn btn-box-tool" data-widget="remove">
+									<i class="fa fa-times"></i>
+								</button>
+							</div>
+						</div>
+						<div class="box-body">
+							<div class="direct-chat-messages">
+								<div class="direct-chat-msg">
+									<div class="direct-chat-info clearfix">
+										<span class="direct-chat-name pull-left">艾利克斯</span>
+										<span class="direct-chat-timestamp pull-right">01-23 14:00</span>
+									</div>
+									<img class="direct-chat-img" src="core/dist/img/user1-128x128.jpg" alt="Message User Image">
+									<div class="direct-chat-text">
+										这个真的免费吗?那是难以置信的!
+									</div>
+								</div>
+								<div class="direct-chat-msg right">
+									<div class="direct-chat-info clearfix">
+										<span class="direct-chat-name pull-right">布鲁克</span>
+										<span class="direct-chat-timestamp pull-left">01-23 14:05</span>
+									</div>
+									<img class="direct-chat-img" src="core/dist/img/user3-128x128.jpg" alt="Message User Image">
+									<div class="direct-chat-text">
+										你最好相信!
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="box-footer">
+							<form action="#" method="post">
+								<div class="input-group">
+								<input type="text" name="message" placeholder="输入消息 ..." class="form-control">
+								<span class="input-group-btn">
+									<button type="submit" class="btn btn-primary btn-flat">发送</button>
+								</span>
+								</div>
+							</form>
+						</div>
+					</div>
+
+			    </div>
+
+			    <div class="col-md-3 mb-10">
+					
+					<div class="box box-danger direct-chat direct-chat-danger">
+						<div class="box-header with-border">
+							<h3 class="box-title">聊天室</h3>
+							<div class="box-tools pull-right">
+								<span data-toggle="tooltip" title="3 条新消息" class="badge bg-light-blue">3</span>
+								<button type="button" class="btn btn-box-tool" data-widget="collapse">
+									<i class="fa fa-minus"></i>
+								</button>
+								<button type="button" class="btn btn-box-tool" data-widget="remove">
+									<i class="fa fa-times"></i>
+								</button>
+							</div>
+						</div>
+						<div class="box-body">
+							<div class="direct-chat-messages">
+								<div class="direct-chat-msg">
+									<div class="direct-chat-info clearfix">
+										<span class="direct-chat-name pull-left">艾利克斯</span>
+										<span class="direct-chat-timestamp pull-right">01-23 14:00</span>
+									</div>
+									<img class="direct-chat-img" src="core/dist/img/user1-128x128.jpg" alt="Message User Image">
+									<div class="direct-chat-text">
+										这个真的免费吗?那是难以置信的!
+									</div>
+								</div>
+								<div class="direct-chat-msg right">
+									<div class="direct-chat-info clearfix">
+										<span class="direct-chat-name pull-right">布鲁克</span>
+										<span class="direct-chat-timestamp pull-left">01-23 14:05</span>
+									</div>
+									<img class="direct-chat-img" src="core/dist/img/user3-128x128.jpg" alt="Message User Image">
+									<div class="direct-chat-text">
+										你最好相信!
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="box-footer">
+							<form action="#" method="post">
+								<div class="input-group">
+								<input type="text" name="message" placeholder="输入消息 ..." class="form-control">
+								<span class="input-group-btn">
+									<button type="submit" class="btn btn-primary btn-flat">发送</button>
+								</span>
+								</div>
+							</form>
+						</div>
+					</div>
+
+			    </div>
+			    
+			</div>
+			<!--/row-->
+
+			<!--row-->
+			<div class="row">
+			    <div class="col-md-3 col-sm-12">
+					<div class="box box-widget widget-user-2">
+						<div class="widget-user-header bg-info">
+							<div class="widget-user-image">
+								<img class="img-circle" src="core/dist/img/user7-128x128.jpg" alt="User Avatar">
+							</div>
+							<h3 class="widget-user-username">妮娜 娜迪娅卡</h3>
+							<h5 class="widget-user-desc">开发工程师</h5>
+						</div>
+						<div class="box-footer no-padding">
+							<ul class="nav nav-stacked">
+								<li><a href="#">项目 <span class="pull-right badge bg-blue">31</span></a></li>
+								<li><a href="#">任务 <span class="pull-right badge bg-aqua">5</span></a></li>
+								<li><a href="#">已完成 <span class="pull-right badge bg-green">12</span></a></li>
+								<li><a href="#">粉丝 <span class="pull-right badge bg-red">842</span></a></li>
+							</ul>
+						</div>
+					</div>
+			    </div>
+
+			    <div class="col-md-3 col-sm-12">
+					<div class="box box-widget widget-user-2">
+						<div class="widget-user-header bg-info" style="background: url('core/dist/img/photo1.png') center center; background-size:cover;">
+							<div class="widget-user-image">
+								<img class="img-circle" src="core/dist/img/user4-128x128.jpg" alt="User Avatar">
+							</div>
+							<h3 class="widget-user-username">杰西卡</h3>
+							<h5 class="widget-user-desc">交互设计师</h5>
+						</div>
+						<div class="box-footer no-padding">
+							<ul class="nav nav-stacked">
+								<li><a href="#">项目 <span class="pull-right badge bg-blue">31</span></a></li>
+								<li><a href="#">任务 <span class="pull-right badge bg-aqua">5</span></a></li>
+								<li><a href="#">已完成 <span class="pull-right badge bg-green">12</span></a></li>
+								<li><a href="#">粉丝 <span class="pull-right badge bg-red">842</span></a></li>
+							</ul>
+						</div>
+					</div>
+			    </div>
+
+			    <div class="col-md-3 col-sm-12">
+					<div class="box box-widget widget-user">
+						<div class="widget-user-header bg-green-active">
+							<h3 class="widget-user-username">艾利克斯 皮尔斯</h3>
+							<h5 class="widget-user-desc">Founder &amp; CEO</h5>
+						</div>
+						<div class="widget-user-image">
+							<img class="img-circle" src="core/dist/img/user1-128x128.jpg" alt="User Avatar">
+						</div>
+						<div class="box-footer">
+							<div class="row">
+								<div class="col-sm-4 border-right">
+									<div class="description-block">
+										<h5 class="description-header">3,200</h5>
+										<span class="description-text">售出</span>
+									</div>
+								</div>
+								<div class="col-sm-4 border-right">
+									<div class="description-block">
+										<h5 class="description-header">13,000</h5>
+										<span class="description-text">粉丝</span>
+									</div>
+								</div>
+								<div class="col-sm-4">
+									<div class="description-block">
+										<h5 class="description-header">35</h5>
+										<span class="description-text">产品</span>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+			    </div>
+
+			    <div class="col-md-3 col-sm-12">
+					<div class="box box-widget widget-user">
+						<div class="widget-user-header bg-black" style="background: url('core/dist/img/photo1.png') center center; background-size:cover;">
+							<h3 class="widget-user-username">利兹 普林斯</h3>
+							<h5 class="widget-user-desc">设计师</h5>
+						</div>
+						<div class="widget-user-image">
+							<img class="img-circle" src="core/dist/img/user3-128x128.jpg" alt="User Avatar">
+						</div>
+						<div class="box-footer">
+							<div class="row">
+								<div class="col-sm-4 border-right">
+									<div class="description-block">
+										<h5 class="description-header">3,200</h5>
+										<span class="description-text">售出</span>
+									</div>
+								</div>
+								<div class="col-sm-4 border-right">
+									<div class="description-block">
+										<h5 class="description-header">13,000</h5>
+										<span class="description-text">粉丝</span>
+									</div>
+								</div>
+								<div class="col-sm-4">
+									<div class="description-block">
+										<h5 class="description-header">35</h5>
+										<span class="description-text">产品</span>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+			    </div>
+
+			</div>
+			<!--/row-->
+
+			<!--row-->
+			<div class="row">
+
+			    <div class="col-md-4 col-sm-12">
+					<div class="box box-widget">
+						<div class="box-header with-border">
+							<div class="user-block">
+								<img class="img-circle" src="core/dist/img/user1-128x128.jpg" alt="User Image">
+								<span class="username"><a href="#">乔纳森伯克</a></span>
+								<span class="description">分享于 19:30</span>
+							</div>
+						</div>
+						<div class="box-body">
+							<img class="img-responsive pad" src="core/dist/img/photo2.png" alt="Photo">
+							<p>我今天早上拍了这张照片。你们怎么看？</p>
+							<button type="button" class="btn btn-info btn-xs"><i class="fa fa-share"></i> 分享</button>
+							<button type="button" class="btn btn-success btn-xs"><i class="fa fa-thumbs-o-up"></i> 赞</button>
+							<span class="pull-right text-muted">127 赞 | 3 评论</span>
+						</div>
+						<div class="box-footer box-comments">
+							<div class="box-comment">
+								<img class="img-circle img-sm" src="core/dist/img/user3-128x128.jpg" alt="User Image">
+								<div class="comment-text">
+									<span class="username">
+										玛利亚
+										<span class="text-muted pull-right">20:03</span>
+									</span>
+									读者会被注意力分散是一个长期的事实当查看它的布局时的一个页面的可读内容。
+								</div>
+							</div>
+							<div class="box-comment">
+								<img class="img-circle img-sm" src="core/dist/img/user4-128x128.jpg" alt="User Image">
+								<div class="comment-text">
+									<span class="username">
+										斯塔克 露娜
+										<span class="text-muted pull-right">20:03</span>
+									</span>
+									读者会被注意力分散是一个长期的事实当查看它的布局时的一个页面的可读内容。
+								</div>
+							</div>
+						</div>
+						<div class="box-footer">
+							<form action="#" method="post">
+								<img class="img-responsive img-circle img-sm" src="core/dist/img/user4-128x128.jpg" alt="Alt Text">
+								<div class="img-push">
+									<input type="text" class="form-control input-sm" placeholder="按回车键发表评论">
+								</div>
+							</form>
+						</div>
+					</div>
+			    </div>
+
+			    <div class="col-md-4 col-sm-12">
+					<div class="box box-widget">
+						<div class="box-header with-border">
+							<div class="user-block">
+								<img class="img-circle" src="core/dist/img/user1-128x128.jpg" alt="User Image">
+								<span class="username"><a href="#">乔纳森伯克</a></span>
+								<span class="description">分享于 19:30</span>
+							</div>
+						</div>
+						<div class="box-body">
+							<p>在众多米粉的欢呼下，今日小米秋季新品发布会在北京国家会议中心正式召开，该发布会的主角便是小米5s和小米5s Plus。现在我们带来这两部手机的图赏，米粉们可一睹为快了。此次小米5s的外观一改小米5的设计，小米5s机身为全金属一体化设计，更有深灰、银白、金色、玫瑰金四个配色可选。</p>
+							<div class="attachment-block clearfix">
+								<img class="attachment-img" src="core/dist/img/photo1.png" alt="Attachment Image">
+								<div class="attachment-pushed">
+									<h4 class="attachment-heading mb-5"><a href="http://www.mi.com/">用的黑白传感器，拍出更高品质的黑白照片</a></h4>
+									<div class="attachment-text">
+										小米5s提供四种配色，提供玫瑰金、金色、银色、深灰色四种配色，正面使用2.5d弧面玻璃，背面均使用金属机身打造。雷军特别提到和小米5最大的不同是，小米5s又重新回归了金属机身是因为陶瓷机身工艺难度太大。... <a href="#">更多</a>
+									</div>
+								</div>
+							</div>
+							<button type="button" class="btn btn-default btn-xs"><i class="fa fa-share"></i> 分享</button>
+							<button type="button" class="btn btn-default btn-xs"><i class="fa fa-thumbs-o-up"></i> 赞</button>
+							<span class="pull-right text-muted">45 赞 | 2 评论</span>
+						</div>
+						<div class="box-footer box-comments">
+							<div class="box-comment">
+								<img class="img-circle img-sm" src="core/dist/img/user3-128x128.jpg" alt="User Image">
+								<div class="comment-text">
+									<span class="username">
+										玛利亚
+										<span class="text-muted pull-right">20:03</span>
+									</span>
+										两个摄像头订单量不该翻翻么~
+								</div>
+							</div>
+							<div class="box-comment">
+								<img class="img-circle img-sm" src="core/dist/img/user5-128x128.jpg" alt="User Image">
+								<div class="comment-text">
+									<span class="username">
+										诺娜
+										<span class="text-muted pull-right">20:03</span>
+									</span>
+									如果这么算 ，那四核的CPU对比双核和翻翻咯~
+								</div>
+							</div>
+						</div>
+						<div class="box-footer">
+							<form action="#" method="post">
+								<img class="img-responsive img-circle img-sm" src="core/dist/img/user4-128x128.jpg" alt="Alt Text">
+								<div class="img-push">
+									<input type="text" class="form-control input-sm" placeholder="按回车键发表评论">
+								</div>
+							</form>
+						</div>
+					</div>
+			    </div>
+
+			</div>
+			<!--/row-->
+
+		</section>
+		<!--/content-->
+
+	</div>
+	<!--/content-wrapper-->
+
+	<!--main-footer-->
+	<footer class="main-footer">
+		<div class="pull-right hidden-xs">iDvert Frame ver 1.0</div>
+		<strong>Copyright &copy; 2016 <a href="#">iDvert</a>.</strong> All rights reserved.
+	</footer>
+	<!--/main-footer-->
+
+</div>
+<!--/wrapper-->
+
+
+<!-- Script -->
+<script src="core/plugins/jQuery/jquery-2.2.3.min.js"></script>
+<script src="core/bootstrap/js/bootstrap.min.js"></script>
+<script src="core/plugins/slimScroll/jquery.slimscroll.min.js"></script>
+<!--toastr-->
+<script src="core/plugins/toastr/toastr.min.js"></script>
+<script src="core/dist/js/app.min.js"></script>
+<script src="core/dist/js/ivt.js"></script>
+</body>
+</html>

@@ -1,0 +1,280 @@
+/* List Group */
+.list-group {
+	.list-group-item {
+		border-color:@default-color;
+		> .label,> .badge {
+			float:right;
+		}
+		> .label + .label,> .badge + .badge {
+			margin-right:5px;
+		}
+	}
+	&.square {
+		.list-group-item {
+			&:first-child {
+				.border-top-radius(0);
+			}
+			&:last-child {
+				.border-bottom-radius(0);
+			}
+		}
+	}
+	&.no-border {
+		.list-group-item {
+			border:none;
+		}
+	}
+	&.no-side-border {
+		border-left:none;
+		border-right:none;
+	}
+	
+	// Primary
+	&.list-block-primary {
+		.list-group-item {
+			background-color:@primary-color;
+			border-color:shade(@primary-color, 5%);
+			color:@light-color;
+
+			.badge-primary {
+				background-color:shade(@primary-color, 5%);
+			}
+			&.active {
+				background-color:shade(@primary-color, 5%);
+				border-color:shade(@primary-color, 5%);
+				color:@light-color;
+				.badge {
+					color:shade(@primary-color, 5%);
+					background-color:@light-color;
+				}
+			}
+			&:hover,&:focus {
+				background-color:@primary-color;
+			}
+		}
+	}
+	&.list-group-primary {
+		.list-group-item {
+			&.active {
+				background-color:shade(@primary-color, 5%);
+				border-color:shade(@primary-color, 5%);
+				color:@light-color;
+			}
+			&.active {
+				background-color:@primary-color;
+				border-color:@primary-color;
+				color:@light-color;
+
+				.label,.badge {
+					color:@primary-color;
+				}
+			}
+		}
+	}
+
+	// Success
+	&.list-block-success {
+		.list-group-item {
+			background-color:@success-color;
+			border-color:shade(@success-color, 5%);
+			color:@light-color;
+
+			.badge-success {
+				background-color:shade(@success-color, 5%);
+			}
+			&.active {
+				background-color:shade(@success-color, 5%);
+				border-color:shade(@success-color, 5%);
+				color:@light-color;
+				.badge {
+					color:shade(@success-color, 5%);
+					background-color:@light-color;
+				}
+			}
+			&:hover,&:focus {
+				background-color:@success-color;
+			}
+		}
+	}
+	&.list-group-success {
+		.list-group-item {
+			&.active {
+				background-color:shade(@success-color, 5%);
+				border-color:shade(@success-color, 5%);
+				color:@light-color;
+			}
+			&.active {
+				background-color:@success-color;
+				border-color:@success-color;
+				color:@light-color;
+
+				.label,.badge {
+					color:@success-color;
+				}
+			}
+		}
+	}
+
+	// Info
+	&.list-block-info {
+		.list-group-item {
+			background-color:@info-color;
+			border-color:shade(@info-color, 5%);
+			color:@light-color;
+
+			.badge-info {
+				background-color:shade(@info-color, 5%);
+			}
+			&.active {
+				background-color:shade(@info-color, 5%);
+				border-color:shade(@info-color, 5%);
+				color:@light-color;
+				.badge {
+					color:shade(@info-color, 5%);
+					background-color:@light-color;
+				}
+			}
+			&:hover,&:focus {
+				background-color:@info-color;
+			}
+		}
+	}
+	&.list-group-info {
+		.list-group-item {
+			&.active {
+				background-color:shade(@info-color, 5%);
+				border-color:shade(@info-color, 5%);
+				color:@light-color;
+			}
+			&.active {
+				background-color:@info-color;
+				border-color:@info-color;
+				color:@light-color;
+
+				.label,.badge {
+					color:@info-color;
+				}
+			}
+		}
+	}
+
+	// Warning
+	&.list-block-warning {
+		.list-group-item {
+			background-color:@warning-color;
+			border-color:shade(@warning-color, 5%);
+			color:@light-color;
+
+			.badge-warning {
+				background-color:shade(@warning-color, 5%);
+			}
+			&.active {
+				background-color:shade(@warning-color, 5%);
+				border-color:shade(@warning-color, 5%);
+				color:@light-color;
+				.badge {
+					color:shade(@warning-color, 5%);
+					background-color:@light-color;
+				}
+			}
+			&:hover,&:focus {
+				background-color:@warning-color;
+			}
+		}
+	}
+	&.list-group-warning {
+		.list-group-item {
+			&.active {
+				background-color:shade(@warning-color, 5%);
+				border-color:shade(@warning-color, 5%);
+				color:@light-color;
+			}
+			&.active {
+				background-color:@warning-color;
+				border-color:@warning-color;
+				color:@light-color;
+
+				.label,.badge {
+					color:@warning-color;
+				}
+			}
+		}
+	}
+
+	// Danger
+	&.list-block-danger {
+		.list-group-item {
+			background-color:@danger-color;
+			border-color:shade(@danger-color, 5%);
+			color:@light-color;
+
+			.badge-danger {
+				background-color:shade(@danger-color, 5%);
+			}
+			&.active {
+				background-color:shade(@danger-color, 5%);
+				border-color:shade(@danger-color, 5%);
+				color:@light-color;
+				.badge {
+					color:shade(@danger-color, 5%);
+					background-color:@light-color;
+				}
+			}
+			&:hover,&:focus {
+				background-color:@danger-color;
+			}
+		}
+	}
+	&.list-group-danger {
+		.list-group-item {
+			&.active {
+				background-color:shade(@danger-color, 5%);
+				border-color:shade(@danger-color, 5%);
+				color:@light-color;
+			}
+			&.active {
+				background-color:@danger-color;
+				border-color:@danger-color;
+				color:@light-color;
+
+				.label,.badge {
+					color:@danger-color;
+				}
+			}
+		}
+	}
+}
+
+a.list-group-item {
+	color:lighten(@dark-color,10%);
+	.list-group-item-heading {
+		color:darken(@dark-color,20%);
+	}
+	&:hover,&:focus {
+		background-color:@light-gray;
+		text-decoration:none;
+	}
+	&.active,&.active:hover,&.active:focus {
+		background-color:@primary-color;
+		border-color:@primary-color;
+		color:@light-color;
+	}
+	&.active {
+		&,&:hover,&:focus {
+			color:@light-color;
+		}
+	}
+}
+
+.list-group-item {
+	&.active,&.active:hover,&.active:focus {
+		background-color:@primary-color;
+		border-color:@primary-color;
+		color:@light-color;
+
+		.badge {
+			color:shade(@primary-color, 5%);
+			background-color:@light-color;
+		}
+	}
+}

@@ -1,0 +1,1138 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<title>General - iDvert Frame</title>
+<meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport" />
+<!--Style-->
+<link rel="stylesheet" href="core/bootstrap/css/bootstrap.min.css" />
+<link rel="stylesheet" href="core/dist/css/font-awesome.min.css" />
+<link rel="stylesheet" href="core/dist/css/AdminLTE.min.css" />
+<link rel="stylesheet" href="core/dist/css/skins/skin-ivt-light.min.css">
+<link rel="stylesheet" href="core/dist/css/doc.css">
+<!--[if lt IE 9]>
+<script src="core/dits/js/html5shiv.min.js"></script>
+<script src="core/dits/js/respond.min.js"></script>
+<![endif]-->
+</head>
+
+<body class="hold-transition skin-ivt-light sidebar-mini">
+<!--wrapper-->
+<div class="wrapper">
+
+ 	<!--main-header-->
+ 	<header class="main-header">
+
+ 	    <!--logo-->
+ 	    <a href="#" class="logo">
+ 	    	<span class="logo-lg">iDvert Frame</span>
+ 	    	<span class="logo-mini">ivt</span>
+ 	    </a>
+ 	    <!--/logo-->
+
+ 	    <!--navbar-->
+ 	    <nav class="navbar navbar-static-top" role="navigation">
+ 	    	<!--sidebar-toggle-->
+ 	    	<a href="#" class="sidebar-toggle" data-toggle="offcanvas" role="button">
+		    	<span class="sr-only">Toggle navigation</span>
+		    </a>
+ 	    	<!--/sidebar-toggle-->
+
+ 	    	<!--navbar-custom-menu-->
+ 	        <div class="navbar-custom-menu">
+				<ul class="nav navbar-nav">
+					<!-- <li class="dropdown messages-menu">
+						<a href="#">
+							<i class="fa fa-envelope-o"></i>
+							<span class="label label-success">4</span>
+						</a>
+					</li> -->
+					<li class="dropdown user user-menu dropdown-sm">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+							<img src="core/dist/img/user2-160x160.jpg" class="user-image" alt="User Image">
+							<span class="hidden-xs">Sim</span>
+						</a>
+					</li>
+				</ul>
+ 	        </div>
+ 	    	<!--navbar-custom-menu-->
+ 	    </nav>
+ 	    <!--/navbar-->
+ 	</header>
+ 	<!--/main-header-->
+	
+	<!--main-sidebar-->
+	<aside class="main-sidebar">
+		<section class="sidebar">
+			<!--sidebar-menu-->
+		    <ul class="sidebar-menu">
+				<li class="header">导航</li>
+				<li class="active"><a href="main.html"><i class="fa fa-dashboard"></i> <span>总览</span></a></li>
+				<li class="treeview">
+					<a href="#"><i class="fa fa-laptop"></i> <span>UI组件</span>
+						<span class="pull-right-container">
+							<i class="fa fa-angle-left pull-right"></i>
+						</span>
+					</a>
+					<ul class="treeview-menu">
+						<li><a href="general.html"><i class="fa fa-circle-o"></i> 基础组件</a></li>
+						<li><a href="button.html"><i class="fa fa-circle-o"></i> 按钮</a></li>
+						<li><a href="modal.html"><i class="fa fa-circle-o"></i> 弹层</a></li>
+						<li><a href="tips.html"><i class="fa fa-circle-o"></i> 消息</a></li>
+						<li><a href="collapse.html"><i class="fa fa-circle-o"></i> 折叠</a></li>
+						<li><a href="dragdrop.html"><i class="fa fa-circle-o"></i> 拖拽</a></li>
+						<li><a href="scrollbar.html"><i class="fa fa-circle-o"></i> 滚动条</a></li>
+						<li><a href="timeline.html"><i class="fa fa-circle-o"></i> 时间轴</a></li>
+						<li><a href="list-group.html"><i class="fa fa-circle-o"></i> 列表</a></li>
+						<li><a href="nestable.html"><i class="fa fa-circle-o"></i> 拖拽排序</a></li>
+						<li><a href="tabs.html"><i class="fa fa-circle-o"></i> 标签页</a></li>
+						<li><a href="tree.html"><i class="fa fa-circle-o"></i> 树形菜单</a></li>
+						<li><a href="typography.html"><i class="fa fa-circle-o"></i> 排版</a></li>
+						<li><a href="grid.html"><i class="fa fa-circle-o"></i> 栅格</a></li>
+						<li><a href="icon.html"><i class="fa fa-circle-o"></i> 图标</a></li>
+					</ul>
+				</li>
+				<li class="treeview">
+					<a href="#"><i class="fa fa-cube"></i> <span>组件</span>
+						<span class="pull-right-container">
+							<i class="fa fa-angle-left pull-right"></i>
+						</span>
+					</a>
+					<ul class="treeview-menu">
+						<li><a href="widget.html"><i class="fa fa-circle-o"></i> 组件</a></li>
+						<li><a href="box-panel.html"><i class="fa fa-circle-o"></i> 容器面板</a></li>
+					</ul>
+				</li>
+				<li class="treeview">
+					<a href="#"><i class="fa fa-image"></i> <span>图片</span>
+						<span class="pull-right-container">
+							<i class="fa fa-angle-left pull-right"></i>
+						</span>
+					</a>
+					<ul class="treeview-menu">
+						<li><a href="carousel.html"><i class="fa fa-circle-o"></i> 轮播图</a></li>
+						<li><a href="card.html"><i class="fa fa-circle-o"></i> 卡片组</a></li>
+						<li><a href="lightbox.html"><i class="fa fa-circle-o"></i> lightbox</a></li>
+						<li><a href="wookmark.html"><i class="fa fa-circle-o"></i> 瀑布流</a></li>
+					</ul>
+				</li>
+				<!-- <li><a href="echart.html"><i class="fa fa-area-chart"></i> <span>图表</span></a></li> -->
+				<li class="treeview">
+					<a href="#"><i class="fa fa-edit"></i> <span>表单</span>
+						<span class="pull-right-container">
+							<i class="fa fa-angle-left pull-right"></i>
+						</span>
+					</a>
+					<ul class="treeview-menu">
+						<li><a href="form.html"><i class="fa fa-circle-o"></i> 通用表单组件</a></li>
+						<li><a href="validform.html"><i class="fa fa-circle-o"></i> 表单验证</a></li>
+					</ul>
+				</li>
+				<li class="treeview">
+					<a href="#"><i class="fa fa-table"></i> <span>表格</span>
+						<span class="pull-right-container">
+							<i class="fa fa-angle-left pull-right"></i>
+						</span>
+					</a>
+					<ul class="treeview-menu">
+						<li><a href="table.html"><i class="fa fa-circle-o"></i> 基础表格</a></li>
+						<li><a href="data-table.html"><i class="fa fa-circle-o"></i> DataTable</a></li>
+						<li><a href="bootstrap-table.html"><i class="fa fa-circle-o"></i> Bootstrap Table</a></li>
+					</ul>
+				</li>
+				<li class="treeview">
+					<a href="#"><i class="fa fa-file-o"></i> <span>页面</span>
+						<span class="pull-right-container">
+							<i class="fa fa-angle-left pull-right"></i>
+						</span>
+					</a>
+					<ul class="treeview-menu">
+						<li><a href="blank.html"><i class="fa fa-circle-o"></i> 空白页面</a></li>
+						<li><a href="500.html"><i class="fa fa-circle-o"></i> 500</a></li>
+						<li><a href="404.html"><i class="fa fa-circle-o"></i> 404</a></li>
+					</ul>
+				</li>
+				<li><a href="helper-classes.html"><i class="fa fa-wrench"></i> <span>辅助类</span></a></li>
+		    </ul>
+			<!--/sidebar-menu-->
+		</section>
+	</aside>
+	<!--/main-sidebar-->
+
+	<!--content-wrapper-->
+	<div class="content-wrapper">
+		<!--content-header-->
+		<section class="content-header">
+			<!--content-header-title-->
+			<h1>基础组件<small>基于Bootstrap的基础组件</small></h1>
+			<!--/content-header-title-->
+
+			<!---breadcrumb-->
+			<ol class="breadcrumb">
+				<li><a href="#"><i class="fa fa-dashboard"></i> 控制面板</a></li>
+				<li class="active">基础组件</li>
+			</ol>
+			<!---/breadcrumb-->
+		</section>
+		<!--/content-header-->
+		
+		<!--content-->
+		<section class="content">
+			
+			<!--row-->
+			<div class="row">
+			    <div class="col-md-12">
+					
+					<!--box-->
+					<div class="box box-primary">
+					    <div class="box-header">
+					    	<span class="text-primary mr-5"><i class="fa fa-square"></i></span>
+					    	<h3 class="box-title">基础颜色</h3>
+					    </div>
+					    <div class="box-body p-10">
+							<p>框架使用的基本颜色</p>
+							
+							<!--row-->
+							<div class="row">
+							    <div class="col-md-2 col-sm-4">
+									<div class="color-box">
+										<div class="color-box-block bg-default-hover text-dark">Hover</div>
+										<div class="color-box-block bg-default text-dark">Normal</div>
+										<div class="color-box-block bg-default-active text-dark">Active</div>
+										<div class="color-box-title">
+											<h4>默认</h4>
+										</div>
+									</div>
+							    </div>
+							    <div class="col-md-2 col-sm-4">
+									<div class="color-box">
+										<div class="color-box-block bg-primary-hover">Hover</div>
+										<div class="color-box-block bg-primary">Normal</div>
+										<div class="color-box-block bg-primary-active">Active</div>
+										<div class="color-box-title">
+											<h4>主要</h4>
+										</div>
+									</div>
+							    </div>
+							    <div class="col-md-2 col-sm-4">
+									<div class="color-box">
+										<div class="color-box-block bg-success-hover">Hover</div>
+										<div class="color-box-block bg-success">Normal</div>
+										<div class="color-box-block bg-success-active">Active</div>
+										<div class="color-box-title">
+											<h4>成功</h4>
+										</div>
+									</div>
+							    </div>
+							    <div class="col-md-2 col-sm-4">
+									<div class="color-box">
+										<div class="color-box-block bg-info-hover">Hover</div>
+										<div class="color-box-block bg-info">Normal</div>
+										<div class="color-box-block bg-info-active">Active</div>
+										<div class="color-box-title">
+											<h4>信息</h4>
+										</div>
+									</div>
+							    </div>
+							    <div class="col-md-2 col-sm-4">
+									<div class="color-box">
+										<div class="color-box-block bg-warning-hover">Hover</div>
+										<div class="color-box-block bg-warning">Normal</div>
+										<div class="color-box-block bg-warning-active">Active</div>
+										<div class="color-box-title">
+											<h4>警告</h4>
+										</div>
+									</div>
+							    </div>
+							    <div class="col-md-2 col-sm-4">
+									<div class="color-box">
+										<div class="color-box-block bg-danger-hover">Hover</div>
+										<div class="color-box-block bg-danger">Normal</div>
+										<div class="color-box-block bg-danger-active">Active</div>
+										<div class="color-box-title">
+											<h4>危险</h4>
+										</div>
+									</div>
+							    </div>
+							</div>
+							<!--/row-->
+
+					    </div>
+					</div>
+					<!--/box-->
+
+
+			    </div>
+			</div>
+			<!--/row-->
+			
+			<!--row-->
+			<div class="row">
+			    <div class="col-md-12">
+					
+					<!--box-->
+					<div class="box box-primary">
+					    <div class="box-header">
+					    	<span class="text-primary mr-5"><i class="fa fa-square"></i></span>
+					    	<h3 class="box-title">辅助颜色</h3>
+					    </div>
+					    <div class="box-body p-10">
+							<p>框架使用的辅助颜色</p>
+							
+							<!--row-->
+							<div class="row">
+							    <div class="col-md-2 col-sm-4 mb-10">
+									<div class="color-box">
+										<div class="color-box-block bg-gray text-dark">Normal</div>
+										<div class="color-box-block bg-gray-active text-dark">Active</div>
+										<div class="color-box-title">
+											<h4>Gray</h4>
+										</div>
+									</div>
+							    </div>
+							    <div class="col-md-2 col-sm-4 mb-10">
+									<div class="color-box">
+										<div class="color-box-block bg-light-gray text-dark">Normal</div>
+										<div class="color-box-block bg-light-gray-active text-dark">Active</div>
+										<div class="color-box-title">
+											<h4>Light Gray</h4>
+										</div>
+									</div>
+							    </div>
+							    <div class="col-md-2 col-sm-4 mb-10">
+									<div class="color-box">
+										<div class="color-box-block bg-black">Normal</div>
+										<div class="color-box-block bg-black-active">Active</div>
+										<div class="color-box-title">
+											<h4>Black</h4>
+										</div>
+									</div>
+							    </div>
+							    <div class="col-md-2 col-sm-4 mb-10">
+									<div class="color-box">
+										<div class="color-box-block bg-red">Normal</div>
+										<div class="color-box-block bg-red-active">Active</div>
+										<div class="color-box-title">
+											<h4>Red</h4>
+										</div>
+									</div>
+							    </div>
+							    <div class="col-md-2 col-sm-4 mb-10">
+									<div class="color-box">
+										<div class="color-box-block bg-yellow">Normal</div>
+										<div class="color-box-block bg-yellow-active">Active</div>
+										<div class="color-box-title">
+											<h4>Yellow</h4>
+										</div>
+									</div>
+							    </div>
+							    <div class="col-md-2 col-sm-4 mb-10">
+									<div class="color-box">
+										<div class="color-box-block bg-aqua">Normal</div>
+										<div class="color-box-block bg-aqua-active">Active</div>
+										<div class="color-box-title">
+											<h4>Aqua</h4>
+										</div>
+									</div>
+							    </div>
+							    <div class="col-md-2 col-sm-4 mb-10">
+									<div class="color-box">
+										<div class="color-box-block bg-blue">Normal</div>
+										<div class="color-box-block bg-blue-active">Active</div>
+										<div class="color-box-title">
+											<h4>Blue</h4>
+										</div>
+									</div>
+							    </div>
+							    <div class="col-md-2 col-sm-4 mb-10">
+									<div class="color-box">
+										<div class="color-box-block bg-light-blue">Normal</div>
+										<div class="color-box-block bg-light-blue-active">Active</div>
+										<div class="color-box-title">
+											<h4>Light Blue</h4>
+										</div>
+									</div>
+							    </div>
+							    <div class="col-md-2 col-sm-4 mb-10">
+									<div class="color-box">
+										<div class="color-box-block bg-green">Normal</div>
+										<div class="color-box-block bg-green-active">Active</div>
+										<div class="color-box-title">
+											<h4>Green</h4>
+										</div>
+									</div>
+							    </div>
+							    <div class="col-md-2 col-sm-4 mb-10">
+									<div class="color-box">
+										<div class="color-box-block bg-light-green">Normal</div>
+										<div class="color-box-block bg-light-green-active">Active</div>
+										<div class="color-box-title">
+											<h4>Light Green</h4>
+										</div>
+									</div>
+							    </div>
+							    <div class="col-md-2 col-sm-4 mb-10">
+									<div class="color-box">
+										<div class="color-box-block bg-navy">Normal</div>
+										<div class="color-box-block bg-navy-active">Active</div>
+										<div class="color-box-title">
+											<h4>Navy</h4>
+										</div>
+									</div>
+							    </div>
+							    <div class="col-md-2 col-sm-4 mb-10">
+									<div class="color-box">
+										<div class="color-box-block bg-teal">Normal</div>
+										<div class="color-box-block bg-teal-active">Active</div>
+										<div class="color-box-title">
+											<h4>Teal</h4>
+										</div>
+									</div>
+							    </div>
+							    <div class="col-md-2 col-sm-4 mb-10">
+									<div class="color-box">
+										<div class="color-box-block bg-olive">Normal</div>
+										<div class="color-box-block bg-olive-active">Active</div>
+										<div class="color-box-title">
+											<h4>Olive</h4>
+										</div>
+									</div>
+							    </div>
+							    <div class="col-md-2 col-sm-4 mb-10">
+									<div class="color-box">
+										<div class="color-box-block bg-lime">Normal</div>
+										<div class="color-box-block bg-lime-active">Active</div>
+										<div class="color-box-title">
+											<h4>Lime</h4>
+										</div>
+									</div>
+							    </div>
+							    <div class="col-md-2 col-sm-4 mb-10">
+									<div class="color-box">
+										<div class="color-box-block bg-orange">Normal</div>
+										<div class="color-box-block bg-orange-active">Active</div>
+										<div class="color-box-title">
+											<h4>Orange</h4>
+										</div>
+									</div>
+							    </div>
+							    <div class="col-md-2 col-sm-4 mb-10">
+									<div class="color-box">
+										<div class="color-box-block bg-fuchsia">Normal</div>
+										<div class="color-box-block bg-fuchsia-active">Active</div>
+										<div class="color-box-title">
+											<h4>Fuchsia</h4>
+										</div>
+									</div>
+							    </div>
+							    <div class="col-md-2 col-sm-4 mb-10">
+									<div class="color-box">
+										<div class="color-box-block bg-purple">Normal</div>
+										<div class="color-box-block bg-purple-active">Active</div>
+										<div class="color-box-title">
+											<h4>Purple</h4>
+										</div>
+									</div>
+							    </div>
+							    <div class="col-md-2 col-sm-4 mb-10">
+									<div class="color-box">
+										<div class="color-box-block bg-maroon">Normal</div>
+										<div class="color-box-block bg-maroon-active">Active</div>
+										<div class="color-box-title">
+											<h4>Maroon</h4>
+										</div>
+									</div>
+							    </div>
+							</div>
+							<!--/row-->
+
+					    </div>
+					</div>
+					<!--/box-->
+
+
+			    </div>
+			</div>
+			<!--/row-->
+
+			<!--row-->
+			<div class="row">
+			    <div class="col-md-12">
+					
+					<!--box-->
+					<div class="box box-primary">
+					    <div class="box-header">
+					    	<span class="text-warning mr-5"><i class="fa fa-warning"></i></span>
+					    	<h3 class="box-title">警告提示</h3>
+					    </div>
+					    <div class="box-body p-10">
+							
+							<!--row-->
+							<div class="row">
+							    <div class="col-md-6 col-sm-12">
+									<div class="alert alert-warning alert-dismissible" role="alert">
+										<button type="button" class="close" data-dismiss="alert"><span aria-hidden="true">&times;</span><span class="sr-only">关闭</span></button>
+										<i class="fa fa-warning"></i> <strong>警告</strong> 注意警告文字.
+									</div>
+							    </div>
+							    <div class="col-md-6 col-sm-12">
+									<div class="alert alert-danger alert-dismissible" role="alert">
+										<button type="button" class="close" data-dismiss="alert"><span aria-hidden="true">&times;</span><span class="sr-only">关闭</span></button>
+										<i class="fa fa-times-circle"></i> <strong>出错</strong> 注意出错文字.
+									</div>
+							    </div>
+							    <div class="col-md-6 col-sm-12">
+									<div class="alert alert-info alert-dismissible" role="alert">
+										<button type="button" class="close" data-dismiss="alert"><span aria-hidden="true">&times;</span><span class="sr-only">关闭</span></button>
+										<i class="fa fa-exclamation-circle"></i> <strong>信息</strong> 注意信息文字.
+									</div>
+							    </div>
+							    <div class="col-md-6 col-sm-12">
+									<div class="alert alert-success alert-dismissible" role="alert">
+										<button type="button" class="close" data-dismiss="alert"><span aria-hidden="true">&times;</span><span class="sr-only">关闭</span></button>
+										<i class="fa fa-check-circle"></i> <strong>成功</strong> 注意成功文字.
+									</div>
+							    </div>
+							</div>
+							<!--/row-->
+							
+							<h4 class="box-title mb-10">多行提示</h4>
+							<!--row-->
+							<div class="row">
+							    <div class="col-md-6 col-sm-12">
+									<div class="alert alert-warning alert-dismissible" role="alert">
+										<button type="button" class="close" data-dismiss="alert"><span aria-hidden="true">&times;</span><span class="sr-only">关闭</span></button>
+										<h4><i class="fa fa-warning"></i> <strong>警告</strong></h4>
+										警告框没有默认类，只有基类和修饰类。默认的灰色警告框并没有多少意义。所以您要使用一种有意义的警告类。目前提供了成功、消息、警告或危险。
+									</div>
+							    </div>
+							    <div class="col-md-6 col-sm-12">
+									<div class="alert alert-danger alert-dismissible" role="alert">
+										<button type="button" class="close" data-dismiss="alert"><span aria-hidden="true">&times;</span><span class="sr-only">关闭</span></button>
+										<h4><i class="fa fa-times-circle"></i> <strong>出错</strong></h4>
+										警告框没有默认类，只有基类和修饰类。默认的灰色警告框并没有多少意义。所以您要使用一种有意义的警告类。目前提供了成功、消息、警告或危险。
+									</div>
+							    </div>
+							    <div class="col-md-6 col-sm-12">
+									<div class="alert alert-info alert-dismissible" role="alert">
+										<button type="button" class="close" data-dismiss="alert"><span aria-hidden="true">&times;</span><span class="sr-only">关闭</span></button>
+										<h4><i class="fa fa-exclamation-circle"></i> <strong>信息</strong></h4>>
+										警告框没有默认类，只有基类和修饰类。默认的灰色警告框并没有多少意义。所以您要使用一种有意义的警告类。目前提供了成功、消息、警告或危险。
+									</div>
+							    </div>
+							    <div class="col-md-6 col-sm-12">
+									<div class="alert alert-success alert-dismissible" role="alert">
+										<button type="button" class="close" data-dismiss="alert"><span aria-hidden="true">&times;</span><span class="sr-only">关闭</span></button>
+										<h4><i class="fa fa-check-circle"></i> <strong>成功</strong></h4>
+										警告框没有默认类，只有基类和修饰类。默认的灰色警告框并没有多少意义。所以您要使用一种有意义的警告类。目前提供了成功、消息、警告或危险。
+									</div>
+							    </div>
+							</div>
+							<!--/row-->
+
+					    </div>
+					</div>
+					<!--/box-->
+
+			    </div>
+			</div>
+			<!--/row-->
+
+			<!--row-->
+			<div class="row">
+			    <div class="col-md-12">
+					
+					<!--box-->
+					<div class="box box-primary">
+					    <div class="box-header">
+					    	<span class="text-warning mr-5"><i class="fa fa-warning"></i></span>
+					    	<h3 class="box-title">提示信息</h3>
+					    </div>
+					    <div class="box-body p-10">
+							
+							<!--row-->
+							<div class="row">
+							    <div class="col-md-6 col-sm-12">
+									<div class="callout callout-warning">
+										<h4>错误提示信息</h4>
+										<p>提示信息框没有默认类，只有基类和修饰类。默认的灰色警告框并没有多少意义。所以您要使用一种有意义的警告类。目前提供了成功、消息、警告或危险。</p>
+									</div>
+							    </div>
+							    <div class="col-md-6 col-sm-12">
+									<div class="callout callout-danger">
+										<h4>错误提示信息</h4>
+
+										<p>提示信息框没有默认类，只有基类和修饰类。默认的灰色警告框并没有多少意义。所以您要使用一种有意义的警告类。目前提供了成功、消息、警告或危险。</p>
+									</div>
+							    </div>
+							    <div class="col-md-6 col-sm-12">
+									<div class="callout callout-info">
+										<h4>错误提示信息</h4>
+
+										<p>提示信息框没有默认类，只有基类和修饰类。默认的灰色警告框并没有多少意义。所以您要使用一种有意义的警告类。目前提供了成功、消息、警告或危险。</p>
+									</div>
+							    </div>
+							    <div class="col-md-6 col-sm-12">
+									<div class="callout callout-success">
+										<h4>错误提示信息</h4>
+
+										<p>提示信息框没有默认类，只有基类和修饰类。默认的灰色警告框并没有多少意义。所以您要使用一种有意义的警告类。目前提供了成功、消息、警告或危险。</p>
+									</div>
+							    </div>
+							</div>
+							<!--/row-->
+							
+
+					    </div>
+					</div>
+					<!--/box-->
+
+			    </div>
+			</div>
+			<!--/row-->
+
+			<!--row-->
+			<div class="row">
+			    <div class="col-md-12">
+					<!--box-->
+					<div class="box box-primary">
+					    <div class="box-header">
+					    	<span class="text-primary mr-5"><i class="fa fa-refresh"></i></span>
+					    	<h3 class="box-title">进度条</h3>
+					    </div>
+					    <div class="box-body p-10">
+
+							<!--row-->
+							<div class="row">
+							    <div class="col-md-6 col-sm-12">
+
+									<div class="progress">
+										<div class="progress-bar progress-bar-primary" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 90%">
+											<span class="sr-only">90%</span>
+										</div>
+									</div>
+
+									<div class="progress">
+										<div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 40%">
+											<span class="sr-only">40%</span>
+										</div>
+									</div>
+
+									<div class="progress">
+										<div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" style="width: 20%">
+											<span class="sr-only">20%</span>
+										</div>
+									</div>
+
+									<div class="progress">
+										<div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%">
+											<span class="sr-only">60%</span>
+										</div>
+									</div>
+
+									<div class="progress">
+										<div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%">
+											<span class="sr-only">80%</span>
+										</div>
+									</div>
+							    </div>
+
+							    <div class="col-md-6 col-sm-12">
+									<p>默认尺寸</p>
+									<div class="progress">
+										<div class="progress-bar progress-bar-primary progress-bar-striped" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 40%">
+											<span class="sr-only">40% Complete (success)</span>
+										</div>
+									</div>
+									<p>小尺寸，样式: <code>.sm</code></p>
+									<div class="progress progress-sm active">
+										<div class="progress-bar progress-bar-success progress-bar-striped" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" style="width: 20%">
+											<span class="sr-only">20% Complete</span>
+										</div>
+									</div>
+									<p>最小尺寸，样式: <code>.xs</code></p>
+									<div class="progress progress-xs">
+										<div class="progress-bar progress-bar-warning progress-bar-striped" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%">
+											<span class="sr-only">60% Complete (warning)</span>
+										</div>
+									</div>
+									<p>超小尺寸，样式: <code>.xxs</code></p>
+									<div class="progress progress-xxs">
+										<div class="progress-bar progress-bar-danger progress-bar-striped" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%">
+											<span class="sr-only">60% Complete (warning)</span>
+										</div>
+									</div>
+							    </div>
+							</div>
+							<!--/row-->
+
+					    </div>
+					</div>
+					<!--/box-->
+			    </div>
+			</div>
+			<!--/row-->
+
+			<!--row-->
+			<div class="row">
+			    <div class="col-md-12">
+					<!--box-->
+					<div class="box box-primary">
+					    <div class="box-header">
+					    	<span class="text-primary mr-5"><i class="fa fa-tag"></i></span>
+					    	<h3 class="box-title">徽章</h3>
+					    </div>
+					    <div class="box-body p-10">
+
+							<!--row-->
+							<div class="row">
+							    <div class="col-md-6 col-sm-12">
+									<span class="badge badge-default">12</span>
+									<span class="badge badge-primary">12</span>
+									<span class="badge badge-success">12</span>
+									<span class="badge badge-info">12</span>
+									<span class="badge badge-warning">12</span>
+									<span class="badge badge-danger">12</span>
+							    </div>
+
+							    <div class="col-md-6 col-sm-12">
+									<span class="badge square badge-default">12</span>
+									<span class="badge square badge-primary">12</span>
+									<span class="badge square badge-success">12</span>
+									<span class="badge square badge-info">12</span>
+									<span class="badge square badge-warning">12</span>
+									<span class="badge square badge-danger">12</span>
+									
+							    </div>
+							</div>
+							<!--/row-->
+
+					    </div>
+					</div>
+					<!--/box-->
+			    </div>
+			</div>
+			<!--/row-->
+
+			<!--row-->
+			<div class="row">
+			    <div class="col-md-12">
+					<!--box-->
+					<div class="box box-primary">
+					    <div class="box-header">
+					    	<span class="text-primary mr-5"><i class="fa fa-home"></i></span>
+					    	<h3 class="box-title">面包屑</h3>
+					    </div>
+					    <div class="box-body p-10">
+
+							<!--row-->
+							<div class="row">
+							    <div class="col-md-6 col-sm-12">
+									<ol class="breadcrumb">
+										<li><a href="#fakelink">首页</a></li>
+										<li><a href="#fakelink">列表</a></li>
+										<li class="active">详情</li>
+									</ol>
+									<br />
+									<ol class="breadcrumb breadcrumb-default">
+										<li><a href="#fakelink">首页</a></li>
+										<li><a href="#fakelink">列表</a></li>
+										<li class="active">详情</li>
+									</ol>
+									<br />
+									<ol class="breadcrumb breadcrumb-primary">
+										<li><a href="#fakelink">首页</a></li>
+										<li><a href="#fakelink">列表</a></li>
+										<li class="active">详情</li>
+									</ol>
+									<br />
+									<ol class="breadcrumb breadcrumb-success">
+										<li><a href="#fakelink">首页</a></li>
+										<li><a href="#fakelink">列表</a></li>
+										<li class="active">详情</li>
+									</ol>
+									<br />
+									<ol class="breadcrumb breadcrumb-info">
+										<li><a href="#fakelink">首页</a></li>
+										<li><a href="#fakelink">列表</a></li>
+										<li class="active">详情</li>
+									</ol>
+									<br />
+									<ol class="breadcrumb breadcrumb-warning">
+										<li><a href="#fakelink">首页</a></li>
+										<li><a href="#fakelink">列表</a></li>
+										<li class="active">详情</li>
+									</ol>
+									<br />
+									<ol class="breadcrumb breadcrumb-danger">
+										<li><a href="#fakelink">首页</a></li>
+										<li><a href="#fakelink">列表</a></li>
+										<li class="active">详情</li>
+									</ol>
+
+							    </div>
+
+							    <div class="col-md-6 col-sm-12">
+									<ol class="breadcrumb">
+										<li><a href="#fakelink">首页</a></li>
+										<li><a href="#fakelink">列表</a></li>
+										<li class="active">详情</li>
+									</ol>
+									<br />
+									<ol class="breadcrumb square breadcrumb-default">
+										<li><a href="#fakelink">首页</a></li>
+										<li><a href="#fakelink">列表</a></li>
+										<li class="active">详情</li>
+									</ol>
+									<br />
+									<ol class="breadcrumb square breadcrumb-primary">
+										<li><a href="#fakelink">首页</a></li>
+										<li><a href="#fakelink">列表</a></li>
+										<li class="active">详情</li>
+									</ol>
+									<br />
+									<ol class="breadcrumb square breadcrumb-success">
+										<li><a href="#fakelink">首页</a></li>
+										<li><a href="#fakelink">列表</a></li>
+										<li class="active">详情</li>
+									</ol>
+									<br />
+									<ol class="breadcrumb square breadcrumb-info">
+										<li><a href="#fakelink">首页</a></li>
+										<li><a href="#fakelink">列表</a></li>
+										<li class="active">详情</li>
+									</ol>
+									<br />
+									<ol class="breadcrumb square breadcrumb-warning">
+										<li><a href="#fakelink">首页</a></li>
+										<li><a href="#fakelink">列表</a></li>
+										<li class="active">详情</li>
+									</ol>
+									<br />
+									<ol class="breadcrumb square breadcrumb-danger">
+										<li><a href="#fakelink">首页</a></li>
+										<li><a href="#fakelink">列表</a></li>
+										<li class="active">详情</li>
+									</ol>
+
+							    </div>
+							</div>
+							<!--/row-->
+
+					    </div>
+					</div>
+					<!--/box-->
+			    </div>
+			</div>
+			<!--/row-->
+
+			<!--row-->
+			<div class="row">
+			    <div class="col-md-12">
+					<!--box-->
+					<div class="box box-primary">
+					    <div class="box-header">
+					    	<span class="text-primary mr-5"><i class="fa fa-fast-forward"></i></span>
+					    	<h3 class="box-title">分页</h3>
+					    </div>
+					    <div class="box-body p-10">
+
+							<!--row-->
+							<div class="row">
+							    <div class="col-md-6 col-sm-12">
+									<ul class="pagination">
+										<li class="disabled"><a href="#fakelink">«</a></li>
+										<li class="disabled"><a href="#fakelink">‹</a></li>
+										<li class="active"><a href="#fakelink">1</a></li>
+										<li><a href="#fakelink">2</a></li>
+										<li><a href="#fakelink">3</a></li>
+										<li><a href="#fakelink">...</a></li>
+										<li><a href="#fakelink">15</a></li>
+										<li><a href="#fakelink">›</a></li>
+										<li><a href="#fakelink">»</a></li>
+									</ul>
+				                    
+									<ul class="pagination page-default">
+										<li class="disabled"><a href="#fakelink">«</a></li>
+										<li class="disabled"><a href="#fakelink">‹</a></li>
+										<li class="active"><a href="#fakelink">1</a></li>
+										<li><a href="#fakelink">2</a></li>
+										<li><a href="#fakelink">3</a></li>
+										<li><a href="#fakelink">...</a></li>
+										<li><a href="#fakelink">15</a></li>
+										<li><a href="#fakelink">›</a></li>
+										<li><a href="#fakelink">»</a></li>
+									</ul>
+				                    
+									<ul class="pagination page-primary">
+										<li class="disabled"><a href="#fakelink">«</a></li>
+										<li class="disabled"><a href="#fakelink">‹</a></li>
+										<li class="active"><a href="#fakelink">1</a></li>
+										<li><a href="#fakelink">2</a></li>
+										<li><a href="#fakelink">3</a></li>
+										<li><a href="#fakelink">...</a></li>
+										<li><a href="#fakelink">15</a></li>
+										<li><a href="#fakelink">›</a></li>
+										<li><a href="#fakelink">»</a></li>
+									</ul>
+				                    
+									<ul class="pagination page-success">
+										<li class="disabled"><a href="#fakelink">«</a></li>
+										<li class="disabled"><a href="#fakelink">‹</a></li>
+										<li class="active"><a href="#fakelink">1</a></li>
+										<li><a href="#fakelink">2</a></li>
+										<li><a href="#fakelink">3</a></li>
+										<li><a href="#fakelink">...</a></li>
+										<li><a href="#fakelink">15</a></li>
+										<li><a href="#fakelink">›</a></li>
+										<li><a href="#fakelink">»</a></li>
+									</ul>
+				                    
+									<ul class="pagination page-info">
+										<li class="disabled"><a href="#fakelink">«</a></li>
+										<li class="disabled"><a href="#fakelink">‹</a></li>
+										<li class="active"><a href="#fakelink">1</a></li>
+										<li><a href="#fakelink">2</a></li>
+										<li><a href="#fakelink">3</a></li>
+										<li><a href="#fakelink">...</a></li>
+										<li><a href="#fakelink">15</a></li>
+										<li><a href="#fakelink">›</a></li>
+										<li><a href="#fakelink">»</a></li>
+									</ul>
+				                    
+									<ul class="pagination page-warning">
+										<li class="disabled"><a href="#fakelink">«</a></li>
+										<li class="disabled"><a href="#fakelink">‹</a></li>
+										<li class="active"><a href="#fakelink">1</a></li>
+										<li><a href="#fakelink">2</a></li>
+										<li><a href="#fakelink">3</a></li>
+										<li><a href="#fakelink">...</a></li>
+										<li><a href="#fakelink">15</a></li>
+										<li><a href="#fakelink">›</a></li>
+										<li><a href="#fakelink">»</a></li>
+									</ul>
+				                    
+									<ul class="pagination page-danger">
+										<li class="disabled"><a href="#fakelink">«</a></li>
+										<li class="disabled"><a href="#fakelink">‹</a></li>
+										<li class="active"><a href="#fakelink">1</a></li>
+										<li><a href="#fakelink">2</a></li>
+										<li><a href="#fakelink">3</a></li>
+										<li><a href="#fakelink">...</a></li>
+										<li><a href="#fakelink">15</a></li>
+										<li><a href="#fakelink">›</a></li>
+										<li><a href="#fakelink">»</a></li>
+									</ul>
+
+							    </div>
+
+							    <div class="col-md-6 col-sm-12">
+									<ul class="pagination block-color">
+										<li class="disabled"><a href="#fakelink">«</a></li>
+										<li class="disabled"><a href="#fakelink">‹</a></li>
+										<li class="active"><a href="#fakelink">1</a></li>
+										<li><a href="#fakelink">2</a></li>
+										<li><a href="#fakelink">3</a></li>
+										<li><a href="#fakelink">...</a></li>
+										<li><a href="#fakelink">15</a></li>
+										<li><a href="#fakelink">›</a></li>
+										<li><a href="#fakelink">»</a></li>
+									</ul>
+				                    
+									<ul class="pagination page-default block-color">
+										<li class="disabled"><a href="#fakelink">«</a></li>
+										<li class="disabled"><a href="#fakelink">‹</a></li>
+										<li class="active"><a href="#fakelink">1</a></li>
+										<li><a href="#fakelink">2</a></li>
+										<li><a href="#fakelink">3</a></li>
+										<li><a href="#fakelink">...</a></li>
+										<li><a href="#fakelink">15</a></li>
+										<li><a href="#fakelink">›</a></li>
+										<li><a href="#fakelink">»</a></li>
+									</ul>
+				                    
+									<ul class="pagination page-primary block-color">
+										<li class="disabled"><a href="#fakelink">«</a></li>
+										<li class="disabled"><a href="#fakelink">‹</a></li>
+										<li class="active"><a href="#fakelink">1</a></li>
+										<li><a href="#fakelink">2</a></li>
+										<li><a href="#fakelink">3</a></li>
+										<li><a href="#fakelink">...</a></li>
+										<li><a href="#fakelink">15</a></li>
+										<li><a href="#fakelink">›</a></li>
+										<li><a href="#fakelink">»</a></li>
+									</ul>
+				                    
+									<ul class="pagination page-success block-color">
+										<li class="disabled"><a href="#fakelink">«</a></li>
+										<li class="disabled"><a href="#fakelink">‹</a></li>
+										<li class="active"><a href="#fakelink">1</a></li>
+										<li><a href="#fakelink">2</a></li>
+										<li><a href="#fakelink">3</a></li>
+										<li><a href="#fakelink">...</a></li>
+										<li><a href="#fakelink">15</a></li>
+										<li><a href="#fakelink">›</a></li>
+										<li><a href="#fakelink">»</a></li>
+									</ul>
+				                    
+									<ul class="pagination page-info block-color">
+										<li class="disabled"><a href="#fakelink">«</a></li>
+										<li class="disabled"><a href="#fakelink">‹</a></li>
+										<li class="active"><a href="#fakelink">1</a></li>
+										<li><a href="#fakelink">2</a></li>
+										<li><a href="#fakelink">3</a></li>
+										<li><a href="#fakelink">...</a></li>
+										<li><a href="#fakelink">15</a></li>
+										<li><a href="#fakelink">›</a></li>
+										<li><a href="#fakelink">»</a></li>
+									</ul>
+				                    
+									<ul class="pagination page-warning block-color">
+										<li class="disabled"><a href="#fakelink">«</a></li>
+										<li class="disabled"><a href="#fakelink">‹</a></li>
+										<li class="active"><a href="#fakelink">1</a></li>
+										<li><a href="#fakelink">2</a></li>
+										<li><a href="#fakelink">3</a></li>
+										<li><a href="#fakelink">...</a></li>
+										<li><a href="#fakelink">15</a></li>
+										<li><a href="#fakelink">›</a></li>
+										<li><a href="#fakelink">»</a></li>
+									</ul>
+				                    
+									<ul class="pagination page-danger block-color">
+										<li class="disabled"><a href="#fakelink">«</a></li>
+										<li class="disabled"><a href="#fakelink">‹</a></li>
+										<li class="active"><a href="#fakelink">1</a></li>
+										<li><a href="#fakelink">2</a></li>
+										<li><a href="#fakelink">3</a></li>
+										<li><a href="#fakelink">...</a></li>
+										<li><a href="#fakelink">15</a></li>
+										<li><a href="#fakelink">›</a></li>
+										<li><a href="#fakelink">»</a></li>
+									</ul>
+
+							    </div>
+							</div>
+							<!--/row-->
+
+					    </div>
+					</div>
+					<!--/box-->
+			    </div>
+			</div>
+			<!--/row-->
+
+			<!--row-->
+			<div class="row">
+			    <div class="col-md-12">
+					<!--box-->
+					<div class="box box-primary">
+					    <div class="box-header">
+					    	<span class="text-primary mr-5"><i class="fa fa-forward"></i></span>
+					    	<h3 class="box-title">分页样式</h3>
+					    </div>
+					    <div class="box-body p-10">
+
+							<!--row-->
+							<div class="row">
+							    <div class="col-md-6 col-sm-12">
+									<ul class="pagination square">
+										<li class="disabled"><a href="#fakelink">«</a></li>
+										<li class="disabled"><a href="#fakelink">‹</a></li>
+										<li class="active"><a href="#fakelink">1</a></li>
+										<li><a href="#fakelink">2</a></li>
+										<li><a href="#fakelink">3</a></li>
+										<li><a href="#fakelink">...</a></li>
+										<li><a href="#fakelink">15</a></li>
+										<li><a href="#fakelink">›</a></li>
+										<li><a href="#fakelink">»</a></li>
+									</ul>
+									
+									<br />
+
+									<ul class="pagination separated">
+										<li class="disabled"><a href="#fakelink">«</a></li>
+										<li class="disabled"><a href="#fakelink">‹</a></li>
+										<li class="active"><a href="#fakelink">1</a></li>
+										<li><a href="#fakelink">2</a></li>
+										<li><a href="#fakelink">3</a></li>
+										<li><a href="#fakelink">...</a></li>
+										<li><a href="#fakelink">15</a></li>
+										<li><a href="#fakelink">›</a></li>
+										<li><a href="#fakelink">»</a></li>
+									</ul>
+									
+									<br />
+
+									<ul class="pagination separated-square">
+										<li class="disabled"><a href="#fakelink">«</a></li>
+										<li class="disabled"><a href="#fakelink">‹</a></li>
+										<li class="active"><a href="#fakelink">1</a></li>
+										<li><a href="#fakelink">2</a></li>
+										<li><a href="#fakelink">3</a></li>
+										<li><a href="#fakelink">...</a></li>
+										<li><a href="#fakelink">15</a></li>
+										<li><a href="#fakelink">›</a></li>
+										<li><a href="#fakelink">»</a></li>
+									</ul>
+
+							    </div>
+
+							    <div class="col-md-6 col-sm-12">
+									<ul class="pager page-primary">
+										<li class="previous"><a href="#fakelink"><i class="fa fa-angle-left"></i> 上一页</a></li>
+										<li class="next"><a href="#fakelink">下一页 <i class="fa fa-angle-right"></i></a></li>
+									</ul>
+
+									<br />
+
+									<ul class="pager page-primary block-color">
+										<li class="previous"><a href="#fakelink"><i class="fa fa-angle-left"></i> 上一页</a></li>
+										<li class="next"><a href="#fakelink">下一页 <i class="fa fa-angle-right"></i></a></li>
+									</ul>
+
+									<br />
+
+									<ul class="pager square">
+										<li class="previous"><a href="#fakelink"><i class="fa fa-angle-left"></i> 上一页</a></li>
+										<li class="next"><a href="#fakelink">下一页 <i class="fa fa-angle-right"></i></a></li>
+									</ul>
+
+							    </div>
+							</div>
+							<!--/row-->
+
+					    </div>
+					</div>
+					<!--/box-->
+			    </div>
+			</div>
+			<!--/row-->
+
+
+		</section>
+		<!--/content-->
+
+	</div>
+	<!--/content-wrapper-->
+
+	<!--main-footer-->
+	<footer class="main-footer">
+		<div class="pull-right hidden-xs">iDvert Frame ver 1.0</div>
+		<strong>Copyright &copy; 2016 <a href="#">iDvert</a>.</strong> All rights reserved.
+	</footer>
+	<!--/main-footer-->
+
+</div>
+<!--/wrapper-->
+
+
+<!-- Script -->
+<script src="core/plugins/jQuery/jquery-2.2.3.min.js"></script>
+<script src="core/bootstrap/js/bootstrap.min.js"></script>
+<script src="core/plugins/slimScroll/jquery.slimscroll.min.js"></script>
+<script src="core/dist/js/app.min.js"></script>
+<script src="core/dist/js/ivt.min.js"></script>
+</body>
+</html>

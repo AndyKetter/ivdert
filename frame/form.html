@@ -1,0 +1,1301 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<title>Form - iDvert Frame</title>
+<meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport" />
+<!--Style-->
+<link rel="stylesheet" href="core/bootstrap/css/bootstrap.min.css" />
+<link rel="stylesheet" href="core/dist/css/font-awesome.min.css" />
+<link rel="stylesheet" href="core/plugins/iCheck/all.css">
+<link rel="stylesheet" href="core/plugins/select2/select2.min.css">
+<link rel="stylesheet" href="core/dist/css/AdminLTE.min.css" />
+<link rel="stylesheet" href="core/dist/css/skins/skin-ivt-light.min.css">
+<link rel="stylesheet" href="core/dist/css/doc.css">
+<!--[if lt IE 9]>
+<script src="core/dits/js/html5shiv.min.js"></script>
+<script src="core/dits/js/respond.min.js"></script>
+<![endif]-->
+</head>
+
+<body class="hold-transition skin-ivt-light sidebar-mini">
+<!--wrapper-->
+<div class="wrapper">
+
+ 	<!--main-header-->
+ 	<header class="main-header">
+
+ 	    <!--logo-->
+ 	    <a href="#" class="logo">
+ 	    	<span class="logo-lg">iDvert Frame</span>
+ 	    	<span class="logo-mini">ivt</span>
+ 	    </a>
+ 	    <!--/logo-->
+
+ 	    <!--navbar-->
+ 	    <nav class="navbar navbar-static-top" role="navigation">
+ 	    	<!--sidebar-toggle-->
+ 	    	<a href="#" class="sidebar-toggle" data-toggle="offcanvas" role="button">
+		    	<span class="sr-only">Toggle navigation</span>
+		    </a>
+ 	    	<!--/sidebar-toggle-->
+
+ 	    	<!--navbar-custom-menu-->
+ 	        <div class="navbar-custom-menu">
+				<ul class="nav navbar-nav">
+					<!-- <li class="dropdown messages-menu">
+						<a href="#">
+							<i class="fa fa-envelope-o"></i>
+							<span class="label label-success">4</span>
+						</a>
+					</li> -->
+					<li class="dropdown user user-menu dropdown-sm">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+							<img src="core/dist/img/user2-160x160.jpg" class="user-image" alt="User Image">
+							<span class="hidden-xs">Sim</span>
+						</a>
+					</li>
+				</ul>
+ 	        </div>
+ 	    	<!--navbar-custom-menu-->
+ 	    </nav>
+ 	    <!--/navbar-->
+
+ 	</header>
+ 	<!--/main-header-->
+	
+	<!--main-sidebar-->
+	<aside class="main-sidebar">
+		<section class="sidebar">
+			<!--sidebar-menu-->
+		    <ul class="sidebar-menu">
+				<li class="header">导航</li>
+				<li class="active"><a href="main.html"><i class="fa fa-dashboard"></i> <span>总览</span></a></li>
+				<li class="treeview">
+					<a href="#"><i class="fa fa-laptop"></i> <span>UI组件</span>
+						<span class="pull-right-container">
+							<i class="fa fa-angle-left pull-right"></i>
+						</span>
+					</a>
+					<ul class="treeview-menu">
+						<li><a href="general.html"><i class="fa fa-circle-o"></i> 基础组件</a></li>
+						<li><a href="button.html"><i class="fa fa-circle-o"></i> 按钮</a></li>
+						<li><a href="modal.html"><i class="fa fa-circle-o"></i> 弹层</a></li>
+						<li><a href="tips.html"><i class="fa fa-circle-o"></i> 消息</a></li>
+						<li><a href="collapse.html"><i class="fa fa-circle-o"></i> 折叠</a></li>
+						<li><a href="dragdrop.html"><i class="fa fa-circle-o"></i> 拖拽</a></li>
+						<li><a href="scrollbar.html"><i class="fa fa-circle-o"></i> 滚动条</a></li>
+						<li><a href="timeline.html"><i class="fa fa-circle-o"></i> 时间轴</a></li>
+						<li><a href="list-group.html"><i class="fa fa-circle-o"></i> 列表</a></li>
+						<li><a href="nestable.html"><i class="fa fa-circle-o"></i> 拖拽排序</a></li>
+						<li><a href="tabs.html"><i class="fa fa-circle-o"></i> 标签页</a></li>
+						<li><a href="tree.html"><i class="fa fa-circle-o"></i> 树形菜单</a></li>
+						<li><a href="typography.html"><i class="fa fa-circle-o"></i> 排版</a></li>
+						<li><a href="grid.html"><i class="fa fa-circle-o"></i> 栅格</a></li>
+						<li><a href="icon.html"><i class="fa fa-circle-o"></i> 图标</a></li>
+					</ul>
+				</li>
+				<li class="treeview">
+					<a href="#"><i class="fa fa-cube"></i> <span>组件</span>
+						<span class="pull-right-container">
+							<i class="fa fa-angle-left pull-right"></i>
+						</span>
+					</a>
+					<ul class="treeview-menu">
+						<li><a href="widget.html"><i class="fa fa-circle-o"></i> 组件</a></li>
+						<li><a href="box-panel.html"><i class="fa fa-circle-o"></i> 容器面板</a></li>
+					</ul>
+				</li>
+				<li class="treeview">
+					<a href="#"><i class="fa fa-image"></i> <span>图片</span>
+						<span class="pull-right-container">
+							<i class="fa fa-angle-left pull-right"></i>
+						</span>
+					</a>
+					<ul class="treeview-menu">
+						<li><a href="carousel.html"><i class="fa fa-circle-o"></i> 轮播图</a></li>
+						<li><a href="card.html"><i class="fa fa-circle-o"></i> 卡片组</a></li>
+						<li><a href="lightbox.html"><i class="fa fa-circle-o"></i> lightbox</a></li>
+						<li><a href="wookmark.html"><i class="fa fa-circle-o"></i> 瀑布流</a></li>
+					</ul>
+				</li>
+				<!-- <li><a href="echart.html"><i class="fa fa-area-chart"></i> <span>图表</span></a></li> -->
+				<li class="treeview">
+					<a href="#"><i class="fa fa-edit"></i> <span>表单</span>
+						<span class="pull-right-container">
+							<i class="fa fa-angle-left pull-right"></i>
+						</span>
+					</a>
+					<ul class="treeview-menu">
+						<li><a href="form.html"><i class="fa fa-circle-o"></i> 通用表单组件</a></li>
+						<li><a href="validform.html"><i class="fa fa-circle-o"></i> 表单验证</a></li>
+					</ul>
+				</li>
+				<li class="treeview">
+					<a href="#"><i class="fa fa-table"></i> <span>表格</span>
+						<span class="pull-right-container">
+							<i class="fa fa-angle-left pull-right"></i>
+						</span>
+					</a>
+					<ul class="treeview-menu">
+						<li><a href="table.html"><i class="fa fa-circle-o"></i> 基础表格</a></li>
+						<li><a href="data-table.html"><i class="fa fa-circle-o"></i> DataTable</a></li>
+						<li><a href="bootstrap-table.html"><i class="fa fa-circle-o"></i> Bootstrap Table</a></li>
+					</ul>
+				</li>
+				<li class="treeview">
+					<a href="#"><i class="fa fa-file-o"></i> <span>页面</span>
+						<span class="pull-right-container">
+							<i class="fa fa-angle-left pull-right"></i>
+						</span>
+					</a>
+					<ul class="treeview-menu">
+						<li><a href="blank.html"><i class="fa fa-circle-o"></i> 空白页面</a></li>
+						<li><a href="500.html"><i class="fa fa-circle-o"></i> 500</a></li>
+						<li><a href="404.html"><i class="fa fa-circle-o"></i> 404</a></li>
+					</ul>
+				</li>
+				<li><a href="helper-classes.html"><i class="fa fa-wrench"></i> <span>辅助类</span></a></li>
+		    </ul>
+			<!--/sidebar-menu-->
+		</section>
+	</aside>
+	<!--/main-sidebar-->
+
+	<!--content-wrapper-->
+	<div class="content-wrapper">
+		<!--content-header-->
+		<section class="content-header">
+			<!--content-header-title-->
+			<h1>表单</h1>
+			<!--/content-header-title-->
+
+			<!---breadcrumb-->
+			<ol class="breadcrumb">
+				<li><a href="#"><i class="fa fa-dashboard"></i> 控制面板</a></li>
+				<li class="active">表单</li>
+			</ol>
+			<!---/breadcrumb-->
+		</section>
+		<!--/content-header-->
+		
+		<!--content-->
+		<section class="content">
+			
+			<!--row-->
+			<div class="row">
+
+			    <div class="col-md-4 col-sm-12">
+					<!--box-->
+					<div class="box box-primary">
+					    <div class="box-header">
+					    	<span class="text-primary mr-5"><i class="fa fa-table"></i></span>
+					    	<h3 class="box-title">默认文本框</h3>
+					    </div>
+					    <div class="box-body p-10">
+							<div class="form-group">
+								<label>标题</label>
+								<input type="text" class="form-control" placeholder="请输入文本框内容">
+								<p class="help-block">文本框帮助内容</p>
+							</div>
+
+							<div class="form-group">
+								<label>密码</label>
+								<input type="password" class="form-control" placeholder="请输入密码">
+							</div>
+		                    
+		                    <div class="form-group">
+								<label>圆角文本框</label>
+								<input type="text" class="form-control rounded" placeholder="请输入内容">
+							</div>
+						</div>
+					</div>
+					<!--/box-->
+			    </div>
+
+			    <div class="col-md-4 col-sm-12">
+					<!--box-->
+					<div class="box box-primary">
+					    <div class="box-header">
+					    	<span class="text-primary mr-5"><i class="fa fa-table"></i></span>
+					    	<h3 class="box-title">文本框尺寸</h3>
+					    </div>
+					    <div class="box-body">
+							<div class="form-group">
+								<label>小尺寸文本框</label>
+								<input type="text" class="form-control input-sm" placeholder="请输入内容">
+							</div>
+
+							<div class="form-group">
+								<label>默认尺寸文本框</label>
+								<input type="text" class="form-control" placeholder="请输入内容">
+							</div>
+		                    
+		                    <div class="form-group">
+								<label>大尺寸文本框</label>
+								<input type="text" class="form-control  input-lg" placeholder="请输入内容">
+							</div>
+						</div>
+					</div>
+					<!--/box-->
+			    </div>
+
+			    <div class="col-md-4 col-sm-12">
+					<!--box-->
+					<div class="box box-primary">
+					    <div class="box-header">
+					    	<span class="text-primary mr-5"><i class="fa fa-table"></i></span>
+					    	<h3 class="box-title">文本框样式</h3>
+					    </div>
+					    <div class="box-body">
+							<div class="form-group">
+								<label>禁用文本框</label>
+								<input type="text" class="form-control" placeholder="请输入内容" disabled>
+							</div>
+
+							<div class="form-group">
+								<label>只读文本框</label>
+								<input type="text" class="form-control" placeholder="请输入内容" readonly>
+							</div>
+		                    
+		                    <div class="form-group">
+								<label>粗边文本框</label>
+								<input type="text" class="form-control bold-border" placeholder="请输入内容">
+							</div>
+						</div>
+					</div>
+					<!--/box-->
+			    </div>
+
+			</div>
+			<!--/row-->
+			
+			<!--row-->
+			<div class="row">
+
+			    <div class="col-md-6 col-sm-12 mb-10">
+					<!--box-->
+					<div class="box box-primary">
+					    <div class="box-header">
+					    	<span class="text-primary mr-5"><i class="fa fa-table"></i></span>
+					    	<h3 class="box-title">默认文本域</h3>
+					    </div>
+					    <div class="box-body">
+							<div class="form-group">
+								<label>文本域</label>
+								<textarea class="form-control"></textarea>
+							</div>
+		                    
+		                   	<div class="form-group">
+								<label>不能调整文本域</label>
+								<textarea class="form-control no-resize"></textarea>
+							</div>
+						</div>
+					</div>
+					<!--/box-->
+			    </div>
+
+			    <div class="col-md-6 col-sm-12 mb-10">
+					<!--box-->
+					<div class="box box-primary">
+					    <div class="box-header">
+					    	<span class="text-primary mr-5"><i class="fa fa-table"></i></span>
+					    	<h3 class="box-title">文本域样式</h3>
+					    </div>
+					    <div class="box-body">
+							<div class="form-group">
+								<label>圆角文本域</label>
+								<textarea class="form-control rounded"></textarea>
+							</div>
+		                    
+		                   	<div class="form-group">
+								<label>粗边文本域</label>
+								<textarea class="form-control bold-border"></textarea>
+							</div>
+						</div>
+					</div>
+					<!--/box-->
+			    </div>
+
+			</div>
+			<!--/row-->
+			
+			<!--row-->
+			<div class="row">
+
+			    <div class="col-md-6 col-sm-12 mb-10">
+					<!--box-->
+					<div class="box box-primary">
+					    <div class="box-header">
+					    	<span class="text-primary mr-5"><i class="fa fa-table"></i></span>
+					    	<h3 class="box-title">默认文本框组</h3>
+					    </div>
+					    <div class="box-body">
+							<div class="form-group">
+		                        <label>左文本框组</label>
+		                        <div class="input-group">
+		                            <span class="input-group-addon"><i class="fa fa-calendar"></i></span>
+		                            <input type="text" class="form-control" placeholder="请选择日期">
+		                        </div>
+		                    </div>
+		                    
+		                    <div class="form-group">
+		                        <label>右文本框组</label>
+		                        <div class="input-group">
+		                            <input type="text" class="form-control" placeholder="请选择日期">
+		                            <span class="input-group-addon"><i class="fa fa-calendar"></i></span>
+		                        </div>
+		                    </div>
+						</div>
+					</div>
+					<!--/box-->
+			    </div>
+
+			    <div class="col-md-6 col-sm-12 mb-10">
+					<!--box-->
+					<div class="box box-primary">
+					    <div class="box-header">
+					    	<span class="text-primary mr-5"><i class="fa fa-table"></i></span>
+					    	<h3 class="box-title">多彩文本框组</h3>
+					    </div>
+					    <div class="box-body">
+
+					    	<div class="row">
+								<div class="col-md-4">
+
+									<div class="form-group">
+				                        <label>默认</label>
+				                        <div class="input-group">
+				                            <span class="input-group-addon input-group-default"><i class="fa fa-calendar"></i></span>
+				                            <input type="text" class="form-control" placeholder="请选择日期">
+				                        </div>
+				                    </div>
+
+									<div class="form-group">
+				                        <label>主要</label>
+				                        <div class="input-group">
+				                            <span class="input-group-addon input-group-primary"><i class="fa fa-calendar"></i></span>
+				                            <input type="text" class="form-control" placeholder="请选择日期">
+				                        </div>
+				                    </div>
+
+								</div>
+								<div class="col-md-4">
+				                    
+				                    <div class="form-group">
+				                        <label>成功</label>
+				                        <div class="input-group">
+				                            <span class="input-group-addon input-group-success"><i class="fa fa-calendar"></i></span>
+				                            <input type="text" class="form-control" placeholder="请选择日期">
+				                        </div>
+				                    </div>
+
+									<div class="form-group">
+				                        <label>信息</label>
+				                        <div class="input-group">
+				                            <span class="input-group-addon input-group-info"><i class="fa fa-calendar"></i></span>
+				                            <input type="text" class="form-control" placeholder="请选择日期">
+				                        </div>
+				                    </div>
+								</div>
+								<div class="col-md-4">
+				                    
+				                    <div class="form-group">
+				                        <label>警告</label>
+				                        <div class="input-group">
+				                            <span class="input-group-addon input-group-warning"><i class="fa fa-calendar"></i></span>
+				                            <input type="text" class="form-control" placeholder="请选择日期">
+				                        </div>
+				                    </div>
+
+									<div class="form-group">
+				                        <label>错误</label>
+				                        <div class="input-group">
+				                            <span class="input-group-addon input-group-danger"><i class="fa fa-calendar"></i></span>
+				                            <input type="text" class="form-control" placeholder="请选择日期">
+				                        </div>
+				                    </div>
+								</div>
+
+							</div>
+						</div>
+					</div>
+					<!--/box-->
+			    </div>
+
+			</div>
+			<!--/row-->
+			
+			<!--row-->
+			<div class="row">
+
+			    <div class="col-md-4 col-sm-12 mb-10">
+					<!--box-->
+					<div class="box box-primary">
+					    <div class="box-header">
+					    	<h3 class="box-title">默认验证文本框</h3>
+					    </div>
+					    <div class="box-body">
+            
+		                    <div class="form-group has-success">
+		                        <label class="control-label" for="inputSuccess1">成功</label>
+		                        <input type="text" class="form-control" id="inputSuccess1">
+		                    </div>
+		            
+		                    <div class="form-group has-warning">
+		                        <label class="control-label" for="inputSuccess1">警告</label>
+		                        <input type="text" class="form-control" id="inputSuccess1">
+		                    </div>
+		            
+		                    <div class="form-group has-error">
+		                        <label class="control-label" for="inputSuccess1">错误</label>
+		                        <input type="text" class="form-control" id="inputSuccess1">
+		                    </div>
+							
+						</div>
+					</div>
+					<!--/box-->
+			    </div>
+
+			    <div class="col-md-4 col-sm-12 mb-10">
+					<!--box-->
+					<div class="box box-primary">
+					    <div class="box-header">
+					    	<h3 class="box-title">多彩验证文本框-后图标</h3>
+					    </div>
+					    <div class="box-body">
+            
+		                    <div class="form-group has-success has-feedback">
+		                        <label class="control-label" for="inputSuccess2">成功</label>
+		                        <input type="text" class="form-control" id="inputSuccess2">
+		                        <span class="fa fa-check form-control-feedback"></span>
+		                    </div>
+		            
+		                    <div class="form-group has-warning has-feedback">
+		                        <label class="control-label" for="inputSuccess2">警告</label>
+		                        <input type="text" class="form-control" id="inputSuccess2">
+		                        <span class="fa fa-exclamation-triangle form-control-feedback"></span>
+		                    </div>
+		            
+		                    <div class="form-group has-error has-feedback">
+		                        <label class="control-label" for="inputSuccess2">错误</label>
+		                        <input type="text" class="form-control" id="inputSuccess2">
+		                        <span class="fa fa-times form-control-feedback"></span>
+		                    </div>
+							
+						</div>
+					</div>
+					<!--/box-->
+			    </div>
+
+			    <div class="col-md-4 col-sm-12 mb-10">
+					<!--box-->
+					<div class="box box-primary">
+					    <div class="box-header">
+					    	<h3 class="box-title">多彩文本框组-前图标</h3>
+					    </div>
+					    <div class="box-body">
+            
+		                    <div class="form-group has-success has-feedback left-feedback">
+		                        <label class="control-label" for="inputSuccess2">成功</label>
+		                        <input type="text" class="form-control" id="inputSuccess2">
+		                        <span class="fa fa-check form-control-feedback"></span>
+		                    </div>
+		            
+		                    <div class="form-group has-warning has-feedback left-feedback">
+		                        <label class="control-label" for="inputSuccess2">警告</label>
+		                        <input type="text" class="form-control" id="inputSuccess2">
+		                        <span class="fa fa-exclamation-triangle form-control-feedback"></span>
+		                    </div>
+		            
+		                    <div class="form-group has-error has-feedback left-feedback">
+		                        <label class="control-label" for="inputSuccess2">错误</label>
+		                        <input type="text" class="form-control" id="inputSuccess2">
+		                        <span class="fa fa-times form-control-feedback"></span>
+		                    </div>
+							
+						</div>
+					</div>
+					<!--/box-->
+			    </div>
+
+			</div>
+			<!--/row-->
+			
+			<!--row-->
+			<div class="row">
+
+			    <div class="col-md-6 col-sm-12">
+					<!--box-->
+					<div class="box box-primary">
+					    <div class="box-header">
+					    	<span class="text-primary mr-5"><i class="fa fa-check-circle-o"></i></span>
+					    	<h3 class="box-title">
+					    		单选&多选
+								<span class="text-sm ml-10"><a href="http://www.bootcss.com/p/icheck/" target="_blank"><i class="fa fa-globe"></i> 官方网站</a></span>
+					    	</h3>
+					    </div>
+					    <div class="box-body">
+					    	<div class="row">
+								<div class="col-md-4">
+									<div class="form-group">
+										<label class="mr-10">
+											<input type="checkbox" class="minimal" checked> 已选
+										</label>
+										<label class="mr-10">
+											<input type="checkbox" class="minimal"> 未选
+										</label>
+										<label class="mr-10">
+											<input type="checkbox" class="minimal" disabled> 禁用
+										</label>
+									</div>
+									<!-- radio -->
+									<div class="form-group">
+										<label class="mr-10">
+											<input type="radio" name="r1" class="minimal" checked> 已选
+										</label>
+										<label class="mr-10">
+											<input type="radio" name="r1" class="minimal"> 未选
+										</label class="mr-10">
+										<label>
+											<input type="radio" name="r1" class="minimal" disabled> 禁用
+										</label>
+									</div>
+								</div>
+
+								<div class="col-md-4">
+									<div class="form-group">
+										<label>
+											<input type="checkbox" class="minimal-red" checked> 已选
+										</label>
+										<label>
+											<input type="checkbox" class="minimal-red"> 未选
+										</label>
+										<label>
+											<input type="checkbox" class="minimal-red" disabled> 禁用
+										</label>
+									</div>
+
+									<!-- radio -->
+									<div class="form-group">
+										<label>
+											<input type="radio" name="r2" class="minimal-red" checked> 已选
+										</label>
+										<label>
+											<input type="radio" name="r2" class="minimal-red"> 未选
+										</label>
+										<label>
+											<input type="radio" name="r2" class="minimal-red" disabled> 禁用
+										</label>
+									</div>
+								</div>
+
+								<div class="col-md-4">
+									<div class="form-group">
+										<label>
+											<input type="checkbox" class="flat-red" checked> 已选
+										</label>
+										<label>
+											<input type="checkbox" class="flat-red"> 未选
+										</label>
+										<label>
+											<input type="checkbox" class="flat-red" disabled> 禁用
+										</label>
+									</div>
+
+									<!-- radio -->
+									<div class="form-group">
+										<label>
+											<input type="radio" name="r3" class="flat-red" checked> 已选
+										</label>
+										<label>
+											<input type="radio" name="r3" class="flat-red"> 未选
+										</label>
+										<label>
+											<input type="radio" name="r3" class="flat-red" disabled> 禁用
+										</label>
+									</div>
+								</div>
+
+							</div>
+						</div>
+					</div>
+					<!--/box-->
+
+					<!--box-->
+					<div class="box box-primary">
+					    <div class="box-header">
+					    	<span class="text-primary mr-5"><i class="fa fa-check-square"></i></span>
+					    	<h3 class="box-title">
+					    		块状点选&多选
+								<span class="text-sm ml-10"><a href="https://github.com/fntneves/jquery-labelauty" target="_blank"><i class="fa fa-globe"></i> 官方网站</a></span>
+					    	</h3>
+					    </div>
+					    <div class="box-body">
+					    
+							<ul class="labelauty-group">
+		                        <li><input type="radio" name="radio" data-toggle="labelauty" data-labelauty="视觉设计师"></li>
+		                        <li><input type="radio" name="radio" data-toggle="labelauty" data-labelauty="交互设计师"></li>
+		                        <li><input type="radio" name="radio" data-toggle="labelauty" data-labelauty="前端工程师"></li>
+		                        <li><input type="radio" name="radio" data-toggle="labelauty" data-labelauty="数据分析师"></li>
+		                        <li><input type="radio" name="radio" data-toggle="labelauty" data-labelauty="不可用" disabled></li>
+		                    </ul>
+		                    
+		                    <ul class="labelauty-group margin-top-20">
+		                        <li><input type="checkbox" name="checkbox" data-toggle="labelauty" disabled checked data-labelauty="HTML"></li>
+		                        <li><input type="checkbox" name="checkbox" data-toggle="labelauty" data-labelauty="CSS"></li>
+		                        <li><input type="checkbox" name="checkbox" data-toggle="labelauty" data-labelauty="JavaScript"></li>
+		                        <li><input type="checkbox" name="checkbox" data-toggle="labelauty" data-labelauty="SEO"></li>
+		                        <li><input type="checkbox" name="checkbox" data-toggle="labelauty" data-labelauty="PHP"></li>
+		                        <li><input type="checkbox" name="checkbox" data-toggle="labelauty" data-labelauty="JAVA"></li>
+		                        <li><input type="checkbox" name="checkbox" data-toggle="labelauty" data-labelauty=".NET"></li>
+
+		                    </ul>
+
+						</div>
+					</div>
+					<!--/box-->
+			    </div>
+
+			    <div class="col-md-6 col-sm-12">
+					<!--box-->
+					<div class="box box-primary">
+					    <div class="box-header">
+					    	<span class="text-primary mr-5"><i class="fa fa-toggle-down"></i></span>
+					    	<h3 class="box-title">
+					    		下拉列表
+								<span class="text-sm ml-10"><a href="https://select2.github.io/" target="_blank"><i class="fa fa-globe"></i> 官方网站</a></span>
+					    	</h3>
+					    </div>
+					    <div class="box-body">
+                    
+		                    <div class="form-group">
+		                        <label>下拉选择</label>
+		                        <select class="form-control select" tabindex="2">
+		                            <option value="Empty">请选择城市</option>
+		                            <option value="United States">United States</option>
+		                            <option value="United Kingdom">United Kingdom</option>
+		                            <option value="Afghanistan">Afghanistan</option>
+		                            <option value="Aland Islands">Aland Islands</option>
+		                            <option value="Albania">Albania</option>
+		                            <option value="Algeria">Algeria</option>
+		                            <option value="American Samoa">American Samoa</option>
+		                            <option value="Andorra">Andorra</option>
+		                            <option value="Angola">Angola</option>
+		                            <option value="Anguilla">Anguilla</option>
+		                            <option value="Antarctica">Antarctica</option>
+		                            <option value="Antigua and Barbuda">Antigua and Barbuda</option>
+		                            <option value="Argentina">Argentina</option>
+		                            <option value="Armenia">Armenia</option>
+		                            <option value="Aruba">Aruba</option>
+		                            <option value="Australia">Australia</option>
+		                            <option value="Austria">Austria</option>
+		                            <option value="Azerbaijan">Azerbaijan</option>
+		                            <option value="Bahamas">Bahamas</option>
+		                            <option value="Bahrain">Bahrain</option>
+		                            <option value="Bangladesh">Bangladesh</option>
+		                            <option value="Barbados">Barbados</option>
+		                            <option value="Belarus">Belarus</option>
+		                            <option value="Belgium">Belgium</option>
+		                            <option value="Belize">Belize</option>
+		                            <option value="Benin">Benin</option>
+		                            <option value="Bermuda">Bermuda</option>
+		                            <option value="Bhutan">Bhutan</option>
+		                        </select>
+		                    </div>
+		                    
+		                    <div class="form-group">
+		                        <label>长内容项下拉选择</label>
+		                        <select class="form-control select" tabindex="3">
+		                            <option value="">这里是下拉选择中的选项，看看够不够长，不够长不够长不够长不够长不够长不够长不够长不够长不够长不够长不够长不够长不够长不够长不够长不够长不够长不够长不够长不够长不够长不够长不够长不够长</option>
+		                            <option selected value="United States">United States</option>
+		                            <option value="United Kingdom">United Kingdom</option>
+		                            <option value="Afghanistan">Afghanistan</option>
+		                            <option value="Aland Islands">Aland Islands</option>
+		                            <option value="Albania">Albania</option>
+		                            <option value="Algeria">Algeria</option>
+		                            <option value="American Samoa">American Samoa</option>
+		                            <option value="Andorra">Andorra</option>
+		                            <option value="Angola">Angola</option>
+		                            <option value="Anguilla">Anguilla</option>
+		                            <option value="Antarctica">Antarctica</option>
+		                            <option value="Antigua and Barbuda">Antigua and Barbuda</option>
+		                            <option value="Argentina">Argentina</option>
+		                            <option value="Armenia">Armenia</option>
+		                            <option value="Aruba">Aruba</option>
+		                            <option value="Australia">Australia</option>
+		                            <option value="Austria">Austria</option>
+		                            <option value="Azerbaijan">Azerbaijan</option>
+		                            <option value="Bahamas">Bahamas</option>
+		                            <option value="Bahrain">Bahrain</option>
+		                            <option value="Bangladesh">Bangladesh</option>
+		                            <option value="Barbados">Barbados</option>
+		                            <option value="Belarus">Belarus</option>
+		                            <option value="Belgium">Belgium</option>
+		                            <option value="Belize">Belize</option>
+		                            <option value="Benin">Benin</option>
+		                            <option value="Bermuda">Bermuda</option>
+		                            <option value="Bhutan">Bhutan</option>
+		                        </select>
+		                    </div>
+		                    
+		                    <div class="form-group">
+		                        <label>禁用下拉选择</label>
+		                        <select class="form-control select" tabindex="4" disabled>
+		                            <option value="">这里是下拉选择中的选项，看看够不够长，不够长不够长不够长不够长不够长不够长不够长不够长不够长不够长不够长不够长不够长不够长不够长不够长不够长不够长不够长不够长不够长不够长不够长不够长</option>
+		                            <option selected value="United States">United States</option>
+		                            <option value="United Kingdom">United Kingdom</option>
+		                            <option value="Afghanistan">Afghanistan</option>
+		                            <option value="Aland Islands">Aland Islands</option>
+		                            <option value="Albania">Albania</option>
+		                            <option value="Algeria">Algeria</option>
+		                            <option value="American Samoa">American Samoa</option>
+		                            <option value="Andorra">Andorra</option>
+		                            <option value="Angola">Angola</option>
+		                            <option value="Anguilla">Anguilla</option>
+		                            <option value="Antarctica">Antarctica</option>
+		                            <option value="Antigua and Barbuda">Antigua and Barbuda</option>
+		                            <option value="Argentina">Argentina</option>
+		                            <option value="Armenia">Armenia</option>
+		                            <option value="Aruba">Aruba</option>
+		                            <option value="Australia">Australia</option>
+		                            <option value="Austria">Austria</option>
+		                            <option value="Azerbaijan">Azerbaijan</option>
+		                            <option value="Bahamas">Bahamas</option>
+		                            <option value="Bahrain">Bahrain</option>
+		                            <option value="Bangladesh">Bangladesh</option>
+		                            <option value="Barbados">Barbados</option>
+		                            <option value="Belarus">Belarus</option>
+		                            <option value="Belgium">Belgium</option>
+		                            <option value="Belize">Belize</option>
+		                            <option value="Benin">Benin</option>
+		                            <option value="Bermuda">Bermuda</option>
+		                            <option value="Bhutan">Bhutan</option>
+		                        </select>
+		                    </div>
+
+						</div>
+					</div>
+					<!--/box-->
+			    </div>
+
+			</div>
+			<!--/row-->
+
+			<!--row-->
+			<div class="row">
+			
+			    <div class="col-md-6 col-sm-12">
+					<!--box-->
+					<div class="box box-primary">
+					    <div class="box-header">
+					    	<h3 class="box-title">按钮组</h3>
+					    </div>
+					    <div class="box-body">
+
+							<div class="btn-group switch-radio" data-toggle="buttons">
+		                        <label class="btn btn-default active">
+		                            <input type="radio" name="options" id="option1" autocomplete="off" checked> <i class="fa fa-check"></i> 是
+		                        </label>
+		                        <label class="btn btn-default">
+		                            <input type="radio" name="options" id="option2" autocomplete="off"> <i class="fa fa-times"></i> 否
+		                        </label>
+		                    </div>
+		                    
+		                    <div class="btn-group switch-radio" data-toggle="buttons">
+		                        <label class="btn btn-primary active">
+		                            <input type="radio" name="options" id="option1" autocomplete="off" checked> <i class="fa fa-check"></i> 是
+		                        </label>
+		                        <label class="btn btn-primary">
+		                            <input type="radio" name="options" id="option2" autocomplete="off"> <i class="fa fa-times"></i> 否
+		                        </label>
+		                    </div>
+		                    
+		                    <div class="btn-group switch-radio" data-toggle="buttons">
+		                        <label class="btn btn-success active">
+		                            <input type="radio" name="options" id="option1" autocomplete="off" checked> <i class="fa fa-check"></i> 是
+		                        </label>
+		                        <label class="btn btn-success">
+		                            <input type="radio" name="options" id="option2" autocomplete="off"> <i class="fa fa-times"></i> 否
+		                        </label>
+		                    </div>
+		                    
+		                    <div class="btn-group switch-radio" data-toggle="buttons">
+		                        <label class="btn btn-info active">
+		                            <input type="radio" name="options" id="option1" autocomplete="off" checked> <i class="fa fa-check"></i> 是
+		                        </label>
+		                        <label class="btn btn-info">
+		                            <input type="radio" name="options" id="option2" autocomplete="off"> <i class="fa fa-times"></i> 否
+		                        </label>
+		                    </div>
+		                    
+		                    <div class="btn-group switch-radio" data-toggle="buttons">
+		                        <label class="btn btn-warning active">
+		                            <input type="radio" name="options" id="option1" autocomplete="off" checked> <i class="fa fa-check"></i> 是
+		                        </label>
+		                        <label class="btn btn-warning">
+		                            <input type="radio" name="options" id="option2" autocomplete="off"> <i class="fa fa-times"></i> 否
+		                        </label>
+		                    </div>
+		                    
+		                    <div class="btn-group switch-radio" data-toggle="buttons">
+		                        <label class="btn btn-danger active">
+		                            <input type="radio" name="options" id="option1" autocomplete="off" checked> <i class="fa fa-check"></i> 是
+		                        </label>
+		                        <label class="btn btn-danger">
+		                            <input type="radio" name="options" id="option2" autocomplete="off"> <i class="fa fa-times"></i> 否
+		                        </label>
+		                    </div>
+
+						</div>
+					</div>
+					<!--/box-->
+			    </div>
+
+			    <div class="col-md-6 col-sm-12">
+					<!--box-->
+					<div class="box box-primary">
+					    <div class="box-header">
+					    	<h3 class="box-title">
+					    		切换按钮
+								<span class="text-sm ml-10"><a href="http://www.bootstrap-switch.org/" target="_blank"><i class="fa fa-globe"></i> 官方网站</a></span>
+					    	</h3>
+					    </div>
+					    <div class="box-body">
+							
+							<input type="checkbox" name="my-checkbox" data-toggle="switch" data-on-text="是" data-off-text="否" data-on-color="primary" data-off-color="default" checked>
+
+							<input type="checkbox" name="my-checkbox" data-toggle="switch" data-on-text="是" data-off-text="否" data-on-color="success" data-off-color="default" checked>
+
+							<input type="checkbox" name="my-checkbox" data-toggle="switch" data-on-text="是" data-off-text="否" data-on-color="info" data-off-color="default" checked>
+
+							<input type="checkbox" name="my-checkbox" data-toggle="switch" data-on-text="<i class='fa fa-check'></i>" data-off-text="<i class='fa fa-times'></i>" data-on-color="warning" data-off-color="default" checked>
+
+							<input type="checkbox" name="my-checkbox" data-toggle="switch" data-on-text="<i class='fa fa-check'></i>" data-off-text="<i class='fa fa-times'></i>" data-on-color="danger" data-off-color="default" checked>
+
+						</div>
+					</div>
+					<!--/box-->
+			    </div>
+			</div>
+			<!--/row-->
+
+			<!--row-->
+			<div class="row">
+			
+			    <div class="col-md-6 col-sm-12">
+					<!--box-->
+					<div class="box box-primary">
+					    <div class="box-header">
+					    	<h3 class="box-title">
+					    		日期
+								<span class="text-sm ml-10"><a href="http://www.daterangepicker.com/" target="_blank"><i class="fa fa-globe"></i> 双日期官方网站</a></span>
+								<span class="text-sm ml-10"><a href="https://github.com/chmln/flatpickr/" target="_blank"><i class="fa fa-globe"></i> 单日期官方网站</a></span>
+					    	</h3>
+					    </div>
+					    <div class="box-body">
+
+							<div class="form-group">
+								<label>双日期:</label>
+								<div class="input-group">
+									<div class="input-group-addon">
+										<i class="fa fa-calendar"></i>
+									</div>
+									<input type="text" class="form-control pull-right" id="reservation">
+								</div>
+							</div>
+
+							<div class="form-group">
+								<label>双日期和时间:</label>
+								<div class="input-group">
+									<div class="input-group-addon">
+										<i class="fa fa-clock-o"></i>
+									</div>
+									<input type="text" class="form-control pull-right" id="reservationtime">
+								</div>
+							</div>
+							
+							<div class="form-group">
+								<label>日期选择:</label>
+								<div class="input-group">
+									<button type="button" class="btn btn-default pull-right" id="daterange-btn">
+									<span>
+										<i class="fa fa-calendar"></i> 日期选择器
+									</span>
+										<i class="fa fa-caret-down"></i>
+									</button>
+								</div>
+							</div>
+
+							<div class="form-group">
+								<label>日期:</label>
+								<div class="input-group date">
+									<div class="input-group-addon">
+										<i class="fa fa-calendar"></i>
+									</div>
+									<input type="text" class="form-control pull-right" id="flatpickr" value="" data-enable-time="true" data-enable-seconds="true" />
+								</div>
+							</div>
+
+						</div>
+					</div>
+					<!--/box-->
+			    </div>
+
+			    <div class="col-md-6 col-sm-12">
+
+					<!--box-->
+					<div class="box box-primary">
+					    <div class="box-header">
+					    	<h3 class="box-title">上传</h3>
+					    </div>
+					    <div class="box-body">
+							
+							<div class="form-group">
+		                        <label>默认上传</label>
+		                        <div class="input-group">
+		                            <input type="text" class="form-control" readonly>
+		                            <span class="input-group-btn">
+		                                <span class="btn btn-default btn-file">
+		                                    浏览文件 <input type="file" name="">
+		                                </span>
+		                            </span>
+		                        </div>
+		                    </div>
+
+		                    <div class="form-group">
+		                        <label>默认上传</label>
+		                        <div class="input-group">
+		                            <span class="input-group-btn">
+		                                <span class="btn btn-default btn-file">
+		                                    浏览文件 <input type="file" name="">
+		                                </span>
+		                            </span>
+		                            <input type="text" class="form-control" readonly>
+		                        </div>
+		                    </div>
+
+		                    <div class="form-group">
+		                        <label>按钮上传</label>
+		                        <div class="input-group">
+		                            <input type="text" class="form-control" readonly>
+		                            <span class="input-group-btn">
+		                                <span class="btn btn-primary btn-file">
+		                                    <i class="fa fa-plus"></i><input type="file" multiple name="">
+		                                </span>
+		                            </span>
+		                        </div>
+		                    </div>
+
+		                    <div class="form-group">
+		                        <label>按钮上传</label>
+		                        <div class="input-group">
+		                            <span class="input-group-btn">
+		                                <span class="btn btn-info btn-file">
+		                                    <i class="fa fa-upload"></i><input type="file" multiple name="">
+		                                </span>
+		                            </span>
+		                            <input type="text" class="form-control" readonly>
+		                        </div>
+		                    </div>
+							
+
+						</div>
+					</div>
+					<!--/box-->
+			    </div>
+
+			</div>
+			<!--/row-->
+
+			<!--row-->
+			<div class="row">
+
+			    <div class="col-md-6 col-sm-12">
+					
+					<!--box-->
+					<div class="box box-primary">
+					    <div class="box-header">
+					    	<h3 class="box-title">
+					    		步长框
+								<span class="text-sm ml-10"><a href="http://getfuelux.com/javascript.html#spinbox" target="_blank"><i class="fa fa-globe"></i> 官方网站</a></span>
+					    	</h3>
+					    </div>
+					    <div class="box-body">
+							
+							<div class="spinbox spinbox-right" id="mySpinbox">
+								<input type="text" class="form-control input-mini spinbox-input">
+								<div class="spinbox-buttons btn-group btn-group-vertical">
+									<button type="button" class="btn btn-default spinbox-up btn-xs">
+										<i class="fa fa-caret-up"></i>
+									</button>
+									<button type="button" class="btn btn-default spinbox-down btn-xs">
+										<i class="fa fa-caret-down"></i>
+									</button>
+								</div>
+							</div>
+
+							<br />
+							<br />
+
+							<div class="spinbox spinbox-two-sided" id="mySpinbox2">
+                                <div class="spinbox-buttons btn-group spinbox-buttons-left">
+                                    <button type="button" class="btn spinbox-up">
+                                        <i class="fa fa-plus"></i>
+                                    </button>
+                                </div>
+                                <input type="text" class="spinbox-input form-control">
+                                <div class="spinbox-buttons btn-group spinbox-buttons-right">
+                                    <button type="button" class="btn spinbox-down">
+                                        <i class="fa fa-minus"></i>
+                                    </button>
+                                </div>
+                            </div>
+							
+
+						</div>
+					</div>
+					<!--/box-->
+			    </div>
+
+			    <div class="col-md-6 col-sm-12">
+					<!--box-->
+					<div class="box box-primary">
+					    <div class="box-header">
+					    	<h3 class="box-title">
+					    		滑块
+								<span class="text-sm ml-10"><a href="http://seiyria.github.io/bootstrap-slider/" target="_blank"><i class="fa fa-globe"></i> 官方网站</a></span>
+					    	</h3>
+					    </div>
+					    <div class="box-body">
+							
+							<input id="ex1" data-slider-id='ex1Slider' type="text" data-slider-min="0" data-slider-max="20" data-slider-step="1" data-slider-value="14"/>
+							
+
+						</div>
+					</div>
+					<!--/box-->
+			    </div>
+
+			</div>
+			<!--/row-->
+
+
+		</section>
+		<!--/content-->
+
+	</div>
+	<!--/content-wrapper-->
+
+	<!--main-footer-->
+	<footer class="main-footer">
+		<div class="pull-right hidden-xs">iDvert Frame ver 1.0</div>
+		<strong>Copyright &copy; 2016 <a href="#">iDvert</a>.</strong> All rights reserved.
+	</footer>
+	<!--/main-footer-->
+
+</div>
+<!--/wrapper-->
+
+
+<!-- Script -->
+<script src="core/plugins/jQuery/jquery-2.2.3.min.js"></script>
+<script src="core/bootstrap/js/bootstrap.min.js"></script>
+<script src="core/plugins/slimScroll/jquery.slimscroll.min.js"></script>
+<!--iCheck-->
+<script src="core/plugins/iCheck/icheck.min.js"></script>
+<!--Labelauty-->
+<script src="core/plugins/labelauty/jquery.labelauty.js"></script>
+<!--Select2-->
+<script src="core/plugins/select2/select2.full.min.js"></script>
+<!--switch-->
+<script src="core/plugins/switch/js/bootstrap-switch.min.js"></script>
+<!-- bootstrap daterangepicker -->
+<script src="core/plugins/daterangepicker/moment.min.js"></script>
+<script src="core/plugins/daterangepicker/daterangepicker.js"></script>
+<!-- flatpickr -->
+<script src="core/plugins/flatpickr/flatpickr.js"></script>
+<!-- spinbox -->
+<script src="core/plugins/spinbox/spinbox.js"></script>
+<!-- slider -->
+<script src="core/plugins/bootstrap-slider/bootstrap-slider.js"></script>
+<!-- selectivity -->
+<script src="core/plugins/selectivity/selectivity-jquery.min.js"></script>
+
+<script src="core/dist/js/app.min.js"></script>
+<script src="core/dist/js/ivt.js"></script>
+<script>
+$(function(){
+	$(".select").select2({
+		minimumResultsForSearch: Infinity
+	});
+	//iCheck for checkbox and radio inputs
+    $('input[type="checkbox"].minimal, input[type="radio"].minimal').iCheck({
+      checkboxClass: 'icheckbox_minimal-blue',
+      radioClass: 'iradio_minimal-blue'
+    });
+    //Red color scheme for iCheck
+    $('input[type="checkbox"].minimal-red, input[type="radio"].minimal-red').iCheck({
+      checkboxClass: 'icheckbox_minimal-red',
+      radioClass: 'iradio_minimal-red'
+    });
+    //Flat red color scheme for iCheck
+    $('input[type="checkbox"].flat-red, input[type="radio"].flat-red').iCheck({
+      checkboxClass: 'icheckbox_flat-green',
+      radioClass: 'iradio_flat-green'
+    });
+
+    $("input[data-toggle='labelauty']").labelauty();
+
+    $("[data-toggle='switch']").bootstrapSwitch();
+
+
+    $('#reservation').daterangepicker({
+    	opens:"right",
+    	locale: {
+			format: "YYYY/MM/DD",
+			separator: " - ",
+			applyLabel: "应用",
+			cancelLabel: "取消",
+			fromLabel: "从",
+			toLabel: "到",
+			customRangeLabel: "自定义",
+			weekLabel: "周",
+			daysOfWeek: [
+				"日",
+	            "一",
+	            "二",
+	            "三",
+	            "四",
+	            "五",
+	            "六"
+			],
+			monthNames: [
+				"一月",
+				"二月",
+				"三月",
+				"四月",
+				"五月",
+				"六月",
+				"七月",
+				"八月",
+				"九月",
+				"十月",
+				"十一月",
+				"十二月"
+			],
+			firstDay: 1
+		}
+    });
+    $('#reservationtime').daterangepicker({
+    	timePicker: true,
+    	timePickerIncrement: 30,
+    	timePicker24Hour: true,
+    	format: 'MM/DD/YYYY h:mm A',
+    	locale: {
+			format: "YYYY/MM/DD",
+			separator: " - ",
+			applyLabel: "应用",
+			cancelLabel: "取消",
+			fromLabel: "从",
+			toLabel: "到",
+			customRangeLabel: "自定义",
+			weekLabel: "周",
+			daysOfWeek: [
+				"日",
+	            "一",
+	            "二",
+	            "三",
+	            "四",
+	            "五",
+	            "六"
+			],
+			monthNames: [
+				"一月",
+				"二月",
+				"三月",
+				"四月",
+				"五月",
+				"六月",
+				"七月",
+				"八月",
+				"九月",
+				"十月",
+				"十一月",
+				"十二月"
+			],
+			firstDay: 1
+		}
+    });
+    $('#daterange-btn').daterangepicker({
+    	opens:"right",
+		ranges: {
+			'今天': [moment(), moment()],
+			'昨天': [moment().subtract(1, 'days'), moment().subtract(1, 'days')],
+			'过去 7 天': [moment().subtract(6, 'days'), moment()],
+			'过去 30 天': [moment().subtract(29, 'days'), moment()],
+			'本月': [moment().startOf('month'), moment().endOf('month')],
+			'上月': [moment().subtract(1, 'month').startOf('month'), moment().subtract(1, 'month').endOf('month')]
+			},
+			locale: {
+				format: "YYYY/MM/DD",
+				separator: " - ",
+				applyLabel: "应用",
+				cancelLabel: "取消",
+				fromLabel: "从",
+				toLabel: "到",
+				customRangeLabel: "自定义",
+				weekLabel: "周",
+				daysOfWeek: [
+					"日",
+		            "一",
+		            "二",
+		            "三",
+		            "四",
+		            "五",
+		            "六"
+				],
+				monthNames: [
+					"一月",
+					"二月",
+					"三月",
+					"四月",
+					"五月",
+					"六月",
+					"七月",
+					"八月",
+					"九月",
+					"十月",
+					"十一月",
+					"十二月"
+				],
+				firstDay: 1
+			},
+			startDate: moment().subtract(29, 'days'),
+			endDate: moment()
+		},function (start, end) {
+			$('#daterange-btn span').html(start.format('MMMM D, YYYY') + ' - ' + end.format('MMMM D, YYYY'));
+		}
+
+    );
+
+    $("#flatpickr").flatpickr();
+
+    $('#mySpinbox').spinbox();
+    $('#mySpinbox2').spinbox();
+
+    $('#ex1').slider({
+		formatter: function(value) {
+			return 'Current value: ' + value;
+		}
+	});
+
+	$('#single-select-box').selectivity({
+	    allowClear: true,
+	    placeholder: 'No city selected'
+	});
+});
+</script>
+</body>
+</html>

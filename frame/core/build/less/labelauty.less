@@ -1,0 +1,121 @@
+/* Labelauty */
+.labelauty-group {
+	margin:0;
+	padding:0;
+	list-style:none;
+
+	li {
+		margin:0;
+		padding:0;
+		display:inline-block;
+	}
+}
+
+input.labelauty {
+	display:none !important;
+
+	& + label {
+		
+		display:table;
+		padding:9px 10px;
+		background-color:@default-color;
+		color:@dark-color;
+		border-radius:2px;
+		cursor:pointer;
+		font-size:14px;
+		font-weight:normal;
+		-webkit-transparent: background-color .25s;
+		-moz-transparent: background-color .25s;
+		-o-transparent: background-color .25s;
+		transparent: background-color .25s;
+		-webkit-user-select:none;
+		-moz-user-select:none;
+		-o-user-select:none;
+		user-select:none;
+		
+		&::selection,&::-moz-selection {
+			background-color:rgba(255,255,255,0);
+		}
+
+		> span {
+			&.labelauty-unchecked,&.labelauty-checked {
+				float:left;
+				display:inline-block;
+				line-height:16px;
+				vertical-align:bottom;
+			}
+
+			&.labelauty-unchecked-image,&.labelauty-checked-image {
+				float:left;
+				display: inline-block;
+				width: 14px;
+				height: 14px;
+				vertical-align: bottom;
+				background-repeat: no-repeat;
+				background-position: left center;
+				-webkit-transition: background-image 0.5s linear;
+				-moz-transition: background-image 0.5s linear;
+				-o-transition: background-image 0.5s linear;
+				transition: background-image 0.5s linear;
+				font: normal normal normal 14px/1 FontAwesome;
+				font-size: 14px;
+
+				&:before {
+					content: "\f10c";
+				}
+			}
+			&.labelauty-checked-image {
+				&:before {
+					content: "\f00c";
+				}
+			}
+
+			&.labelauty-unchecked-image + span.labelauty-unchecked,
+			&.labelauty-checked-image + span.labelauty-checked {
+				margin-left:7px;
+			}
+		}
+	}
+	&:not(:checked) {
+		&:not([disabled]) + label:hover {
+			background-color:lighten(@primary-color,20%);
+			color:@light-color;
+		}
+		& + label {
+			> span {
+				&.labelauty-checked-image,&.labelauty-checked {
+					display:none;
+				}
+			}
+		}
+	}
+	&:checked {
+		&  + label {
+			background-color:@primary-color;
+			color:@light-color;
+			font-weight:normal;
+
+			> span {
+				&.labelauty-unchecked-image,&.labelauty-unchecked {
+					display:none;
+				}
+
+				&.labelauty-checked {
+					display:inline-block;
+				}
+
+				&.labelauty-checked {
+					display:block;
+				}
+			}
+		}
+
+		&:not([disabled]) + label:hover {
+			background-color:tint(@primary-color, 20%);
+		}
+	}
+
+	&[disabled] + label {
+		opacity: 0.5;
+	}
+}

@@ -1,0 +1,47 @@
+.card-box {
+	position:relative;
+	padding: 15px;
+	border-radius: 2px;
+	border:1px solid @default-color;
+	background-color: @light-color;
+
+	&.no-border {
+		border:none;
+	}
+
+	.card-box-icon {
+		position:absolute;
+		top:15px;
+		right:15px;
+		width:64px;
+		height:64px;
+		line-height:32px;
+		text-align:center;
+		font-size:56px;
+		color:lighten(@dark-color,40%);
+	}
+
+	.card-box-title {
+		clear:both;
+		line-height:20px;
+		color:lighten(@dark-color,20%);
+		font-size:14px;
+	}
+
+	.card-box-num {
+		clear:both;
+		margin:0;
+		padding:0;
+		line-height:48px;
+		font-size:32px;
+		color:@dark-color;
+	}
+
+	.card-box-text {
+		line-height:25px;
+
+		.label {
+			margin-right:5px;
+		}
+	}
+}

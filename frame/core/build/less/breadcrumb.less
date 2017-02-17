@@ -1,0 +1,57 @@
+.breadcrumb {
+	margin-bottom:0;
+	background-color:transparent;
+	> li + li:before {
+		color:darken(@default-color,20%);
+	}
+	> .active {
+		color:darken(@default-color,20%);
+	}
+	&.sm {
+		padding:8px 10px;
+		border-radius:2px;
+		font-size:12px;
+	}
+	&.lg {
+		padding:10px 20px;
+		border-radius:4px;
+		font-size:16px;
+	}
+	&.square {
+		border-radius:0;
+	}
+	&.rsaquo {
+		> li + li:before {
+			content:"\203A";
+		}
+	}
+	&.breadcrumb-primary,&.breadcrumb-success,&.breadcrumb-info,&.breadcrumb-warning,&.breadcrumb-danger {
+		a {
+			color:@light-color;
+		}
+		> .active {
+			color:@light-color;
+		}
+		> li + li:before {
+			color:@default-color;
+		}
+	}
+	&.breadcrumb-default {
+		background-color:@light-gray;
+	}
+	&.breadcrumb-primary {
+		background-color:@primary-color;
+	}
+	&.breadcrumb-success {
+		background-color:@success-color;
+	}
+	&.breadcrumb-info {
+		background-color:@info-color;
+	}
+	&.breadcrumb-warning {
+		background-color:@warning-color;
+	}
+	&.breadcrumb-danger {
+		background-color:@danger-color;
+	}
+}

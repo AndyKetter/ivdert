@@ -1,0 +1,235 @@
+/*
+ * Component: Form
+ * ---------------
+ */
+.form-control {
+  .border-radius(@input-radius);
+  box-shadow: none;
+  border-color: @gray;
+  &:focus {
+    border-color: @primary-color;
+    box-shadow: none;
+  }
+  &::-moz-placeholder,
+  &:-ms-input-placeholder,
+  &::-webkit-input-placeholder {
+    color: #bbb;
+    opacity: 1;
+  }
+
+  &:not(select) {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+  }
+  &.bold-border {
+    border-width:2px;
+  }
+  &.no-border {
+    border:none;
+  }
+  &.rounded {
+    border-radius:3px;
+  }
+
+
+  &[disabled],&[readonly] {
+   background-color:@light-gray;
+ }
+}
+
+fieldset {
+  &[disabled] {
+    .form-control {
+      background-color:@light-gray;
+    }
+  }
+}
+
+.form-group {
+  &.has-success {
+    label {
+      color: @success-color;
+    }
+    .form-control {
+      &,&:focus {
+        border-color: @success-color;
+        box-shadow: none;
+      }
+    }
+    .help-block,.control-label,.radio,.checkbox,.radio-inline,.checkbox-inline {
+      color: @success-color;
+    }
+    .input-group-addon {
+      color:@success-color;
+      border-color:@success-color;
+      background-color:lighten(@success-color,40%);
+    }
+    .form-control-feedback {
+      color:@success-color;
+    }
+  }
+
+  &.has-warning {
+    label {
+      color: @warning-color;
+    }
+    .form-control {
+      &,&:focus {
+        border-color: @warning-color;
+        box-shadow: none;
+      }
+    }
+    .help-block,.control-label,.radio,.checkbox,.radio-inline,.checkbox-inline {
+      color: @warning-color;
+    }
+    .input-group-addon {
+      color:@warning-color;
+      border-color:@warning-color;
+      background-color:lighten(@warning-color,40%);
+    }
+    .form-control-feedback {
+      color:@warning-color;
+    }
+  }
+
+  &.has-error {
+    label {
+      color: @danger-color;
+    }
+    .form-control {
+      &,&:focus {
+        border-color: @danger-color;
+        box-shadow: none;
+      }
+    }
+    .help-block,.control-label,.radio,.checkbox,.radio-inline,.checkbox-inline {
+      color: @danger-color;
+    }
+    .input-group-addon {
+      color:@danger-color;
+      border-color:@danger-color;
+      background-color:lighten(@danger-color,40%);
+    }
+    .form-control-feedback {
+      color:@danger-color;
+    }
+  }
+}
+
+/* Has Feedback */
+.has-feedback {
+  &.no-label {
+    .form-control-feedback {
+      top:0;
+    }
+    &.lg {
+      .form-control-feedback {
+        top:7px;
+      }
+    }
+  }
+  &.left-feedback {
+    .form-control {
+      padding-left:35.5px;
+      padding-right:0;
+    }
+    .form-control-feedback {
+      left:0;
+      right:auto;
+    }
+    &.lg {
+      .form-control-feedback {
+        left:3px;
+      }
+    }
+  }
+  label~.form-control-feedback {
+    top:23px;
+  }
+}
+
+
+.form-control-feedback{
+  color: #AAB2BD;
+  line-height:34px;
+}
+
+/* Input group */
+.input-group {
+  .input-group-addon {
+    .border-radius(@input-radius);
+    border-color: @default-color;
+    background-color: #fff;
+  }
+}
+
+/* button groups */
+.btn-group-vertical {
+  .btn {
+    &.btn-flat:first-of-type, &.btn-flat:last-of-type {
+      .border-radius(0);
+    }
+  }
+}
+
+.icheck > label {
+  padding-left: 0;
+}
+
+textarea.no-resize { resize: none;}
+
+/* support Font Awesome icons in form-control */
+.form-control-feedback.fa {
+  line-height: @input-height-base;
+}
+
+.input-lg + .form-control-feedback.fa,
+.input-group-lg + .form-control-feedback.fa,
+.form-group-lg .form-control + .form-control-feedback.fa {
+  line-height: @input-height-large;
+}
+
+.input-sm + .form-control-feedback.fa,
+.input-group-sm + .form-control-feedback.fa,
+.form-group-sm .form-control + .form-control-feedback.fa {
+  line-height: @input-height-small;
+}
+
+/* Form Group */
+
+.input-group-addon {
+  &.input-group-default {
+    border-color:@default-color;
+    background-color:@default-color;
+    color:@dark-color;
+  }
+  &.input-group-primary {
+    border-color:@primary-color;
+    background-color:@primary-color;
+    color:@light-color;
+  }
+  &.input-group-success {
+    border-color:@success-color;
+    background-color:@success-color;
+    color:@light-color;
+  }
+  &.input-group-info {
+    border-color:@info-color;
+    background-color:@info-color;
+    color:@light-color;
+  }
+  &.input-group-warning {
+    border-color:@warning-color;
+    background-color:@warning-color;
+    color:@light-color;
+  }
+  &.input-group-danger {
+    border-color:@danger-color;
+    background-color:@danger-color;
+    color:@light-color;
+  }
+}
+
+.control-label { font-weight:normal;}
+.help-block { color:darken(@default-color,20%);}

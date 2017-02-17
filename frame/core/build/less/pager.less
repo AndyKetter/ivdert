@@ -1,0 +1,448 @@
+.pager {
+	margin:0;
+	li {
+		> a,> span {
+			color:@dark-color;
+			border-color:@default-color;
+		}
+		a {
+			&:hover,&:focus {
+				color:@dark-color;
+				background-color:lighten(@default-color,20%);
+				border-color:@default-color;
+			}
+		}
+	}
+	&.square li {
+		> a,> span {
+			border-radius:0;
+		}
+	}
+	.disabled {
+		> &,> &:hover,> &:focus,> span {
+			color:darken(@default-color,20%);
+			border-color:@default-color;
+		}
+	}
+}
+
+.pagination {
+	&.square {
+		&:first-child {
+			> a,> span {
+				.border-left-radius(0);
+			}
+		}
+		&:last-child {
+			> a,> span {
+				.border-right-radius(0);
+			}
+		}
+	}
+	&.separated {
+		> li {
+			> a,> span {
+				margin:0 2px;
+				border-radius:2px;
+			}
+		}
+	}
+	&.separated-square {
+		> li {
+			> a,> span {
+				margin:0 2px;
+				border-radius:0;
+			}
+		}
+	}
+	> li {
+		> a,> span {
+			color:@dark-color;
+			border-color:@default-color;
+			&:hover,&:focus {
+				color:@dark-color;
+				background-color:lighten(@default-color,10%);
+				border-color:@default-color;
+			}
+		}
+	}
+	> .active {
+		> a,> span {
+			&,&:hover,&:focus {
+				background-color:@dark-color;
+				border-color:@dark-color;
+			}
+		}
+	}
+	> .disabled {
+		> a,> span {
+			&,&:hover,&:focus {
+				color:darken(@default-color,30%);
+				border-color:@default-color;
+			}
+		}
+	}
+}
+
+.pagination {
+	margin:0;
+	border-radius:2px;
+	> li {
+		&:first-child {
+			> a,> span {
+				.border-left-radius(2px);
+			}
+		}
+		&:last-child {
+			> a,> span {
+				.border-right-radius(2px);
+			}
+		}
+	}
+
+	// default
+	&.page-default {
+		> li {
+			> a,> span {
+				color:@default-color;
+			}
+		}
+	}
+
+	// primary
+	&.page-primary {
+		> li {
+			> a,> span {
+				color:@primary-color;
+			}
+		}
+	}
+
+	// success
+	&.page-success {
+		> li {
+			> a,> span {
+				color:@success-color;
+			}
+		}
+	}
+
+	// info
+	&.page-info {
+		> li {
+			> a,> span {
+				color:@info-color;
+			}
+		}
+	}
+
+	// warning
+	&.page-warning {
+		> li {
+			> a,> span {
+				color:@warning-color;
+			}
+		}
+	}
+
+	// danger
+	&.page-danger {
+		> li {
+			> a,> span {
+				color:@danger-color;
+			}
+		}
+	}
+}
+
+// default
+.pagination {
+	// default
+	&.page-default {
+		> .active {
+			> a,> span {
+				&,&:hover,&:focus {
+					background-color:@default-color;
+					border-color:@default-color;
+					color:@dark-color;
+				}
+			}
+		}
+	}
+	
+	// primary
+	&.page-primary {
+		> .active {
+			> a,> span {
+				&,&:hover,&:focus {
+					background-color:@primary-color;
+					border-color:@primary-color;
+					color:@light-color;
+				}
+			}
+		}
+	}
+
+	// success
+	&.page-success {
+		> .active {
+			> a,> span {
+				&,&:hover,&:focus {
+					background-color:@success-color;
+					border-color:@success-color;
+					color:@light-color;
+				}
+			}
+		}
+	}
+
+	// info
+	&.page-info {
+		> .active {
+			> a,> span {
+				&,&:hover,&:focus {
+					background-color:@info-color;
+					border-color:@info-color;
+					color:@light-color;
+				}
+			}
+		}
+	}
+
+	// warning
+	&.page-warning {
+		> .active {
+			> a,> span {
+				&,&:hover,&:focus {
+					background-color:@warning-color;
+					border-color:@warning-color;
+					color:@light-color;
+				}
+			}
+		}
+	}
+
+	// danger
+	&.page-danger {
+		> .active {
+			> a,> span {
+				&,&:hover,&:focus {
+					background-color:@danger-color;
+					border-color:@danger-color;
+					color:@light-color;
+				}
+			}
+		}
+	}
+}
+
+.pager,.pagination {
+	//default
+	&.page-default {
+		&.block-color {
+			> li {
+				> a,> span {
+					color:@dark-color;
+					background-color:@default-color;
+					border-color:shade(@default-color, 5%);
+
+					&:hover,&:focus {
+						background-color:@default-color;
+					}
+				}
+			}
+			> .active {
+				> a,> span {
+					&,&:hover,&:focus {
+						background-color:shade(@default-color, 5%);
+						border-color:shade(@default-color, 5%);
+						color:@dark-color;
+					}
+				}
+			}
+			> .disabled {
+				> a,> span {
+					&,&:hover,&:focus {
+						background-color:tint(@default-color, 20%);
+						border-color:tint(@default-color, 20%);
+						color:@dark-color;
+					}
+				}
+			}
+		}
+	}
+	//primary
+	&.page-primary {
+		&.block-color {
+			> li {
+				> a,> span {
+					color:@light-color;
+					background-color:@primary-color;
+					border-color:shade(@primary-color, 5%);
+
+					&:hover,&:focus {
+						background-color:@primary-color;
+					}
+				}
+			}
+			> .active {
+				> a,> span {
+					&,&:hover,&:focus {
+						background-color:shade(@primary-color, 5%);
+						border-color:shade(@primary-color, 5%);
+						color:@light-color;
+					}
+				}
+			}
+			> .disabled {
+				> a,> span {
+					&,&:hover,&:focus {
+						background-color:tint(@primary-color, 20%);
+						border-color:tint(@primary-color, 20%);
+						color:@light-color;
+					}
+				}
+			}
+		}
+	}
+
+	//success
+	&.page-success {
+		&.block-color {
+			> li {
+				> a,> span {
+					color:@light-color;
+					background-color:@success-color;
+					border-color:shade(@success-color, 5%);
+
+					&:hover,&:focus {
+						background-color:@success-color;
+					}
+				}
+			}
+			> .active {
+				> a,> span {
+					&,&:hover,&:focus {
+						background-color:shade(@success-color, 5%);
+						border-color:shade(@success-color, 5%);
+						color:@light-color;
+					}
+				}
+			}
+			> .disabled {
+				> a,> span {
+					&,&:hover,&:focus {
+						background-color:tint(@success-color, 20%);
+						border-color:tint(@success-color, 20%);
+						color:@light-color;
+					}
+				}
+			}
+		}
+	}
+
+	//info
+	&.page-info {
+		&.block-color {
+			> li {
+				> a,> span {
+					color:@light-color;
+					background-color:@info-color;
+					border-color:shade(@info-color, 5%);
+
+					&:hover,&:focus {
+						background-color:@info-color;
+					}
+				}
+			}
+			> .active {
+				> a,> span {
+					&,&:hover,&:focus {
+						background-color:shade(@info-color, 5%);
+						border-color:shade(@info-color, 5%);
+						color:@light-color;
+					}
+				}
+			}
+			> .disabled {
+				> a,> span {
+					&,&:hover,&:focus {
+						background-color:tint(@info-color, 20%);
+						border-color:tint(@info-color, 20%);
+						color:@light-color;
+					}
+				}
+			}
+		}
+	}
+
+	//warning
+	&.page-warning {
+		&.block-color {
+			> li {
+				> a,> span {
+					color:@light-color;
+					background-color:@warning-color;
+					border-color:shade(@warning-color, 5%);
+
+					&:hover,&:focus {
+						background-color:@warning-color;
+					}
+				}
+			}
+			> .active {
+				> a,> span {
+					&,&:hover,&:focus {
+						background-color:shade(@warning-color, 5%);
+						border-color:shade(@warning-color, 5%);
+						color:@light-color;
+					}
+				}
+			}
+			> .disabled {
+				> a,> span {
+					&,&:hover,&:focus {
+						background-color:tint(@warning-color, 20%);
+						border-color:tint(@warning-color, 20%);
+						color:@light-color;
+					}
+				}
+			}
+		}
+	}
+
+	//danger
+	&.page-danger {
+		&.block-color {
+			> li {
+				> a,> span {
+					color:@light-color;
+					background-color:@danger-color;
+					border-color:shade(@danger-color, 5%);
+
+					&:hover,&:focus {
+						background-color:@danger-color;
+					}
+				}
+			}
+			> .active {
+				> a,> span {
+					&,&:hover,&:focus {
+						background-color:shade(@danger-color, 5%);
+						border-color:shade(@danger-color, 5%);
+						color:@light-color;
+					}
+				}
+			}
+			> .disabled {
+				> a,> span {
+					&,&:hover,&:focus {
+						background-color:tint(@danger-color, 20%);
+						border-color:tint(@danger-color, 20%);
+						color:@light-color;
+					}
+				}
+			}
+		}
+	}
+}
